@@ -1,0 +1,319 @@
+{
+  "error404": {
+    "title": "Page not found",
+    "code": "404",
+    "message": "Oops! This page went backstage.",
+    "hint": "Head back to the homepage and catch the next set.",
+    "backHome": "Back to home"
+  },
+  "common": {
+    "brand": "ARTCORE HUB",
+    "tagline": "Coworking • Live Music • Festivals • Cultural Exchange",
+    "language": "Language",
+    "it": "IT",
+    "en": "EN",
+    "accept": "Accept",
+    "reject": "Reject",
+    "save": "Save",
+    "close": "Close",
+    "manage": "Manage",
+    "learnMore": "Learn more"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "coworking": "Coworking",
+    "theSpace": "The space",
+    "events": "Events",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "title": "ARTCORE HUB",
+      "subtitle": "Coworking space, live music, festivals and cultural exchange",
+      "ctaCoworking": "Discover Coworking",
+      "ctaEvents": "View Events"
+    },
+    "features": {
+      "title": "What we offer",
+      "liveMusic": {
+        "title": "Live Music",
+        "description": "Concerts and live sessions in a dedicated space"
+      },
+      "international": {
+        "title": "International",
+        "description": "Cultural exchange and global connections"
+      },
+      "coworking": {
+        "title": "Coworking",
+        "description": "Shared workspaces and community"
+      },
+      "festivals": {
+        "title": "Festivals",
+        "description": "Events and festivals bringing together art and culture"
+      }
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "q1": {
+        "question": "What happens if the campaign goal is not reached?",
+        "answer": "If the goal of opening the coworking space is not reached, we commit to refund the full donated amount. Refunds will be made using the same method as the donation  within a reasonable time from the official communication that the goal has not been met."
+      },
+      "q2": {
+        "question": "How does the donation-to-coworking-months ratio work?",
+        "answer": "Every 100 euros donated entitle you to one month of coworking access, subject to availability. Amounts under 100 euros do not entitle you to one month or fractions of a month."
+      },
+      "q3": {
+        "question": "What happens if there is no availability when the venue opens?",
+        "answer": "If when we open there is no availability for the months you are entitled to based on your donation, the corresponding amount will be refunded to you using the same method as the donation."
+      },
+      "q4": {
+        "question": "Do donations under 100€ entitle you to months or fractions of a month?",
+        "answer": "No. Only donations of at least 100 euros entitle you to one month of coworking (subject to availability). Lower amounts do not entitle you to one month or fractions of a month."
+      }
+    },
+    "about": {
+      "title": "The association",
+      "description": "ARTCORE is a Social Promotion Association (Associazione di Promozione Sociale) promoting coworking, live music, festivals and cultural exchange. A place where creativity and work meet.",
+      "link": "Learn more about us"
+    },
+    "project": {
+      "title": "The coworking journey",
+      "paragraph1": "We plan to fund the association's activities in the long run through coworking and grants. Right now, everyone's support is essential to get started with a venue that can host coworking and small events (home concerts, book presentations, networking).",
+      "paragraph2": "Those who support us with an early adopter subscription are helping with initial expenses; when the venue is ready they get 6 months of coworking access.",
+      "paragraph3": "There is no profit — only the desire that whoever uses these spaces, whether local or just passing through, finds a richer and more relevant cultural offering.",
+      "latestUpdate": "Latest update",
+      "milestones": {
+        "idea": { "label": "Idea and plan", "desc": "Defining the model and vision" },
+        "space": { "label": "Finding a space", "desc": "Searching for the right location" },
+        "setup": { "label": "Setup", "desc": "Renovation and equipment" },
+        "opening": { "label": "Opening", "desc": "Launch and first months" }
+      },
+      "status": { "done": "Done", "current": "In progress", "next": "Upcoming" },
+      "followProgress": "Follow the progress",
+      "imagineLikeThis": "We imagine it like this",
+      "getInvolved": "Get involved",
+      "expandHint": "Click to see how you can participate",
+      "interested": "I'm interested",
+      "interestedDesc": "Want to stay updated or join the community?",
+      "canHelp": "I can help",
+      "canHelpDesc": "Skills, time, contacts or ideas: every contribution counts.",
+      "earlyAdopterTitle": "Early adopter: semiannual subscription",
+      "earlyAdopterDesc": "80€/month for six months. Those who support us now will get 6 months of coworking access when the venue is ready.",
+      "earlyAdopterBenefit": "When the venue is ready: 6 months of coworking access.",
+      "earlyAdopterSavings": "savings",
+      "earlyAdopterDiscountBadge": "−20%",
+      "transferAmount": "Amount",
+      "bankTransfer": "Bank transfer",
+      "bankTransferDetails": "Bank transfer details",
+      "bankTransferModalTitle": "Bank transfer details",
+      "iban": "IBAN",
+      "causal": "Payment reference (causale)",
+      "causalValue": "Liberal donation by YOUR_NAME YOUR_SURNAME",
+      "copy": "Copy",
+      "copied": "Copied",
+      "paymentOr": " - or - ",
+      "orPayPal": "Or donate with PayPal",
+      "donatePayPal": "Donate with PayPal",
+      "termsAndConditions": "Terms and conditions",
+      "termsModalTitle": "Terms and conditions",
+      "termsModalRefund": "If the goal of opening the coworking space is not reached, we commit to refund the full donated amount. Refunds will be made using the same method as the donation  within a reasonable time from the official communication that the goal has not been met.",
+      "contactCta": "Get in touch",
+      "contactSubject": {
+        "interested": "Interest in staying updated / joining the community",
+        "help": "Available to help (skills / time / contacts)"
+      }
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "About us",
+      "subtitle": "An APS for coworking, music and culture"
+    },
+    "mission": {
+      "title": "Our mission",
+      "description": "We promote coworking spaces, live music, festivals and international cultural exchange. We believe in inclusive communities where art, work and connection merge."
+    },
+    "values": {
+      "title": "Our values",
+      "community": "Community and sharing",
+      "creativity": "Creativity and expression",
+      "inclusion": "Inclusion and diversity",
+      "sustainability": "Cultural and social sustainability"
+    },
+    "team": {
+      "title": "The team",
+      "subtitle": "The people behind ARTCORE APS"
+    }
+  },
+  "coworking": {
+    "hero": {
+      "title": "Coworking",
+      "subtitle": "Shared workspaces for creatives and professionals"
+    },
+    "services": {
+      "title": "Services",
+      "desks": "Dedicated and flexible desks",
+      "meeting": "Meeting and workshop rooms",
+      "events": "Space for events and networking",
+      "community": "Access to ARTCORE HUB community"
+    },
+    "features": {
+      "title": "Features",
+      "wifi": "Fast connection",
+      "amenities": "Included amenities",
+      "flexible": "Flexible plans",
+      "location": "Central location"
+    }
+  },
+  "theSpace": {
+    "hero": {
+      "title": "The space",
+      "subtitle": "How we imagine it will be"
+    },
+    "intro": "A space that breathes with those who inhabit it. From the first coffee in the morning to the last note at night.",
+    "morning": {
+      "title": "Morning",
+      "body": "Light pours in through the windows. Someone opens a laptop, someone makes coffee. The space wakes gently: workstations, shared silence, focus. Here work has a human rhythm."
+    },
+    "day": {
+      "title": "Daytime",
+      "body": "Informal encounters, exchanges of ideas, a call in a room, a break in the courtyard. Real coworking: not just desks, but people crossing paths and projects."
+    },
+    "evening": {
+      "title": "Evening",
+      "body": "The work lights go off and the spotlights come on. The same space transforms: a stage for a home concert, chairs in a circle for a book launch, networking with a drink in hand. Culture takes the place of work—not replacing it, completing it."
+    },
+    "night": {
+      "title": "Night",
+      "body": "The last applause, the last conversations. The space grows quiet. Tomorrow it will begin again: same place, different stories. A place that isn't just where you work or listen to music—it's where you meet something bigger."
+    },
+    "outro": "This is the space we're building. For those who live here and for those passing through. For the day and for the evening.",
+    "earlyAdopterIntro": "Want to help us get this space off the ground? With an early adopter subscription you contribute to the initial costs and, when the venue is ready, you'll get 6 months of coworking access."
+  },
+  "events": {
+    "hero": {
+      "title": "Events",
+      "subtitle": "Live music, festivals and cultural exchange"
+    },
+    "types": {
+      "title": "Event types",
+      "liveMusic": {
+        "title": "Live Music",
+        "description": "Concerts, jam sessions and live performances"
+      },
+      "festivals": {
+        "title": "Festivals",
+        "description": "Festivals bringing together music, art and culture"
+      },
+      "cultural": {
+        "title": "Cultural exchange",
+        "description": "Meetups, workshops and international projects"
+      }
+    },
+    "upcoming": {
+      "title": "Upcoming events",
+      "empty": "New events coming soon. Stay tuned!"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Contact",
+      "subtitle": "Get in touch for information or collaborations"
+    },
+    "form": {
+      "name": "Name",
+      "surname": "Surname",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send",
+      "success": "Message sent. We will get back to you soon.",
+      "error": "An error occurred. Please try again."
+    },
+    "info": {
+      "title": "Information",
+      "email": "Email"
+    }
+  },
+  "footer": {
+    "description": "APS for coworking, live music, festivals and cultural exchange.",
+    "quickLinks": "Quick links",
+    "legal": "Legal",
+    "gdpr": "Privacy (GDPR)",
+    "cookiePolicy": "Cookie Policy",
+    "transparency": "Transparent Administration",
+    "copyright": "© {year} ARTCORE HUB. All rights reserved."
+  },
+  "transparency": {
+    "hero": {
+      "title": "Transparent Administration",
+      "subtitle": "Association documents and financial reports"
+    },
+    "statuto": {
+      "title": "Statute",
+      "description": "The statute of ARTCORE APS association.",
+      "linkText": "Download the statute"
+    },
+    "rendiconti": {
+      "title": "Financial reports",
+      "description": "Financial reports with attachments by year.",
+      "year": "Year {year}",
+      "rendiconto": "Report",
+      "allegati": "Attachments",
+      "noData": "No financial reports published yet."
+    }
+  },
+  "cookie": {
+    "banner": {
+      "message": "We use cookies to improve your experience and analyze traffic. You can accept all, reject or manage preferences.",
+      "acceptAll": "Accept all",
+      "rejectAll": "Reject all",
+      "preferences": "Manage preferences"
+    },
+    "modal": {
+      "title": "Cookie preferences",
+      "necessary": "Necessary",
+      "necessaryDesc": "Essential for the site to work. Cannot be disabled.",
+      "analytics": "Analytics",
+      "analyticsDesc": "Help us understand how you use the site.",
+      "marketing": "Marketing",
+      "marketingDesc": "For personalized content and ads.",
+      "functional": "Functional",
+      "functionalDesc": "For advanced features and preferences."
+    }
+  },
+  "cookiePolicy": {
+    "title": "Cookie Policy",
+    "intro": "This Cookie Policy explains how ARTCORE HUB uses cookies.",
+    "what": "What are cookies",
+    "whatDesc": "Cookies are small text files saved on your device when you visit the site.",
+    "types": "Types of cookies",
+    "necessary": "Necessary cookies: essential for operation.",
+    "analytics": "Analytics cookies: for statistics and site improvement.",
+    "marketing": "Marketing cookies: for advertising and personalized content.",
+    "functional": "Functional cookies: for preferences and features.",
+    "manage": "You can manage preferences via the cookie banner."
+  },
+  "gdpr": {
+    "title": "Privacy Policy (GDPR)",
+    "intro": "Information on the processing of personal data under GDPR.",
+    "controller": "Data controller",
+    "controllerDesc": "ARTCORE HUB is the data controller for data collected through this site.",
+    "data": "Data collected",
+    "dataDesc": "We only collect necessary data (name, email, message) when you contact us.",
+    "purpose": "Purpose",
+    "purposeDesc": "Data is used to respond to requests and for association communications.",
+    "rights": "Your rights",
+    "rightsDesc": "You have the right to access, rectification, erasure and data portability. Contact us to exercise them.",
+    "contact": "Privacy contact"
+  },
+  "comingSoon": {
+    "title": "Coming Soon",
+    "subtitle": "We're preparing something special",
+    "message": "Coming soon. A hub of initiatives around coworking, live music, festivals and cultural exchange.",
+    "liveMusic": "Live Music",
+    "international": "International",
+    "coworking": "Coworking",
+    "festivals": "Festivals"
+  }
+}
