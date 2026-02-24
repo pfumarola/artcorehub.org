@@ -5,6 +5,7 @@ const localePath = useLocalePath()
 const switchLocalePath = useSwitchLocalePath()
 const { locale, locales } = useI18n()
 const route = useRoute()
+const { isContactHashInUrl } = useContactHashInUrl()
 
 const isMenuOpen = ref(false)
 
@@ -25,7 +26,7 @@ function isActive(path: string) {
   const fullPath = route.fullPath
   const localizedPath = localePath(path)
   if (path === '/') return fullPath === '/' || fullPath === '/en'
-  if (path === '#contact') return fullPath.endsWith('#contact')
+  if (path === '#contact') return isContactHashInUrl.value
   return fullPath === localizedPath || fullPath.startsWith(localizedPath + '/')
 }
 
