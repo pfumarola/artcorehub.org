@@ -23,16 +23,36 @@ function linkTo(link: { key: string; path: string }) {
 }
 
 function isActive(path: string) {
-  const fullPath = route.fullPath
-  const localizedPath = localePath(path)
-  if (path === '/') return fullPath === '/' || fullPath === '/en'
   if (path === '#contact') return isContactHashInUrl.value
+
+  // Se c'è #contact attivo, nessuna pagina è "attiva"
+  if (isContactHashInUrl.value) return false
+
+  const fullPath = route.fullPath.split('#')[0] // ignora hash residui
+  const localizedPath = localePath(path)
+  if (path === '/') return fullPath === '/' || fullPath === '/en' || fullPath === localePath('/')
   return fullPath === localizedPath || fullPath.startsWith(localizedPath + '/')
 }
 
 /** Rimuove il focus dal link dopo la navigazione per evitare che resti il focus ring. */
 function onNavClick() {
   nextTick(() => (document.activeElement as HTMLElement)?.blur())
+}
+
+const router = useRouter()
+
+function onNavLinkClick(link: { key: string; path: string }) {
+  if (link.path === '#contact') {
+    // Aggiorna URL e stato reattivo manualmente
+    const targetPath = localePath(route.path) + '#contact'
+    history.replaceState(history.state, '', targetPath)
+    isContactHashInUrl.value = true
+    // Scrolla alla sezione
+    nextTick(() => {
+      document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
+    })
+  }
+  onNavClick()
 }
 </script>
 
@@ -60,7 +80,7 @@ function onNavClick() {
           :to="linkTo(link)"
           class="text-sm font-medium text-stone-600 transition hover:text-stone-900 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2 dark:text-stone-400 dark:hover:text-white"
           :class="{ 'text-stone-900 dark:text-white': isActive(link.path) }"
-          @click="onNavClick"
+          @click="onNavLinkClick(link)"
         >
           {{ $t(`nav.${link.key}`) }}
         </NuxtLink>
@@ -116,7 +136,7 @@ function onNavClick() {
           :to="linkTo(link)"
           class="rounded-lg px-3 py-2 text-sm font-medium text-stone-700 hover:bg-stone-100 dark:text-stone-300 dark:hover:bg-stone-800"
           :class="{ 'bg-amber-50 text-amber-900 dark:bg-amber-900/30 dark:text-amber-200': isActive(link.path) }"
-          @click="isMenuOpen = false; onNavClick()"
+          @click="isMenuOpen = false; onNavLinkClick(link)"
         >
           {{ $t(`nav.${link.key}`) }}
         </NuxtLink>

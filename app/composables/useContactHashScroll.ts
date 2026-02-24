@@ -25,7 +25,7 @@ export function useContactHashScroll() {
     observer = new IntersectionObserver(
       (entries) => {
         const [entry] = entries
-        if (!entry?.isIntersecting && route.hash === '#contact') {
+        if (!entry?.isIntersecting && isContactHashInUrl.value) {
           const fullPath = route.fullPath.replace(/#contact$/, '')
           history.replaceState(history.state, '', fullPath)
           isContactHashInUrl.value = false
