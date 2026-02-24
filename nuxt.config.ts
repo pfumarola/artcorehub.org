@@ -3,6 +3,14 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
 
+  app: {
+    head: {
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1',
+      titleTemplate: '%s'
+    }
+  },
+
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxtjs/i18n',
@@ -10,7 +18,10 @@ export default defineNuxtConfig({
   ],
 
   nitro: {
-    preset: 'static'
+    preset: 'static',
+    prerender: {
+      routes: ['/robots.txt']
+    }
   },
 
   runtimeConfig: {
@@ -18,7 +29,9 @@ export default defineNuxtConfig({
       maintenanceMode: process.env.MAINTENANCE_MODE === 'true',
       siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://artcorehub.org',
       paypalDonateUrl: process.env.NUXT_PUBLIC_PAYPAL_DONATE_URL || '',
-      instagramUrl: process.env.NUXT_PUBLIC_INSTAGRAM_URL || ''
+      instagramUrl: process.env.NUXT_PUBLIC_INSTAGRAM_URL || '',
+      /** Posti coworking ancora disponibili: imposta NUXT_PUBLIC_COWORKING_SPOTS_LEFT (es. 7) e rideploya per aggiornare */
+      coworkingSpotsLeft: parseInt(process.env.NUXT_PUBLIC_COWORKING_SPOTS_LEFT || '10', 10)
     }
   },
 

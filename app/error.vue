@@ -47,6 +47,7 @@ const error = useError()
 const statusCode = computed(() => error.value?.statusCode ?? error.value?.status ?? 404)
 
 useHead({
-  title: () => `${statusCode.value} - ${t('error404.title')}`
+  title: () => `${statusCode.value} - ${t('error404.title')}`,
+  meta: [{ name: 'robots', content: 'noindex, nofollow' }]
 })
 </script>

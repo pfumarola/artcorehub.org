@@ -132,8 +132,14 @@ function submit() {
           <p class="mt-2 text-sm text-stone-600 dark:text-stone-400">
             {{ $t('footer.description') }}
           </p>
-          <p class="mt-2 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-stone-500 dark:text-stone-400">
-            <span>{{ $t('contact.info.email') }}: info@artcorehub.org</span>
+          <address class="mt-3 not-italic text-sm text-stone-600 dark:text-stone-400">
+            <span class="font-medium text-stone-700 dark:text-stone-300">{{ $t('footer.legalName') }}</span><br>
+            {{ $t('footer.address') }}<br>
+            {{ $t('contact.info.email') }}: <a href="mailto:segreteria@artcorehub.org" class="text-stone-600 underline hover:text-stone-900 dark:text-stone-400 dark:hover:text-white">{{ $t('footer.email') }}</a>
+            – PEC: <a href="mailto:artcore@pec.it" class="text-stone-600 underline hover:text-stone-900 dark:text-stone-400 dark:hover:text-white">{{ $t('footer.pec') }}</a><br>
+            {{ $t('footer.taxCode') }}
+          </address>
+          <p class="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-stone-500 dark:text-stone-400">
             <a
               v-if="instagramUrl"
               :href="instagramUrl"

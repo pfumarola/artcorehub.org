@@ -6,8 +6,12 @@ usePageSeo({
   title: `${t('common.brand')} - ${t('transparency.hero.title')}`,
   description: t('transparency.hero.subtitle'),
   path: '/transparency',
-  keywords: 'amministrazione trasparente, statuto, rendiconto, ARTCORE HUB'
+  keywords: t('seo.keywords.transparency')
 })
+useBreadcrumbStructuredData([
+  { name: t('nav.home'), path: localePath('/') },
+  { name: t('transparency.hero.title'), path: localePath('/transparency') }
+])
 
 // Statute: place the file at public/documents/statuto.pdf (or update the URL)
 const statutoUrl = '/documents/statuto.pdf'

@@ -28,6 +28,11 @@ function isActive(path: string) {
   if (path === '#contact') return fullPath.endsWith('#contact')
   return fullPath === localizedPath || fullPath.startsWith(localizedPath + '/')
 }
+
+/** Rimuove il focus dal link dopo la navigazione per evitare che resti il focus ring. */
+function onNavClick() {
+  nextTick(() => (document.activeElement as HTMLElement)?.blur())
+}
 </script>
 
 <template>
@@ -35,10 +40,16 @@ function isActive(path: string) {
     <div class="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
       <NuxtLink
         :to="localePath('/')"
-        class="text-xl font-bold tracking-tight text-stone-900 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2 dark:text-white"
-        aria-label="ARTCORE HUB - Home"
+        class="flex items-center focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2"
+        :aria-label="`${$t('common.brand')} - Home`"
       >
-        {{ $t('common.brand') }}
+        <img
+          src="/images/logo.webp"
+          :alt="$t('common.brand')"
+          class="h-9 w-auto"
+          width="120"
+          height="36"
+        />
       </NuxtLink>
 
       <nav v-if="!maintenanceMode" class="hidden items-center gap-8 md:flex" aria-label="Navigazione principale">
@@ -48,6 +59,7 @@ function isActive(path: string) {
           :to="linkTo(link)"
           class="text-sm font-medium text-stone-600 transition hover:text-stone-900 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2 dark:text-stone-400 dark:hover:text-white"
           :class="{ 'text-stone-900 dark:text-white': isActive(link.path) }"
+          @click="onNavClick"
         >
           {{ $t(`nav.${link.key}`) }}
         </NuxtLink>
@@ -103,7 +115,7 @@ function isActive(path: string) {
           :to="linkTo(link)"
           class="rounded-lg px-3 py-2 text-sm font-medium text-stone-700 hover:bg-stone-100 dark:text-stone-300 dark:hover:bg-stone-800"
           :class="{ 'bg-amber-50 text-amber-900 dark:bg-amber-900/30 dark:text-amber-200': isActive(link.path) }"
-          @click="isMenuOpen = false"
+          @click="isMenuOpen = false; onNavClick()"
         >
           {{ $t(`nav.${link.key}`) }}
         </NuxtLink>

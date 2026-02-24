@@ -5,6 +5,9 @@ usePageSeo({
   description: t('comingSoon.message'),
   path: '/coming-soon'
 })
+useHead({
+  meta: [{ name: 'robots', content: 'noindex, nofollow' }]
+})
 </script>
 
 <template>

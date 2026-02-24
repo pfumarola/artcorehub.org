@@ -1,11 +1,16 @@
 <script setup lang="ts">
 const { t, locale } = useI18n()
+const localePath = useLocalePath()
 usePageSeo({
   title: `${t('common.brand')} - ${t('about.hero.title')}`,
   description: t('about.mission.description'),
   path: '/about',
-  keywords: 'about, mission, values, ARTCORE HUB, APS'
+  keywords: t('seo.keywords.about')
 })
+useBreadcrumbStructuredData([
+  { name: t('nav.home'), path: localePath('/') },
+  { name: t('about.hero.title'), path: localePath('/about') }
+])
 
 // Team: array of members (name and surname not translated, role by locale)
 const teamMembers = [
@@ -22,13 +27,13 @@ const teamMembers = [
     role: { it: 'Co-fondatore, Direttore Operativo', en: 'Co-founder, Operational Director' }
   },
   {
-    image: 'https://picsum.photos/seed/artcore-team-8/480/640',
+    image: '/images/dbonasia.jpg',
     name: 'Diletta',
     surname: 'Bonasia',
     role: { it: 'Co-fondatore, Community Manager', en: 'Co-founder, Community Manager' }
   },
   {
-    image: 'https://picsum.photos/seed/artcore-team-4/480/480',
+    image: '/images/mfumarola.jpg',
     name: 'Michele',
     surname: 'Fumarola',
     role: { it: 'Co-fondatore, Spazi & Operazioni', en: 'Co-founder, Spaces & Operations' }
@@ -40,24 +45,30 @@ const teamMembers = [
     role: { it: 'Co-fondatore, Eventi', en: 'Co-founder, Events' }
   },
   {
-    image: 'https://picsum.photos/seed/artcore-team-6/480/640',
+    image: '/images/acolonna.jpg',
     name: 'Antonio',
     surname: 'Colonna',
     role: { it: 'Co-fondatore, Eventi e logistica', en: 'Co-founder, Events & Logistics' }
   },
   {
-    image: 'https://picsum.photos/seed/artcore-team-7/480/640',
+    image: '/images/fpsantoro.jpg',
     name: 'Francesco Paolo',
     surname: 'Santoro',
-    role: { it: 'Co-fondatore, Marketing & Comunicazione', en: 'Co-founder, Marketing & Communication' }
+    role: { it: 'Co-fondatore', en: 'Co-founder' }
   }
 ]
 </script>
 
 <template>
   <div>
-    <section class="border-b border-stone-200 bg-gradient-to-b from-amber-50/50 to-white px-4 py-12 dark:border-stone-800 dark:from-stone-900/50 dark:to-stone-950 sm:py-16">
-      <div class="mx-auto max-w-4xl px-2 text-center sm:px-4">
+    <section class="relative border-b border-stone-200 overflow-hidden bg-gradient-to-b from-amber-50/50 to-white px-4 py-12 dark:border-stone-800 dark:from-stone-900/50 dark:to-stone-950 sm:py-16">
+      <div
+        class="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style="background-image: url('/images/about-hero.jpg')"
+        aria-hidden="true"
+      />
+      <div class="absolute inset-0 bg-white/70 dark:bg-stone-950/80" aria-hidden="true" />
+      <div class="relative z-10 mx-auto max-w-4xl px-2 text-center sm:px-4">
         <h1 class="text-2xl font-bold tracking-tight text-stone-900 dark:text-white sm:text-3xl lg:text-4xl">
           {{ $t('about.hero.title') }}
         </h1>
@@ -68,37 +79,48 @@ const teamMembers = [
     </section>
 
     <section class="px-4 py-12 sm:py-16">
-      <div class="mx-auto max-w-3xl px-2 sm:px-4">
-        <h2 class="text-xl font-bold text-stone-900 dark:text-white sm:text-2xl">
-          {{ $t('about.mission.title') }}
-        </h2>
-        <p class="mt-3 text-sm text-stone-600 dark:text-stone-400 sm:mt-4 sm:text-base">
-          {{ $t('about.mission.description') }}
-        </p>
+      <div class="mx-auto max-w-5xl grid grid-cols-1 gap-8 px-2 sm:px-4 lg:grid-cols-2 lg:gap-10 lg:items-center">
+        <div>
+          <h2 class="text-xl font-bold text-stone-900 dark:text-white sm:text-2xl">
+            {{ $t('about.mission.title') }}
+          </h2>
+          <p class="mt-3 text-sm text-stone-600 dark:text-stone-400 sm:mt-4 sm:text-base">
+            {{ $t('about.mission.description') }}
+          </p>
+        </div>
+        <div class="relative aspect-[4/3] w-full overflow-hidden rounded-xl bg-stone-200 dark:bg-stone-800">
+          <img
+            src="/images/about-mission.jpg"
+            :alt="$t('about.mission.imageAlt')"
+            class="h-full w-full object-cover"
+            loading="lazy"
+            @error="($event.target as HTMLImageElement).style.display = 'none'"
+          />
+        </div>
       </div>
     </section>
 
-    <section class="border-t border-stone-200 bg-stone-50 px-4 py-12 dark:border-stone-800 dark:bg-stone-900/30 sm:py-16">
+    <section class="border-t border-stone-200 bg-stone-50 px-4 py-8 dark:border-stone-800 dark:bg-stone-900/30 sm:py-10">
       <div class="mx-auto max-w-3xl px-2 sm:px-4">
         <h2 class="text-xl font-bold text-stone-900 dark:text-white sm:text-2xl">
           {{ $t('about.values.title') }}
         </h2>
-        <ul class="mt-4 space-y-3 sm:mt-6 sm:space-y-4">
-          <li class="flex items-start gap-3 rounded-lg border border-stone-200 bg-white p-3 dark:border-stone-700 dark:bg-stone-900 sm:p-4">
-            <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-300" aria-hidden="true">1</span>
-            <span class="text-sm text-stone-700 dark:text-stone-300 sm:text-base">{{ $t('about.values.community') }}</span>
+        <ul class="mt-3 grid grid-cols-1 gap-2 sm:mt-4 sm:grid-cols-2 sm:gap-3">
+          <li class="flex items-center gap-2.5 rounded-lg border border-stone-200 bg-white px-3 py-2.5 dark:border-stone-700 dark:bg-stone-900 sm:gap-3 sm:px-3 sm:py-2.5">
+            <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-amber-100 text-sm font-semibold text-amber-700 dark:bg-amber-900/40 dark:text-amber-300 sm:h-8 sm:w-8" aria-hidden="true">1</span>
+            <span class="text-sm text-stone-700 dark:text-stone-300">{{ $t('about.values.community') }}</span>
           </li>
-          <li class="flex items-start gap-3 rounded-lg border border-stone-200 bg-white p-3 dark:border-stone-700 dark:bg-stone-900 sm:p-4">
-            <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-300" aria-hidden="true">2</span>
-            <span class="text-sm text-stone-700 dark:text-stone-300 sm:text-base">{{ $t('about.values.creativity') }}</span>
+          <li class="flex items-center gap-2.5 rounded-lg border border-stone-200 bg-white px-3 py-2.5 dark:border-stone-700 dark:bg-stone-900 sm:gap-3 sm:px-3 sm:py-2.5">
+            <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-amber-100 text-sm font-semibold text-amber-700 dark:bg-amber-900/40 dark:text-amber-300 sm:h-8 sm:w-8" aria-hidden="true">2</span>
+            <span class="text-sm text-stone-700 dark:text-stone-300">{{ $t('about.values.creativity') }}</span>
           </li>
-          <li class="flex items-start gap-3 rounded-lg border border-stone-200 bg-white p-3 dark:border-stone-700 dark:bg-stone-900 sm:p-4">
-            <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-300" aria-hidden="true">3</span>
-            <span class="text-sm text-stone-700 dark:text-stone-300 sm:text-base">{{ $t('about.values.inclusion') }}</span>
+          <li class="flex items-center gap-2.5 rounded-lg border border-stone-200 bg-white px-3 py-2.5 dark:border-stone-700 dark:bg-stone-900 sm:gap-3 sm:px-3 sm:py-2.5">
+            <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-amber-100 text-sm font-semibold text-amber-700 dark:bg-amber-900/40 dark:text-amber-300 sm:h-8 sm:w-8" aria-hidden="true">3</span>
+            <span class="text-sm text-stone-700 dark:text-stone-300">{{ $t('about.values.inclusion') }}</span>
           </li>
-          <li class="flex items-start gap-3 rounded-lg border border-stone-200 bg-white p-3 dark:border-stone-700 dark:bg-stone-900 sm:p-4">
-            <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-300" aria-hidden="true">4</span>
-            <span class="text-sm text-stone-700 dark:text-stone-300 sm:text-base">{{ $t('about.values.sustainability') }}</span>
+          <li class="flex items-center gap-2.5 rounded-lg border border-stone-200 bg-white px-3 py-2.5 dark:border-stone-700 dark:bg-stone-900 sm:gap-3 sm:px-3 sm:py-2.5">
+            <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-amber-100 text-sm font-semibold text-amber-700 dark:bg-amber-900/40 dark:text-amber-300 sm:h-8 sm:w-8" aria-hidden="true">4</span>
+            <span class="text-sm text-stone-700 dark:text-stone-300">{{ $t('about.values.sustainability') }}</span>
           </li>
         </ul>
       </div>

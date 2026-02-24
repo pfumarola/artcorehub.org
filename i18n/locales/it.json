@@ -56,68 +56,69 @@
     "faq": {
       "title": "Domande frequenti",
       "q1": {
-        "question": "Cosa succede se l'obiettivo della campagna non viene raggiunto?",
-        "answer": "Se non verrà raggiunto l'obiettivo di apertura dello spazio coworking, ci impegniamo a rimborsare l'intera cifra donata. I rimborsi saranno effettuati con le stesse modalità utilizzate per la donazione entro un termine ragionevole dalla comunicazione ufficiale del mancato raggiungimento dell'obiettivo."
+        "question": "Chi può usufruire del coworking?",
+        "answer": "Solo i soci. L'adesione ai piani coworking è riservata ai soci dell'associazione. Per aderire serve presentare domanda di ammissione a socio (quota 20€/anno). Quando il socio sarà ammesso (entro 24 ore), potrà versare il contributo per il coworking tramite bonifico (istruzioni nella mail di ammissione)."
       },
       "q2": {
-        "question": "Come funziona il rapporto tra donazione e mesi di coworking?",
-        "answer": "Ogni 100 euro di donazione danno diritto a un mese di accesso al coworking, salvo disponibilità di posti. Le cifre inferiori a 100 euro non danno diritto a un mese né a frazioni di mese."
+        "question": "Quanto costa il coworking?",
+        "answer": "Il contributo per usufruire del coworking è di 120€/mese. I posti sono limitati (massimo 12). Per riservare un mese bisogna versare il contributo almeno 15 giorni prima del primo giorno del mese."
       },
       "q3": {
-        "question": "Cosa succede se non c'è disponibilità quando la sede sarà pronta?",
-        "answer": "Se al momento dell'apertura non ci sarà disponibilità di posti per i mesi a cui avresti diritto in base alla donazione, la cifra corrispondente ti verrà restituita con le stesse modalità utilizzate per la donazione."
+        "question": "Come si diventa socio?",
+        "answer": "Presentando domanda di ammissione a socio (quota 20€/anno). Entro 24 ore ricevi risposta; in caso di ammissione, le istruzioni per il bonifico del contributo coworking ti arrivano via mail."
       },
       "q4": {
-        "question": "Le donazioni sotto i 100€ danno diritto a mesi o frazioni di mese?",
-        "answer": "No. Solo donazioni di almeno 100 euro danno diritto a un mese di coworking (salvo disponibilità). Importi inferiori non danno diritto a un mese né a frazioni di mese."
+        "question": "Come si paga il contributo coworking?",
+        "answer": "Tramite bonifico bancario. Le istruzioni sono inviate nella mail di avvenuta ammissione a socio. Per riservare un mese il contributo va versato almeno 15 giorni prima del primo giorno del mese."
+      },
+      "q5": {
+        "question": "Posso dare il mio contributo anche se il coworking non è ancora aperto?",
+        "answer": "Sì. Contribuire prima dell'apertura ci aiuta a coprire le spese iniziali (ricerca dello spazio, allestimento, attrezzature) e a far partire il progetto. Puoi diventare socio (quota 20€/anno) e, se vuoi, versare in anticipo il contributo coworking per riservare il tuo posto non appena apriremo."
+      },
+      "q6": {
+        "question": "Posso diventare socio anche senza contribuire alle spese del coworking?",
+        "answer": "Certo. Il coworking è solo una delle nostre attività: l'associazione promuove anche live music, festival e scambio culturale. Puoi essere socio pagando solo la quota annuale (20€/anno) e partecipare agli eventi, alla community e alle iniziative senza usufruire del coworking."
       }
     },
     "about": {
       "title": "L'associazione",
       "description": "ARTCORE è un'Associazione di Promozione Sociale che promuove coworking, live music, festival e scambio culturale. Un luogo dove creatività e lavoro si incontrano.",
-      "link": "Scopri di più su di noi"
+      "link": "Scopri di più su di noi",
+      "imageAlt": "L'associazione ARTCORE HUB"
+    },
+    "journey": {
+      "imageAlt": "Il percorso del coworking e lo spazio condiviso"
     },
     "project": {
       "title": "Il percorso del coworking",
-      "paragraph1": "Abbiamo pensato di finanziare le attività dell'associazione, a lungo termine, con il coworking e i bandi. In questo momento è fondamentale l'aiuto di tutti per partire con una sede capace di ospitare coworking e piccoli eventi (home concert, presentazioni di libri, networking).",
-      "paragraph2": "Chi ci sostiene con un abbonamento early adopter contribuisce alle spese iniziali; quando la sede sarà pronta avrà diritto a 6 mesi di accesso al coworking.",
+      "paragraph1": "Il coworking serve a creare la community e a finanziare gli spazi e le attività dell'associazione. Insieme stiamo dando forma a una sede capace di ospitare coworking e piccoli eventi (home concert, presentazioni di libri, networking).",
+      "paragraph2": "Il coworking è riservato ai soci: il contributo è di 120€/mese e i posti sono limitati. Per aderire serve diventare socio presentando domanda di ammissione (quota 20€/anno); l'ammissione avviene entro 24 ore, poi il contributo coworking si versa tramite bonifico (istruzioni nella mail di ammissione).",
       "paragraph3": "Non c'è profitto: solo la voglia che chi frequenta questi spazi — che sia del posto o di passaggio — trovi un'offerta culturale più ricca e rilevante.",
       "latestUpdate": "Ultimo aggiornamento",
       "milestones": {
         "idea": { "label": "Idea e progetto", "desc": "Definizione del modello e della visione" },
-        "space": { "label": "Ricerca spazio", "desc": "Trovare la location giusta" },
+        "space": { "label": "Ricerca spazio e copertura economica", "desc": "Trovare la location e la copertura economica" },
         "setup": { "label": "Allestimento", "desc": "Ristrutturazione e attrezzatura" },
-        "opening": { "label": "Apertura", "desc": "Inaugurazione e primi mesi" }
+        "opening": { "label": "Apertura", "desc": "Inaugurazione e primi mesi. Apertura stimata: primi di maggio." }
       },
       "status": { "done": "Completato", "current": "In corso", "next": "Prossimo" },
       "followProgress": "Segui l'avanzamento",
       "imagineLikeThis": "Noi lo immaginiamo così",
-      "getInvolved": "Partecipa al percorso",
+      "getInvolved": "Diventa socio",
       "expandHint": "Clicca per scoprire come partecipare",
       "interested": "Sono interessato/a",
       "interestedDesc": "Vuoi restare aggiornato o far parte della community?",
       "canHelp": "Posso dare una mano",
       "canHelpDesc": "Competenze, tempo, contatti o idee: ogni contributo conta.",
-      "earlyAdopterTitle": "Early adopter: abbonamento semestrale",
-      "earlyAdopterDesc": "80€/mese per sei mesi. Chi ci sostiene ora avrà 6 mesi di accesso al coworking quando la sede sarà pronta.",
-      "earlyAdopterBenefit": "Quando la sede sarà pronta: 6 mesi di accesso al coworking.",
-      "earlyAdopterSavings": "di risparmio",
-      "earlyAdopterDiscountBadge": "−20%",
-      "transferAmount": "Importo",
-      "bankTransfer": "Bonifico bancario",
-      "bankTransferDetails": "Dettagli bonifico",
-      "bankTransferModalTitle": "Dettagli del bonifico",
-      "iban": "IBAN",
-      "causal": "Causale",
-      "causalValue": "Donazione liberale da TUO_NOME TUO_COGNOME",
-      "copy": "Copia",
-      "copied": "Copiato",
-      "paymentOr": " - o - ",
-      "orPayPal": "Oppure dona con PayPal",
-      "donatePayPal": "Dona con PayPal",
-      "termsAndConditions": "Termini e condizioni",
-      "termsModalTitle": "Termini e condizioni",
-      "termsModalRefund": "Se non verrà raggiunto l'obiettivo di apertura dello spazio coworking, ci impegniamo a rimborsare l'intera cifra donata. I rimborsi saranno effettuati con le stesse modalità utilizzate per la donazione entro un termine ragionevole dalla comunicazione ufficiale del mancato raggiungimento dell'obiettivo.",
+      "plansDisclaimer": "L'adesione ai piani coworking è riservata ai soci dell'associazione.",
+      "howToJoin": "Per aderire è necessario presentare domanda di ammissione a socio (quota 20€/anno). Quando il socio sarà ammesso (entro 24 ore), potrà versare il contributo per il coworking tramite bonifico (istruzioni nella mail di avvenuta ammissione a socio).",
+      "contributionMonthly": "Il contributo per usufruire del coworking è di 120€/mese.",
+      "placesLimit": "I posti sono limitati (massimo 12).",
+      "spotsRemaining": "{count} posti rimanenti",
+      "reserveByAdvance": "Per riservare un mese è necessario versare il contributo almeno 15 giorni prima del primo giorno del mese.",
+      "becomeMemberCta": "Scrivici per la domanda di ammissione",
+      "quotaAnnual": "Quota socio 20€/anno.",
+      "admissionMax24h": "Ammissione entro 24 ore.",
       "contactCta": "Scrivici",
       "contactSubject": {
         "interested": "Interesse a restare aggiornato / far parte della community",
@@ -132,7 +133,8 @@
     },
     "mission": {
       "title": "La nostra missione",
-      "description": "Promuoviamo spazi di coworking, live music, festival e scambio culturale internazionale. Crediamo in community inclusive dove arte, lavoro e incontro si fondono."
+      "description": "Promuoviamo spazi di coworking, live music, festival e scambio culturale internazionale. Crediamo in community inclusive dove arte, lavoro e incontro si fondono.",
+      "imageAlt": "La missione e i valori di ARTCORE HUB"
     },
     "values": {
       "title": "I nostri valori",
@@ -169,27 +171,27 @@
   "theSpace": {
     "hero": {
       "title": "Lo spazio",
-      "subtitle": "Come immaginiamo che sarà"
+      "subtitle": "Coworking di giorno, eventi e concerti la sera"
     },
-    "intro": "Uno spazio che respira con chi lo abita. Dal primo caffè del mattino all'ultima nota della sera.",
+    "intro": "Un unico spazio: postazioni di lavoro al mattino e nel pomeriggio, sala per eventi, home concert e incontri la sera.",
     "morning": {
-      "title": "Il mattino",
-      "body": "La luce entra dalle finestre. Qualcuno apre il portatile, qualcuno prepara un caffè. Lo spazio si sveglia con calma: postazioni, silenzio condiviso, concentrazione. Qui il lavoro ha un ritmo umano."
+      "title": "Mattino e giorno",
+      "body": "Postazioni per lavorare in tranquillità: scrivanie, Wi‑fi, spazi per chiamate e riunioni. Ambiente condiviso per chi lavora in remoto o ha bisogno di una base."
     },
     "day": {
-      "title": "Il giorno",
-      "body": "Incontri informali, scambi di idee, una chiamata in una stanza, una pausa in cortile. Coworking vero: non solo scrivanie, ma persone che incrociano percorsi e progetti."
+      "title": "Durante il giorno",
+      "body": "Coworking con postazioni condivise, incontri informali, pause in comune. Ideale per freelance, startup e chi cerca un posto dove lavorare senza restare in ufficio."
     },
     "evening": {
       "title": "La sera",
-      "body": "Si spengono le luci di lavoro e si accendono i riflettori. Lo stesso spazio si trasforma: palco per un home concert, sedie in cerchio per una presentazione, networking con un bicchiere in mano. La cultura prende il posto del lavoro—senza sostituirlo, completandolo."
+      "body": "Lo spazio ospita eventi: home concert, presentazioni di libri, aperitivi di networking. Stessa sala, uso diverso — lavoro di giorno, cultura e incontri la sera."
     },
     "night": {
-      "title": "La notte",
-      "body": "L'ultimo applauso, le ultime chiacchiere. Lo spazio si quieta. Domani ricomincerà: stesso posto, storie diverse. Un luogo che non è solo dove si lavora o si ascolta musica — è dove si incontra qualcosa di più grande."
+      "title": "Dopo gli eventi",
+      "body": "A fine serata lo spazio si chiude. Il giorno dopo riapre per il coworking. Un solo luogo, due anime: lavoro e community."
     },
-    "outro": "Questo è lo spazio che stiamo costruendo. Per chi abita qui e per chi passa. Per il giorno e per la sera.",
-    "earlyAdopterIntro": "Vuoi aiutarci a far partire questo spazio? Con un abbonamento early adopter contribuisci alle spese iniziali e, quando la sede sarà pronta, avrai diritto a 6 mesi di accesso al coworking."
+    "outro": "Stiamo cercando la sede giusta e la copertura economica per aprire (apertura stimata: primi di maggio). Se vuoi farne parte, diventa socio o contattaci.",
+    "membershipIntro": "Il coworking è riservato ai soci dell'associazione. Il contributo per usufruirne è di 120€/mese, i posti sono limitati (massimo 12). Per aderire presenta domanda di ammissione a socio (quota 20€/anno): entro 24 ore ricevi risposta e, in caso di ammissione, le istruzioni per il bonifico del contributo coworking. Per riservare un mese bisogna versare il contributo almeno 15 giorni prima del primo giorno del mese."
   },
   "events": {
     "hero": {
@@ -237,12 +239,17 @@
   },
   "footer": {
     "description": "APS per coworking, live music, festival e scambio culturale.",
+    "legalName": "ArtCore APS",
+    "address": "Via Francesco Caroli 28, Martina Franca (TA) 74015",
+    "email": "segreteria{'@'}artcorehub.org",
+    "pec": "artcore{'@'}pec.it",
+    "taxCode": "Codice fiscale: 90290600734",
     "quickLinks": "Link rapidi",
     "legal": "Legale",
     "gdpr": "Privacy (GDPR)",
     "cookiePolicy": "Cookie Policy",
     "transparency": "Amministrazione Trasparente",
-    "copyright": "© {year} ARTCORE HUB. Tutti i diritti riservati."
+    "copyright": "© {year} ARTCORE APS. Tutti i diritti riservati."
   },
   "transparency": {
     "hero": {
@@ -306,6 +313,17 @@
     "rights": "I tuoi diritti",
     "rightsDesc": "Hai diritto ad accesso, rettifica, cancellazione e portabilità dei dati. Contattaci per esercitarli.",
     "contact": "Contatti per la privacy"
+  },
+  "seo": {
+    "keywords": {
+      "home": "coworking, live music, festival, scambio culturale, ARTCORE HUB",
+      "about": "about, missione, valori, ARTCORE HUB, APS",
+      "theSpace": "spazio, coworking, live music, eventi, ARTCORE HUB",
+      "events": "eventi, live music, festival, scambio culturale, ARTCORE HUB",
+      "transparency": "amministrazione trasparente, statuto, rendiconto, ARTCORE HUB",
+      "cookiePolicy": "cookie policy, cookies, ARTCORE HUB",
+      "gdpr": "privacy, GDPR, ARTCORE HUB"
+    }
   },
   "comingSoon": {
     "title": "In arrivo",

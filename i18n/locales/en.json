@@ -56,68 +56,69 @@
     "faq": {
       "title": "Frequently asked questions",
       "q1": {
-        "question": "What happens if the campaign goal is not reached?",
-        "answer": "If the goal of opening the coworking space is not reached, we commit to refund the full donated amount. Refunds will be made using the same method as the donation  within a reasonable time from the official communication that the goal has not been met."
+        "question": "Who can use the coworking?",
+        "answer": "Only members. Coworking plan membership is reserved for association members. To join you must submit a membership application (20€/year fee). When admitted (within 24 hours), you can pay the coworking contribution by bank transfer (instructions in the admission email)."
       },
       "q2": {
-        "question": "How does the donation-to-coworking-months ratio work?",
-        "answer": "Every 100 euros donated entitle you to one month of coworking access, subject to availability. Amounts under 100 euros do not entitle you to one month or fractions of a month."
+        "question": "How much does coworking cost?",
+        "answer": "The contribution to use the coworking space is 120€/month. Places are limited (maximum 12). To reserve a month you must pay the contribution at least 15 days before the first day of that month."
       },
       "q3": {
-        "question": "What happens if there is no availability when the venue opens?",
-        "answer": "If when we open there is no availability for the months you are entitled to based on your donation, the corresponding amount will be refunded to you using the same method as the donation."
+        "question": "How do I become a member?",
+        "answer": "By submitting a membership application (20€/year fee). You receive a response within 24 hours; if admitted, the bank transfer instructions for the coworking contribution are sent by email."
       },
       "q4": {
-        "question": "Do donations under 100€ entitle you to months or fractions of a month?",
-        "answer": "No. Only donations of at least 100 euros entitle you to one month of coworking (subject to availability). Lower amounts do not entitle you to one month or fractions of a month."
+        "question": "How do I pay the coworking contribution?",
+        "answer": "By bank transfer. Instructions are sent in the membership admission email. To reserve a month the contribution must be paid at least 15 days before the first day of that month."
+      },
+      "q5": {
+        "question": "Can I contribute even if the coworking isn't open yet?",
+        "answer": "Yes. Contributing before we open helps us cover initial costs (finding the space, setup, equipment) and get the project off the ground. You can become a member (20€/year fee) and, if you wish, pay the coworking contribution in advance to reserve your spot as soon as we open."
+      },
+      "q6": {
+        "question": "Can I become a member without contributing to coworking costs?",
+        "answer": "Absolutely. Coworking is just one of our activities: the association also promotes live music, festivals and cultural exchange. You can be a member by paying only the annual fee (20€/year) and take part in events, the community and initiatives without using the coworking space."
       }
     },
     "about": {
       "title": "The association",
       "description": "ARTCORE is a Social Promotion Association (Associazione di Promozione Sociale) promoting coworking, live music, festivals and cultural exchange. A place where creativity and work meet.",
-      "link": "Learn more about us"
+      "link": "Learn more about us",
+      "imageAlt": "ARTCORE HUB association"
+    },
+    "journey": {
+      "imageAlt": "The coworking journey and shared space"
     },
     "project": {
       "title": "The coworking journey",
-      "paragraph1": "We plan to fund the association's activities in the long run through coworking and grants. Right now, everyone's support is essential to get started with a venue that can host coworking and small events (home concerts, book presentations, networking).",
-      "paragraph2": "Those who support us with an early adopter subscription are helping with initial expenses; when the venue is ready they get 6 months of coworking access.",
+      "paragraph1": "Coworking is for building the community and funding the association's spaces and activities. Together we're shaping a venue for coworking and small events (home concerts, book presentations, networking).",
+      "paragraph2": "Coworking is for members only: the contribution is 120€/month and places are limited. To join you must become a member by submitting an application (20€/year fee); admission within 24 hours, then the coworking contribution is paid by bank transfer (instructions in the admission email).",
       "paragraph3": "There is no profit — only the desire that whoever uses these spaces, whether local or just passing through, finds a richer and more relevant cultural offering.",
       "latestUpdate": "Latest update",
       "milestones": {
         "idea": { "label": "Idea and plan", "desc": "Defining the model and vision" },
-        "space": { "label": "Finding a space", "desc": "Searching for the right location" },
+        "space": { "label": "Finding a space and financial coverage", "desc": "Finding the right location and financial coverage" },
         "setup": { "label": "Setup", "desc": "Renovation and equipment" },
-        "opening": { "label": "Opening", "desc": "Launch and first months" }
+        "opening": { "label": "Opening", "desc": "Launch and first months. Estimated opening: early May." }
       },
       "status": { "done": "Done", "current": "In progress", "next": "Upcoming" },
       "followProgress": "Follow the progress",
       "imagineLikeThis": "We imagine it like this",
-      "getInvolved": "Get involved",
+      "getInvolved": "Become a member",
       "expandHint": "Click to see how you can participate",
       "interested": "I'm interested",
       "interestedDesc": "Want to stay updated or join the community?",
       "canHelp": "I can help",
       "canHelpDesc": "Skills, time, contacts or ideas: every contribution counts.",
-      "earlyAdopterTitle": "Early adopter: semiannual subscription",
-      "earlyAdopterDesc": "80€/month for six months. Those who support us now will get 6 months of coworking access when the venue is ready.",
-      "earlyAdopterBenefit": "When the venue is ready: 6 months of coworking access.",
-      "earlyAdopterSavings": "savings",
-      "earlyAdopterDiscountBadge": "−20%",
-      "transferAmount": "Amount",
-      "bankTransfer": "Bank transfer",
-      "bankTransferDetails": "Bank transfer details",
-      "bankTransferModalTitle": "Bank transfer details",
-      "iban": "IBAN",
-      "causal": "Payment reference (causale)",
-      "causalValue": "Liberal donation by YOUR_NAME YOUR_SURNAME",
-      "copy": "Copy",
-      "copied": "Copied",
-      "paymentOr": " - or - ",
-      "orPayPal": "Or donate with PayPal",
-      "donatePayPal": "Donate with PayPal",
-      "termsAndConditions": "Terms and conditions",
-      "termsModalTitle": "Terms and conditions",
-      "termsModalRefund": "If the goal of opening the coworking space is not reached, we commit to refund the full donated amount. Refunds will be made using the same method as the donation  within a reasonable time from the official communication that the goal has not been met.",
+      "plansDisclaimer": "Coworking plan membership is reserved for association members.",
+      "howToJoin": "To join you must submit a membership application (20€/year fee). When admitted (within 24 hours), you can pay the coworking contribution by bank transfer (instructions in the membership admission email).",
+      "contributionMonthly": "The contribution to use the coworking space is 120€/month.",
+      "placesLimit": "Places are limited (maximum 12).",
+      "spotsRemaining": "{count} spots left",
+      "reserveByAdvance": "To reserve a month you must pay the contribution at least 15 days before the first day of that month.",
+      "becomeMemberCta": "Contact us for the membership application",
+      "quotaAnnual": "Membership fee 20€/year.",
+      "admissionMax24h": "Admission within 24 hours.",
       "contactCta": "Get in touch",
       "contactSubject": {
         "interested": "Interest in staying updated / joining the community",
@@ -132,7 +133,8 @@
     },
     "mission": {
       "title": "Our mission",
-      "description": "We promote coworking spaces, live music, festivals and international cultural exchange. We believe in inclusive communities where art, work and connection merge."
+      "description": "We promote coworking spaces, live music, festivals and international cultural exchange. We believe in inclusive communities where art, work and connection merge.",
+      "imageAlt": "ARTCORE HUB mission and values"
     },
     "values": {
       "title": "Our values",
@@ -169,27 +171,27 @@
   "theSpace": {
     "hero": {
       "title": "The space",
-      "subtitle": "How we imagine it will be"
+      "subtitle": "Coworking by day, events and concerts in the evening"
     },
-    "intro": "A space that breathes with those who inhabit it. From the first coffee in the morning to the last note at night.",
+    "intro": "One space: workstations in the morning and afternoon, a room for events, home concerts and meetups in the evening.",
     "morning": {
-      "title": "Morning",
-      "body": "Light pours in through the windows. Someone opens a laptop, someone makes coffee. The space wakes gently: workstations, shared silence, focus. Here work has a human rhythm."
+      "title": "Morning and daytime",
+      "body": "Quiet workstations: desks, Wi‑fi, space for calls and meetings. A shared environment for remote workers and anyone who needs a base."
     },
     "day": {
-      "title": "Daytime",
-      "body": "Informal encounters, exchanges of ideas, a call in a room, a break in the courtyard. Real coworking: not just desks, but people crossing paths and projects."
+      "title": "During the day",
+      "body": "Coworking with shared desks, informal encounters, shared breaks. Suited to freelancers, startups and anyone looking for a place to work outside the office."
     },
     "evening": {
       "title": "Evening",
-      "body": "The work lights go off and the spotlights come on. The same space transforms: a stage for a home concert, chairs in a circle for a book launch, networking with a drink in hand. Culture takes the place of work—not replacing it, completing it."
+      "body": "The space hosts events: home concerts, book launches, networking aperitifs. Same room, different use — work by day, culture and meetups in the evening."
     },
     "night": {
-      "title": "Night",
-      "body": "The last applause, the last conversations. The space grows quiet. Tomorrow it will begin again: same place, different stories. A place that isn't just where you work or listen to music—it's where you meet something bigger."
+      "title": "After events",
+      "body": "At the end of the evening the space closes. The next day it reopens for coworking. One place, two roles: work and community."
     },
-    "outro": "This is the space we're building. For those who live here and for those passing through. For the day and for the evening.",
-    "earlyAdopterIntro": "Want to help us get this space off the ground? With an early adopter subscription you contribute to the initial costs and, when the venue is ready, you'll get 6 months of coworking access."
+    "outro": "We're looking for the right venue and funding to open (estimated opening: early May). If you want to be part of it, become a member or get in touch.",
+    "membershipIntro": "Coworking is reserved for association members. The contribution to use it is 120€/month; places are limited (maximum 12). To join, submit a membership application (20€/year fee): you receive a response within 24 hours and, if admitted, the bank transfer instructions for the coworking contribution. To reserve a month you must pay the contribution at least 15 days before the first day of that month."
   },
   "events": {
     "hero": {
@@ -237,12 +239,17 @@
   },
   "footer": {
     "description": "APS for coworking, live music, festivals and cultural exchange.",
+    "legalName": "ArtCore APS",
+    "address": "Via Francesco Caroli 28, Martina Franca (TA) 74015",
+    "email": "segreteria{'@'}artcorehub.org",
+    "pec": "artcore{'@'}pec.it",
+    "taxCode": "Tax code: 90290600734",
     "quickLinks": "Quick links",
     "legal": "Legal",
     "gdpr": "Privacy (GDPR)",
     "cookiePolicy": "Cookie Policy",
     "transparency": "Transparent Administration",
-    "copyright": "© {year} ARTCORE HUB. All rights reserved."
+    "copyright": "© {year} ARTCORE APS. All rights reserved."
   },
   "transparency": {
     "hero": {
@@ -306,6 +313,17 @@
     "rights": "Your rights",
     "rightsDesc": "You have the right to access, rectification, erasure and data portability. Contact us to exercise them.",
     "contact": "Privacy contact"
+  },
+  "seo": {
+    "keywords": {
+      "home": "coworking, live music, festival, cultural exchange, ARTCORE HUB",
+      "about": "about, mission, values, ARTCORE HUB, APS",
+      "theSpace": "space, coworking, live music, events, ARTCORE HUB",
+      "events": "events, live music, festivals, cultural exchange, ARTCORE HUB",
+      "transparency": "transparent administration, statute, financial report, ARTCORE HUB",
+      "cookiePolicy": "cookie policy, cookies, ARTCORE HUB",
+      "gdpr": "privacy, GDPR, ARTCORE HUB"
+    }
   },
   "comingSoon": {
     "title": "Coming Soon",

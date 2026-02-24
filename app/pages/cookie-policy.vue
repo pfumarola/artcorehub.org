@@ -1,11 +1,16 @@
 <script setup lang="ts">
 const { t } = useI18n()
+const localePath = useLocalePath()
 usePageSeo({
   title: `${t('common.brand')} - ${t('cookiePolicy.title')}`,
   description: t('cookiePolicy.intro'),
   path: '/cookie-policy',
-  keywords: 'cookie policy, cookies, ARTCORE HUB'
+  keywords: t('seo.keywords.cookiePolicy')
 })
+useBreadcrumbStructuredData([
+  { name: t('nav.home'), path: localePath('/') },
+  { name: t('cookiePolicy.title'), path: localePath('/cookie-policy') }
+])
 </script>
 
 <template>
