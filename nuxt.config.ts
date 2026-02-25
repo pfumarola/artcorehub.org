@@ -46,7 +46,9 @@ export default defineNuxtConfig({
     defaultLocale: 'it',
     lazy: true,
     langDir: 'locales',
-    detectBrowserLanguage: true
+    detectBrowserLanguage: {
+      alwaysRedirect: true
+    }
   },
 
   site: {
