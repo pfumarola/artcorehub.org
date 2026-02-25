@@ -2,16 +2,29 @@
 const { showBanner, acceptAll, rejectAll } = useCookieConsent()
 const localePath = useLocalePath()
 const isPreferencesOpen = useState<boolean>('cookie-preferences-open', () => false)
+const bannerRef = ref<HTMLElement | null>(null)
 
 function openPreferences() {
   isPreferencesOpen.value = true
 }
+
+const FOCUSABLE =
+  'button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'
+watch(showBanner, (visible) => {
+  if (visible) {
+    nextTick(() => {
+      const el = bannerRef.value?.querySelector<HTMLElement>(FOCUSABLE)
+      el?.focus()
+    })
+  }
+})
 </script>
 
 <template>
   <div
     v-if="showBanner"
-    class="fixed bottom-0 left-0 right-0 z-[100] border-t border-stone-200 bg-white p-4 shadow-lg dark:border-stone-800 dark:bg-stone-900"
+    ref="bannerRef"
+    class="fixed bottom-0 left-0 right-0 z-[100] border-t border-stone-200 bg-white p-4 pb-[max(1rem,env(safe-area-inset-bottom))] shadow-lg dark:border-stone-800 dark:bg-stone-900"
     role="dialog"
     aria-label="Cookie consent"
   >
@@ -22,34 +35,34 @@ function openPreferences() {
       <div class="flex flex-wrap items-center gap-3">
         <NuxtLink
           :to="localePath('/cookie-policy')"
-          class="text-sm font-medium text-amber-600 hover:underline focus:outline-none focus:ring-2 focus:ring-amber-500 dark:text-amber-400"
+          class="inline-flex min-h-11 items-center py-2 text-sm font-medium text-amber-600 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 dark:text-amber-400"
         >
           Cookie Policy
         </NuxtLink>
         <NuxtLink
           :to="localePath('/gdpr')"
-          class="text-sm font-medium text-amber-600 hover:underline focus:outline-none focus:ring-2 focus:ring-amber-500 dark:text-amber-400"
+          class="inline-flex min-h-11 items-center py-2 text-sm font-medium text-amber-600 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 dark:text-amber-400"
         >
           Privacy
         </NuxtLink>
-        <div class="ml-auto flex gap-2">
+        <div class="ml-auto flex flex-wrap gap-2">
           <button
             type="button"
-            class="rounded bg-stone-200 px-3 py-1.5 text-sm font-medium text-stone-700 hover:bg-stone-300 focus:outline-none focus:ring-2 focus:ring-amber-500 dark:bg-stone-700 dark:text-stone-200 dark:hover:bg-stone-600"
+            class="min-h-11 rounded-lg bg-stone-200 px-4 py-2.5 text-sm font-medium text-stone-700 hover:bg-stone-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 dark:bg-stone-700 dark:text-stone-200 dark:hover:bg-stone-600"
             @click="rejectAll()"
           >
             {{ $t('cookie.banner.rejectAll') }}
           </button>
           <button
             type="button"
-            class="rounded px-3 py-1.5 text-sm font-medium text-stone-600 hover:bg-stone-100 focus:outline-none focus:ring-2 focus:ring-amber-500 dark:text-stone-400 dark:hover:bg-stone-800"
+            class="min-h-11 rounded-lg px-4 py-2.5 text-sm font-medium text-stone-600 hover:bg-stone-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 dark:text-stone-400 dark:hover:bg-stone-800"
             @click="openPreferences"
           >
             {{ $t('cookie.banner.preferences') }}
           </button>
           <button
             type="button"
-            class="rounded bg-amber-500 px-3 py-1.5 text-sm font-medium text-amber-950 hover:bg-amber-600 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2"
+            class="min-h-11 rounded-lg bg-amber-500 px-4 py-2.5 text-sm font-medium text-amber-950 hover:bg-amber-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2"
             @click="acceptAll()"
           >
             {{ $t('cookie.banner.acceptAll') }}

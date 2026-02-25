@@ -61,7 +61,8 @@ const rendicontiPerAnno = ref<RendicontoAnno[]>([
             :href="statutoUrl"
             target="_blank"
             rel="noopener noreferrer"
-            class="mt-4 inline-flex items-center font-medium text-amber-600 hover:underline focus:outline-none focus:ring-2 focus:ring-amber-500 dark:text-amber-400"
+            :aria-label="`${$t('transparency.statuto.linkText')} (${$t('a11y.opensNewTab')})`"
+            class="mt-4 inline-flex items-center font-medium text-amber-600 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 dark:text-amber-400"
           >
             {{ $t('transparency.statuto.linkText') }}
             <span aria-hidden="true">↗</span>
@@ -92,7 +93,8 @@ const rendicontiPerAnno = ref<RendicontoAnno[]>([
                     :href="item.rendicontoUrl"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="text-sm font-medium text-amber-600 hover:underline focus:outline-none focus:ring-2 focus:ring-amber-500 dark:text-amber-400"
+                    :aria-label="`${$t('transparency.rendiconti.rendiconto')} (${$t('a11y.opensNewTab')})`"
+                    class="text-sm font-medium text-amber-600 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 dark:text-amber-400"
                   >
                     {{ $t('transparency.rendiconti.rendiconto') }}
                     <span aria-hidden="true">↗</span>
@@ -107,7 +109,8 @@ const rendicontiPerAnno = ref<RendicontoAnno[]>([
                         :href="att.url"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-sm font-medium text-amber-600 hover:underline focus:outline-none focus:ring-2 focus:ring-amber-500 dark:text-amber-400"
+                        :aria-label="`${att.label} (${$t('a11y.opensNewTab')})`"
+                        class="text-sm font-medium text-amber-600 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 dark:text-amber-400"
                       >
                         {{ att.label }}<span aria-hidden="true">↗</span>
                       </a>

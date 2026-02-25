@@ -65,7 +65,7 @@ async function copyToClipboard(text: string, field: 'iban' | 'causal') {
     <p class="mt-3 text-sm text-stone-600 dark:text-stone-400">
       <button
         type="button"
-        class="rounded text-amber-700 underline hover:text-amber-800 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2 dark:text-amber-300 dark:hover:text-amber-200"
+        class="rounded text-amber-700 underline hover:text-amber-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 dark:text-amber-300 dark:hover:text-amber-200"
         @click="showTermsModal = true"
       >
         {{ t('home.project.termsAndConditions') }}
@@ -74,7 +74,7 @@ async function copyToClipboard(text: string, field: 'iban' | 'causal') {
     <div class="mt-4 flex flex-col items-center justify-center gap-3 sm:flex-row sm:flex-wrap">
       <button
         type="button"
-        class="inline-flex items-center gap-2 rounded-lg bg-amber-500 px-4 py-2.5 text-sm font-medium text-amber-950 transition hover:bg-amber-600 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2 dark:focus:ring-offset-amber-900/20"
+        class="inline-flex items-center gap-2 rounded-lg bg-amber-500 px-4 py-2.5 text-sm font-medium text-amber-950 transition hover:bg-amber-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-amber-900/20"
         @click="showTransferModal = true"
       >
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -90,7 +90,8 @@ async function copyToClipboard(text: string, field: 'iban' | 'causal') {
         :href="paypalDonateUrlEffective"
         target="_blank"
         rel="noopener noreferrer"
-        class="inline-flex items-center gap-2 rounded-lg border-2 border-[#0070ba] bg-[#0070ba] px-3 py-2 text-sm font-medium text-white transition hover:bg-[#005ea6] focus:outline-none focus:ring-2 focus:ring-[#0070ba] focus:ring-offset-2 dark:focus:ring-offset-amber-900/20"
+        :aria-label="`${t('home.project.donatePayPal')} (${t('a11y.opensNewTab')})`"
+        class="inline-flex items-center gap-2 rounded-lg border-2 border-[#0070ba] bg-[#0070ba] px-3 py-2 text-sm font-medium text-white transition hover:bg-[#005ea6] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0070ba] focus-visible:ring-offset-2 dark:focus-visible:ring-offset-amber-900/20"
       >
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
           <path d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944 3.72a.77.77 0 0 1 .76-.657h5.782c2.018 0 3.597.558 4.616 1.654 1.007 1.082 1.472 2.57 1.377 4.396-.09 1.693-.613 3.034-1.553 3.993-.94.96-2.19 1.446-3.724 1.446H9.77a.77.77 0 0 0-.762.657l-.924 5.465zM22.463 8.26h-2.787c-.234 0-.433.17-.47.398l-.312 1.848-.098.58a.642.642 0 0 1 .633.74l-.924 5.465a.77.77 0 0 0 .762.657h1.428a.641.641 0 0 0 .633-.74l.924-5.465a.77.77 0 0 0-.762-.657h-.726l.312-1.848a.642.642 0 0 0-.633-.74h2.787a.77.77 0 0 1 .762.657l.392 2.315c.037.228-.162.398-.396.398h-.234l-.098.58-.312 1.848a.642.642 0 0 0 .633.74h1.428a.77.77 0 0 0 .762-.657l.924-5.465a.641.641 0 0 0-.633-.74h-.726l.312-1.848a.77.77 0 0 0-.762-.657z" />
@@ -133,7 +134,7 @@ async function copyToClipboard(text: string, field: 'iban' | 'causal') {
           <code class="max-w-full select-all break-all rounded bg-white px-2 py-1.5 font-mono text-sm text-stone-800 dark:bg-stone-800 dark:text-stone-200">{{ iban }}</code>
           <button
             type="button"
-            class="shrink-0 rounded border border-stone-300 bg-white px-2 py-1.5 text-xs font-medium text-stone-600 transition hover:bg-stone-100 focus:outline-none focus:ring-2 focus:ring-amber-500 dark:border-stone-600 dark:bg-stone-800 dark:text-stone-300 dark:hover:bg-stone-700"
+            class="shrink-0 rounded border border-stone-300 bg-white px-2 py-1.5 text-xs font-medium text-stone-600 transition hover:bg-stone-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 dark:border-stone-600 dark:bg-stone-800 dark:text-stone-300 dark:hover:bg-stone-700"
             @click="copyToClipboard(iban, 'iban')"
           >
             {{ copiedField === 'iban' ? t('home.project.copied') : t('home.project.copy') }}
@@ -148,7 +149,7 @@ async function copyToClipboard(text: string, field: 'iban' | 'causal') {
           <code class="max-w-full select-all break-all rounded bg-white px-2 py-1.5 font-mono text-sm text-stone-800 dark:bg-stone-800 dark:text-stone-200">{{ t('home.project.causalValue') }}</code>
           <button
             type="button"
-            class="shrink-0 rounded border border-stone-300 bg-white px-2 py-1.5 text-xs font-medium text-stone-600 transition hover:bg-stone-100 focus:outline-none focus:ring-2 focus:ring-amber-500 dark:border-stone-600 dark:bg-stone-800 dark:text-stone-300 dark:hover:bg-stone-700"
+            class="shrink-0 rounded border border-stone-300 bg-white px-2 py-1.5 text-xs font-medium text-stone-600 transition hover:bg-stone-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 dark:border-stone-600 dark:bg-stone-800 dark:text-stone-300 dark:hover:bg-stone-700"
             @click="copyToClipboard(t('home.project.causalValue'), 'causal')"
           >
             {{ copiedField === 'causal' ? t('home.project.copied') : t('home.project.copy') }}
@@ -163,7 +164,8 @@ async function copyToClipboard(text: string, field: 'iban' | 'causal') {
           :href="paypalDonateUrlEffective"
           target="_blank"
           rel="noopener noreferrer"
-          class="mt-2 inline-flex w-fit items-center gap-2 rounded-lg border-2 border-[#0070ba] bg-[#0070ba] px-3 py-2 text-sm font-medium text-white transition hover:bg-[#005ea6] focus:outline-none focus:ring-2 focus:ring-[#0070ba] focus:ring-offset-2 dark:focus:ring-offset-amber-900/20"
+          :aria-label="`${t('home.project.donatePayPal')} (${t('a11y.opensNewTab')})`"
+          class="mt-2 inline-flex w-fit items-center gap-2 rounded-lg border-2 border-[#0070ba] bg-[#0070ba] px-3 py-2 text-sm font-medium text-white transition hover:bg-[#005ea6] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0070ba] focus-visible:ring-offset-2 dark:focus-visible:ring-offset-amber-900/20"
           @click="showTransferModal = false"
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">

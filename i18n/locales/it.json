@@ -1,4 +1,10 @@
 {
+  "a11y": {
+    "skipToMain": "Salta al contenuto principale",
+    "openMenu": "Apri menu",
+    "closeMenu": "Chiudi menu",
+    "opensNewTab": "si apre in nuova scheda"
+  },
   "error404": {
     "title": "Pagina non trovata",
     "code": "404",

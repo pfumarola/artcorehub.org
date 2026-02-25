@@ -43,7 +43,7 @@ function isOpen(index: number): boolean {
       <h3>
         <button
           type="button"
-          class="flex w-full items-center justify-between gap-4 py-4 px-5 text-left text-base font-semibold text-stone-900 transition hover:bg-stone-50 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-inset dark:text-white dark:hover:bg-stone-800/50 sm:px-6"
+          class="flex min-h-11 w-full items-center justify-between gap-4 py-4 px-5 text-left text-base font-semibold text-stone-900 transition hover:bg-stone-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-inset dark:text-white dark:hover:bg-stone-800/50 sm:px-6"
           :aria-expanded="isOpen(index)"
           :aria-controls="`faq-answer-${index}`"
           :id="`faq-question-${index}`"

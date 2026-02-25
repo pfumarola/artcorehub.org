@@ -26,7 +26,7 @@
 
       <NuxtLink
         :to="localePath('/')"
-        class="mt-8 inline-flex items-center rounded-lg bg-amber-500 px-5 py-2.5 text-sm font-medium text-amber-950 transition hover:bg-amber-600 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2 dark:focus:ring-offset-stone-950"
+        class="mt-8 inline-flex items-center rounded-lg bg-amber-500 px-5 py-2.5 text-sm font-medium text-amber-950 transition hover:bg-amber-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-stone-950"
       >
         {{ $t('error404.backHome') }}
         <span class="ml-1.5" aria-hidden="true">→</span>

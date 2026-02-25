@@ -1,4 +1,10 @@
 {
+  "a11y": {
+    "skipToMain": "Skip to main content",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "opensNewTab": "opens in new tab"
+  },
   "error404": {
     "title": "Page not found",
     "code": "404",
