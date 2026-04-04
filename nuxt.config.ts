@@ -28,10 +28,10 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
-      maintenanceMode: process.env.MAINTENANCE_MODE === 'true',
+      maintenanceMode: process.env.MAINTENANCE_MODE === 'false',
       siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://artcorehub.org',
-      paypalDonateUrl: process.env.NUXT_PUBLIC_PAYPAL_DONATE_URL || '',
-      instagramUrl: process.env.NUXT_PUBLIC_INSTAGRAM_URL || '',
+      paypalDonateUrl: process.env.NUXT_PUBLIC_PAYPAL_DONATE_URL || 'https://paypal.me/artcorehub',
+      instagramUrl: process.env.NUXT_PUBLIC_INSTAGRAM_URL || 'https://instagram.com/artcorehub',
       /** Posti coworking ancora disponibili: imposta NUXT_PUBLIC_COWORKING_SPOTS_LEFT (es. 7) e rideploya per aggiornare */
       coworkingSpotsLeft: parseInt(process.env.NUXT_PUBLIC_COWORKING_SPOTS_LEFT || '10', 10)
     }
@@ -46,8 +46,11 @@ export default defineNuxtConfig({
     defaultLocale: 'it',
     lazy: true,
     langDir: 'locales',
+    // SSG: `alwaysRedirect: true` sulla root può far fallire il prerender di `/` (500 in CI).
+    // Cookie + switch manuale restano; il redirect forzato dalla lingua del browser va gestito lato client o CDN se serve.
     detectBrowserLanguage: {
-      alwaysRedirect: true
+      useCookie: true,
+      alwaysRedirect: false
     }
   },
 

@@ -37,7 +37,10 @@ export function usePageSeo(options: {
 
   const imagePath = image.startsWith('http') ? image : `${baseUrl}${image.startsWith('/') ? image : `/${image}`}`
 
-  const localeList = (locales.value || locales) as { code: string; iso?: string }[]
+  const rawLocales = unref(locales) as unknown
+  const localeList = Array.isArray(rawLocales)
+    ? (rawLocales as { code: string; iso?: string }[])
+    : []
   const defaultLocalePath = path === '/' ? '' : path
   const defaultLocaleUrl = `${baseUrl}${defaultLocalePath || '/'}`
 
