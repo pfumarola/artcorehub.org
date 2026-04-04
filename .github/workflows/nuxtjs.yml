@@ -50,20 +50,19 @@ jobs:
         with:
           node-version: "20"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
+      # Abilita GitHub Pages e esporta metadati. Non usare static_site_generator: nuxt: è pensato per Nuxt 2
+      # (router.base + target static) e non è compatibile con Nuxt 3/4; app.baseURL va impostato a mano se servisse un sottopath.
       - name: Setup Pages
         uses: actions/configure-pages@v5
-        with:
-          # Opzionale: adatta base URL per GitHub Pages (sottopath). Rimuovi se gestisci app.baseURL in nuxt.config.
-          static_site_generator: nuxt
       - name: Restore Nuxt SSG cache
         uses: actions/cache@v4
         with:
           path: |
             .output
             node_modules/.cache/nuxt
-          key: ${{ runner.os }}-nuxt-ssg-${{ hashFiles('package-lock.json', 'yarn.lock', 'pnpm-lock.yaml', 'nuxt.config.ts') }}
+          key: ${{ runner.os }}-nuxt-ssg-v2-${{ hashFiles('package-lock.json', 'yarn.lock', 'pnpm-lock.yaml', 'nuxt.config.ts') }}
           restore-keys: |
-            ${{ runner.os }}-nuxt-ssg-
+            ${{ runner.os }}-nuxt-ssg-v2-
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: SSG — nuxt generate
