@@ -104,8 +104,8 @@ jobs:
           set sftp:auto-confirm yes
           open "sftp://${SFTP_SERVER}:${SFTP_PORT}"
           user "${SFTP_USERNAME}" "${SFTP_PASSWORD}"
-          mkdir -p "${SFTP_REMOTE_DIR}"
-          mirror -R --delete --verbose "./dist/" "${SFTP_REMOTE_DIR}"
+          cd "${SFTP_REMOTE_DIR}"
+          mirror -R --delete --verbose "./dist/" "."
           bye
           EOF
         env:
