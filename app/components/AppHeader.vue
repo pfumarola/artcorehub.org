@@ -9,7 +9,7 @@ const { isContactHashInUrl } = useContactHashInUrl()
 
 const isMenuOpen = ref(false)
 const menuButtonRef = ref<HTMLButtonElement | null>(null)
-const firstNavLinkRef = ref<HTMLElement | null>(null)
+const mobileNavRef = ref<HTMLElement | null>(null)
 
 const navLinks = [
   { key: 'home', path: '/' },
@@ -63,7 +63,7 @@ function onNavLinkClick(link: { key: string; path: string }) {
 function toggleMenu() {
   isMenuOpen.value = !isMenuOpen.value
   if (isMenuOpen.value) {
-    nextTick(() => firstNavLinkRef.value?.focus())
+    nextTick(() => mobileNavRef.value?.querySelector<HTMLElement>('[href], button')?.focus())
   } else {
     nextTick(() => menuButtonRef.value?.focus())
   }
@@ -149,11 +149,10 @@ function closeMenuAndRestoreFocus() {
       role="dialog"
       aria-label="Menu mobile"
     >
-      <nav class="flex flex-col gap-1" aria-label="Navigazione mobile">
+      <nav ref="mobileNavRef" class="flex flex-col gap-1" aria-label="Navigazione mobile">
         <NuxtLink
-          v-for="(link, idx) in navLinks"
+          v-for="link in navLinks"
           :key="link.key"
-          :ref="(el) => { if (idx === 0) firstNavLinkRef.value = (el as HTMLElement) || null }"
           :to="linkTo(link)"
           class="flex min-h-11 items-center rounded-lg px-4 py-3 text-sm font-medium text-stone-700 hover:bg-stone-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 dark:text-stone-300 dark:hover:bg-stone-800"
           :class="{ 'bg-amber-50 text-amber-900 dark:bg-amber-900/30 dark:text-amber-200': isActive(link.path) }"
