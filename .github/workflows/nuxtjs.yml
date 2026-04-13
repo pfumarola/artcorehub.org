@@ -1,4 +1,4 @@
-name: Build and deploy Nuxt via FTP
+name: Build and deploy Nuxt via SFTP
 
 on:
   push:
@@ -60,7 +60,7 @@ jobs:
 
           for var_name in "${required_vars[@]}"; do
             if [ -z "${!var_name}" ]; then
-              echo "Missing required GitHub Secret: $var_name"
+              echo "Missing required GitHub Variable: $var_name"
               exit 1
             fi
           done
@@ -75,11 +75,40 @@ jobs:
           EOF
       - name: Static HTML export with Nuxt
         run: ${{ steps.detect-package-manager.outputs.manager }} run generate
-      - name: Deploy to FTP server
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./dist/
-          server-dir: ${{ secrets.FTP_REMOTE_DIR }}
+      - name: Validate SFTP configuration
+        env:
+          SFTP_SERVER: ${{ secrets.SFTP_SERVER }}
+          SFTP_USERNAME: ${{ secrets.SFTP_USERNAME }}
+          SFTP_PASSWORD: ${{ secrets.SFTP_PASSWORD }}
+          SFTP_REMOTE_DIR: ${{ secrets.SFTP_REMOTE_DIR }}
+        run: |
+          required_sftp_vars=(
+            "SFTP_SERVER"
+            "SFTP_USERNAME"
+            "SFTP_PASSWORD"
+            "SFTP_REMOTE_DIR"
+          )
+
+          for var_name in "${required_sftp_vars[@]}"; do
+            if [ -z "${!var_name}" ]; then
+              echo "Missing required GitHub Secret: $var_name"
+              exit 1
+            fi
+          done
+      - name: Deploy to SFTP server
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y lftp
+          lftp -e "
+            set ssl:verify-certificate no;
+            set sftp:auto-confirm yes;
+            open -u ${SFTP_USERNAME},${SFTP_PASSWORD} sftp://${SFTP_SERVER}:${SFTP_PORT};
+            mirror -R --delete --verbose ./dist/ ${SFTP_REMOTE_DIR};
+            bye
+          "
+        env:
+          SFTP_SERVER: ${{ secrets.SFTP_SERVER }}
+          SFTP_USERNAME: ${{ secrets.SFTP_USERNAME }}
+          SFTP_PASSWORD: ${{ secrets.SFTP_PASSWORD }}
+          SFTP_REMOTE_DIR: ${{ secrets.SFTP_REMOTE_DIR }}
+          SFTP_PORT: ${{ vars.SFTP_PORT || '22' }}
