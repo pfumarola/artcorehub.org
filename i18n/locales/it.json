@@ -266,6 +266,7 @@
       "email": "Email",
       "message": "Messaggio",
       "submit": "Invia",
+      "submitting": "Invio in corso...",
       "success": "Messaggio inviato. Ti risponderemo al più presto.",
       "error": "Si è verificato un errore. Riprova."
     },
