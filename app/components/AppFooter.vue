@@ -54,25 +54,28 @@ async function submit() {
   const contactSubject = subjectQuery.trim() || t('contact.hero.title')
 
   try {
-    const payload = {
-      accessKey: staticformKey,
-      name: `${form.value.name} ${form.value.surname}`.trim(),
-      surname: form.value.surname,
-      email: form.value.email,
-      subject: contactSubject,
-      message: form.value.message,
-      honeypot: form.value.honeypot,
-      replyTo: form.value.email,
-      gdprConsent: form.value.gdprConsent ? 'accepted' : 'not_accepted'
-    }
+    const payload = new FormData()
+    payload.append('accessKey', staticformKey)
+    payload.append('apiKey', staticformKey)
+    payload.append('name', `${form.value.name} ${form.value.surname}`.trim())
+    payload.append('surname', form.value.surname)
+    payload.append('email', form.value.email)
+    payload.append('subject', contactSubject)
+    payload.append('message', form.value.message)
+    payload.append('honeypot', form.value.honeypot)
+    payload.append('replyTo', form.value.email)
+    payload.append('gdprConsent', form.value.gdprConsent ? 'accepted' : 'not_accepted')
 
-    const response = await $fetch<{ success?: boolean; message?: string }>('https://api.staticforms.dev/submit', {
+    const response = await fetch('https://api.staticforms.dev/submit', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { Accept: 'application/json' },
       body: payload
     })
 
-    if (response?.success) {
+    const data = (await response.json().catch(() => ({}))) as { success?: boolean | string }
+    const isSuccess = response.ok && (data.success === true || data.success === 'true')
+
+    if (isSuccess) {
       status.value = 'success'
       form.value = { name: '', surname: '', email: '', message: '', honeypot: '', gdprConsent: false }
       return

@@ -14,6 +14,7 @@ jobs:
       NUXT_PUBLIC_PAYPAL_DONATE_URL: ${{ vars.NUXT_PUBLIC_PAYPAL_DONATE_URL }}
       NUXT_PUBLIC_INSTAGRAM_URL: ${{ vars.NUXT_PUBLIC_INSTAGRAM_URL }}
       NUXT_PUBLIC_COWORKING_SPOTS_LEFT: ${{ vars.NUXT_PUBLIC_COWORKING_SPOTS_LEFT }}
+      STATICFORM_KEY: ${{ secrets.STATICFORM_KEY }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -56,11 +57,12 @@ jobs:
             "NUXT_PUBLIC_PAYPAL_DONATE_URL"
             "NUXT_PUBLIC_INSTAGRAM_URL"
             "NUXT_PUBLIC_COWORKING_SPOTS_LEFT"
+            "STATICFORM_KEY"
           )
 
           for var_name in "${required_vars[@]}"; do
             if [ -z "${!var_name}" ]; then
-              echo "Missing required GitHub Variable: $var_name"
+              echo "Missing required build env (variable or secret): $var_name"
               exit 1
             fi
           done
@@ -72,6 +74,7 @@ jobs:
           NUXT_PUBLIC_PAYPAL_DONATE_URL=${NUXT_PUBLIC_PAYPAL_DONATE_URL}
           NUXT_PUBLIC_INSTAGRAM_URL=${NUXT_PUBLIC_INSTAGRAM_URL}
           NUXT_PUBLIC_COWORKING_SPOTS_LEFT=${NUXT_PUBLIC_COWORKING_SPOTS_LEFT}
+          STATICFORM_KEY=${STATICFORM_KEY}
           EOF
       - name: Static HTML export with Nuxt
         run: ${{ steps.detect-package-manager.outputs.manager }} run generate
