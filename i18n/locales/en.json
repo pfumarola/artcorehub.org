@@ -63,15 +63,15 @@
       "title": "Frequently asked questions",
       "q1": {
         "question": "Who can use the coworking?",
-        "answer": "Only members. Coworking plan membership is reserved for association members. The membership registration contribution is 20€/year; the coworking contribution is separate and follows the plans shown on the site. Submit a membership application. When admitted (within 24 hours), you pay the coworking contribution by bank transfer (instructions in the admission email)."
+        "answer": "Only members. Coworking plan membership is reserved for association members. The membership registration fee is 20€/year; the coworking contribution is separate and follows the plans shown on the site. Submit a membership application. When admitted (within 24 hours), you pay the coworking contribution by bank transfer (instructions in the admission email)."
       },
       "q2": {
         "question": "How much does coworking cost?",
-        "answer": "The coworking contribution follows the plans: Daily 40€/day, Monthly 180€/month, Quarterly 150€/month and Semiannual 120€/month. This is separate from the membership registration contribution (20€/year). Places are limited (maximum 12)."
+        "answer": "The coworking contribution follows the plans: Daily 40€/day, Monthly 180€/month, Quarterly 150€/month and Semiannual 120€/month. This is separate from the membership registration fee (20€/year). Places are limited (maximum 12)."
       },
       "q3": {
         "question": "How do I become a member?",
-        "answer": "Submit a membership application: the registration contribution is 20€/year. You receive a response within 24 hours; if admitted, for coworking you pay the contribution for the plan you choose (instructions by email)."
+        "answer": "Submit a membership application: the registration fee is 20€/year. Within 24 hours you will receive an email response with instructions to settle the registration fee."
       },
       "q4": {
         "question": "How do I pay the coworking contribution?",
@@ -79,11 +79,11 @@
       },
       "q5": {
         "question": "Can I contribute even if the coworking isn't open yet?",
-        "answer": "Yes. Contributing before we open helps us cover initial costs (finding the space, setup, equipment) and get the project off the ground. You can become a member (registration contribution 20€/year) and, if you wish, pay the coworking contribution in advance according to the plans to reserve your spot as soon as we open."
+        "answer": "Yes. Contributing before we open helps us cover initial costs (finding the space, setup, equipment) and get the project off the ground. You can become a member (registration fee 20€/year) and, if you wish, pay the coworking contribution in advance according to the plans to reserve your spot as soon as we open."
       },
       "q6": {
         "question": "Can I become a member without contributing to coworking costs?",
-        "answer": "Absolutely. Coworking is just one of our activities: the association also promotes live music, festivals and cultural exchange. You can be a member by paying only the registration contribution (20€/year) and take part in events, the community and initiatives without using the coworking space."
+        "answer": "Absolutely. Coworking is just one of our activities: the association also promotes live music, festivals and cultural exchange. You can be a member by paying only the registration fee (20€/year) and take part in events, the community and initiatives without using the coworking space."
       }
     },
     "about": {
@@ -98,7 +98,7 @@
     "project": {
       "title": "The coworking journey",
       "paragraph1": "Coworking is for building the community and funding the association's spaces and activities. Together we're shaping a venue for coworking and small events (home concerts, book presentations, networking).",
-      "paragraph2": "Coworking is for members only: the registration contribution is 20€/year; the coworking contribution follows the plans (from 40€/day down to 120€/month on longer plans) and places are limited. Submit a membership application; you get a response within 24 hours and, if admitted, pay the coworking contribution for your chosen plan by bank transfer (instructions in the admission email).",
+      "paragraph2": "Coworking is for members only: the registration fee is 20€/year; the coworking contribution follows the plans (from 40€/day down to 120€/month on longer plans) and places are limited. Submit a membership application; you get a response within 24 hours and, if admitted, pay the coworking contribution for your chosen plan by bank transfer (instructions in the admission email).",
       "paragraph3": "There is no profit — only the desire that whoever uses these spaces, whether local or just passing through, finds a richer and more relevant cultural offering.",
       "latestUpdate": "Latest update",
       "milestones": {
@@ -153,7 +153,7 @@
       "spotsRemaining": "{count} spots left",
       "reserveByAdvance": "To reserve a month you must pay the contribution.",
       "becomeMemberCta": "Contact us for the membership application",
-      "quotaAnnual": "Membership registration contribution: 20€/year.",
+      "quotaAnnual": "Membership registration fee: 20€/year.",
       "admissionMax24h": "Admission within 24 hours.",
       "contactCta": "Get in touch",
       "contactSubject": {
@@ -228,7 +228,7 @@
       "body": "At the end of the evening the space closes. The next day it reopens for coworking. One place, two roles: work and community."
     },
     "outro": "We're looking for the right venue and funding to open (estimated opening: June 1st). If you want to be part of it, become a member or get in touch.",
-    "membershipIntro": "Coworking is reserved for association members. The membership registration contribution is 20€/year; the coworking contribution follows the plans: Daily 40€/day, Monthly 180€/month, Quarterly 150€/month and Semiannual 120€/month. Places are limited (maximum 12). Submit a membership application: you receive a response within 24 hours and, if admitted, bank transfer instructions for the coworking contribution for your chosen plan."
+    "membershipIntro": "Coworking is reserved for association members. The membership registration fee is 20€/year; the coworking contribution follows the plans: Daily 40€/day, Monthly 180€/month, Quarterly 150€/month and Semiannual 120€/month. Places are limited (maximum 12). Submit a membership application: you receive a response within 24 hours and, if admitted, bank transfer instructions for the coworking contribution for your chosen plan."
   },
   "events": {
     "hero": {
@@ -267,6 +267,8 @@
       "message": "Message",
       "submit": "Send",
       "submitting": "Sending...",
+      "gdprConsentPrefix": "I confirm that I have read the ",
+      "gdprConsentLink": "GDPR policy",
       "success": "Message sent. We will get back to you soon.",
       "error": "An error occurred. Please try again."
     },
@@ -340,17 +342,67 @@
     "manage": "You can manage preferences via the cookie banner."
   },
   "gdpr": {
-    "title": "Privacy Policy (GDPR)",
-    "intro": "Information on the processing of personal data under GDPR.",
-    "controller": "Data controller",
-    "controllerDesc": "ARTCORE HUB is the data controller for data collected through this site.",
-    "data": "Data collected",
-    "dataDesc": "We only collect necessary data (name, email, message) when you contact us.",
-    "purpose": "Purpose",
-    "purposeDesc": "Data is used to respond to requests and for association communications.",
-    "rights": "Your rights",
-    "rightsDesc": "You have the right to access, rectification, erasure and data portability. Contact us to exercise them.",
-    "contact": "Privacy contact"
+    "title": "Personal Data Processing Notice (GDPR)",
+    "subtitle": "Privacy notice of ArtCore APS - ETS",
+    "entity": "ArtCore APS - ETS",
+    "address": "Registered office: Via Francesco Caroli 28, Martina Franca (TA) 74015",
+    "email": "Email: segreteria{'@'}artcorehub.org",
+    "sections": {
+      "controller": {
+        "title": "1. Data controller",
+        "body": "The data controller is ArtCore APS - ETS, with registered office at the address above. For any request related to personal data protection, you can contact the association by email at segreteria{'@'}artcorehub.org."
+      },
+      "dataTypes": {
+        "title": "2. Types of data processed",
+        "lead": "ArtCore APS - ETS may process the following categories of personal data:",
+        "item1": "Identity and contact data (name, surname, email address, phone number, tax code);",
+        "item2": "Data related to association activities (membership, participation in courses or events, membership card);",
+        "item3": "Bank details necessary for donations or membership fees;",
+        "item4": "Images, photographs, or video recordings taken during events promoted by the association;",
+        "item5": "Information about artistic interests or preferences, if voluntarily provided by data subjects.",
+        "minorsNote": "The association does not process data of minors."
+      },
+      "purpose": {
+        "title": "3. Purposes and legal basis of processing",
+        "lead": "Personal data are collected and processed for the following purposes:",
+        "item1": "Managing the association relationship and fulfilling statutory or legal obligations related to association activities (legal basis: art. 6(1)(b) GDPR);",
+        "item2": "Sending informational and promotional communications about activities, events, and cultural initiatives promoted by ArtCore APS - ETS (legal basis: legitimate interest of the association, art. 6(1)(f) GDPR);",
+        "item3": "Accounting and administrative management, including donations and sponsorships (legal basis: legal obligation, art. 6(1)(c) GDPR);",
+        "item4": "Publishing images or videos on official channels (website, social networks) for documentation or promotion of association activities, in compliance with the notice and informed consent given."
+      },
+      "processing": {
+        "title": "4. Processing methods",
+        "p1": "Data are processed in paper and digital form lawfully, fairly, and transparently, ensuring their security, confidentiality, and integrity.",
+        "p2": "Appropriate technical and organizational measures are adopted to prevent loss, unauthorized access, improper use, or unauthorized disclosure."
+      },
+      "disclosure": {
+        "title": "5. Data communication and disclosure",
+        "lead": "Personal data may be communicated exclusively to:",
+        "item1": "Collaborators and volunteers of the association, to the extent necessary for association activities;",
+        "item2": "Digital support service providers (e.g. Google Workspace, newsletter platforms, or social networks) located in the European Union;",
+        "item3": "Public or private entities where required by law.",
+        "noTransfer": "No data are transferred outside the European Union."
+      },
+      "retention": {
+        "title": "6. Data retention",
+        "body": "Personal data are retained for as long as necessary to manage the association relationship and in any case no longer than deletion from the members register, or ten years for accounting or administrative purposes only, unless longer retention is required by law."
+      },
+      "rights": {
+        "title": "7. Data subject rights",
+        "p1": "Data subjects may at any time exercise the rights provided by Articles 15-22 of Regulation (EU) 2016/679 (access, rectification, erasure, restriction, objection, data portability) by writing to segreteria{'@'}artcorehub.org.",
+        "p2": "The association undertakes to respond within the deadlines set by GDPR."
+      },
+      "cookies": {
+        "title": "8. Cookies and website interaction",
+        "p1": "The ArtCore APS - ETS website uses only technical cookies necessary for the correct functioning of the platform and contact forms to enable communication with the association.",
+        "p2": "No profiling cookies or third-party statistical analysis tools are used."
+      },
+      "updates": {
+        "title": "9. Notice updates",
+        "p1": "This notice may be updated periodically to reflect legal or organizational changes.",
+        "p2": "Any updates will be published on the association's official website or communicated to members through usual channels."
+      }
+    }
   },
   "seo": {
     "keywords": {

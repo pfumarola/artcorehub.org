@@ -21,7 +21,8 @@ const form = ref({
   surname: '',
   email: '',
   message: (route.query.subject as string) || '',
-  honeypot: ''
+  honeypot: '',
+  gdprConsent: false
 })
 const status = ref<'idle' | 'submitting' | 'success' | 'error'>('idle')
 
@@ -42,12 +43,6 @@ async function submit() {
   if (status.value === 'submitting') return
   status.value = 'idle'
 
-  if (form.value.honeypot.trim()) {
-    status.value = 'success'
-    form.value = { name: '', surname: '', email: '', message: '', honeypot: '' }
-    return
-  }
-
   if (!staticformKey) {
     status.value = 'error'
     return
@@ -67,7 +62,8 @@ async function submit() {
       subject: contactSubject,
       message: form.value.message,
       honeypot: form.value.honeypot,
-      replyTo: form.value.email
+      replyTo: form.value.email,
+      gdprConsent: form.value.gdprConsent ? 'accepted' : 'not_accepted'
     }
 
     const response = await $fetch<{ success?: boolean; message?: string }>('https://api.staticforms.dev/submit', {
@@ -78,7 +74,7 @@ async function submit() {
 
     if (response?.success) {
       status.value = 'success'
-      form.value = { name: '', surname: '', email: '', message: '', honeypot: '' }
+      form.value = { name: '', surname: '', email: '', message: '', honeypot: '', gdprConsent: false }
       return
     }
 
@@ -161,6 +157,29 @@ async function submit() {
               aria-required="true"
               class="mt-1 w-full resize-none rounded-lg border border-stone-200 bg-white/90 px-3 py-2.5 text-base text-stone-900 focus-visible:border-amber-500 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-amber-500 dark:border-stone-600 dark:bg-stone-800/90 dark:text-white"
             />
+          </div>
+          <div>
+            <label for="footer-contact-gdpr" class="flex items-start gap-2 text-sm text-stone-700 dark:text-stone-300">
+              <input
+                id="footer-contact-gdpr"
+                v-model="form.gdprConsent"
+                type="checkbox"
+                required
+                aria-required="true"
+                class="mt-0.5 h-4 w-4 rounded border-stone-300 text-amber-600 focus:ring-amber-500 dark:border-stone-600 dark:bg-stone-800"
+              >
+              <span>
+                {{ $t('contact.form.gdprConsentPrefix') }}
+                <NuxtLink
+                  :to="localePath('/gdpr')"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="font-medium text-amber-700 underline underline-offset-2 hover:text-amber-800 dark:text-amber-300 dark:hover:text-amber-200"
+                >
+                  {{ $t('contact.form.gdprConsentLink') }}
+                </NuxtLink>
+              </span>
+            </label>
           </div>
           <button
             type="submit"
