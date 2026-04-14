@@ -63,27 +63,27 @@
       "title": "Domande frequenti",
       "q1": {
         "question": "Chi può usufruire del coworking?",
-        "answer": "Solo i soci. L'adesione ai piani coworking è riservata ai soci dell'associazione. Per aderire serve presentare domanda di ammissione a socio (quota 20€/anno). Quando il socio sarà ammesso (entro 24 ore), potrà versare il contributo per il coworking tramite bonifico (istruzioni nella mail di ammissione)."
+        "answer": "Solo i soci. L'adesione ai piani coworking è riservata ai soci dell'associazione. Il contributo di iscrizione a socio è di 20€/anno; il contributo per il coworking è distinto e segue i piani indicati sul sito. Per aderire serve presentare domanda di ammissione. Quando il socio sarà ammesso (entro 24 ore), potrà versare il contributo coworking tramite bonifico (istruzioni nella mail di ammissione)."
       },
       "q2": {
         "question": "Quanto costa il coworking?",
-        "answer": "Il contributo per usufruire del coworking è di 120€/mese. I posti sono limitati (massimo 12). Per riservare un mese bisogna versare il contributo almeno 15 giorni prima del primo giorno del mese."
+        "answer": "Il contributo coworking segue i piani: Giornaliero 40€/giorno, Mensile 180€/mese, Trimestrale 150€/mese e Semestrale 120€/mese. È distinto dal contributo di iscrizione a socio (20€/anno). I posti sono limitati (massimo 12)."
       },
       "q3": {
         "question": "Come si diventa socio?",
-        "answer": "Presentando domanda di ammissione a socio (quota 20€/anno). Entro 24 ore ricevi risposta; in caso di ammissione, le istruzioni per il bonifico del contributo coworking ti arrivano via mail."
+        "answer": "Presentando domanda di ammissione a socio: il contributo di iscrizione è di 20€/anno. Entro 24 ore ricevi risposta; in caso di ammissione, per il coworking versi il contributo previsto dal piano scelto (istruzioni via mail)."
       },
       "q4": {
         "question": "Come si paga il contributo coworking?",
-        "answer": "Tramite bonifico bancario. Le istruzioni sono inviate nella mail di avvenuta ammissione a socio. Per riservare un mese il contributo va versato almeno 15 giorni prima del primo giorno del mese."
+        "answer": "Tramite bonifico bancario. Le istruzioni sono inviate nella mail di avvenuta ammissione a socio."
       },
       "q5": {
         "question": "Posso dare il mio contributo anche se il coworking non è ancora aperto?",
-        "answer": "Sì. Contribuire prima dell'apertura ci aiuta a coprire le spese iniziali (ricerca dello spazio, allestimento, attrezzature) e a far partire il progetto. Puoi diventare socio (quota 20€/anno) e, se vuoi, versare in anticipo il contributo coworking per riservare il tuo posto non appena apriremo."
+        "answer": "Sì. Contribuire prima dell'apertura ci aiuta a coprire le spese iniziali (ricerca dello spazio, allestimento, attrezzature) e a far partire il progetto. Puoi diventare socio (contributo di iscrizione 20€/anno) e, se vuoi, versare in anticipo il contributo coworking secondo i piani per riservare il tuo posto non appena apriremo."
       },
       "q6": {
         "question": "Posso diventare socio anche senza contribuire alle spese del coworking?",
-        "answer": "Certo. Il coworking è solo una delle nostre attività: l'associazione promuove anche live music, festival e scambio culturale. Puoi essere socio pagando solo la quota annuale (20€/anno) e partecipare agli eventi, alla community e alle iniziative senza usufruire del coworking."
+        "answer": "Certo. Il coworking è solo una delle nostre attività: l'associazione promuove anche live music, festival e scambio culturale. Puoi essere socio pagando solo il contributo di iscrizione (20€/anno) e partecipare agli eventi, alla community e alle iniziative senza usufruire del coworking."
       }
     },
     "about": {
@@ -98,14 +98,14 @@
     "project": {
       "title": "Il percorso del coworking",
       "paragraph1": "Il coworking serve a creare la community e a finanziare gli spazi e le attività dell'associazione. Insieme stiamo dando forma a una sede capace di ospitare coworking e piccoli eventi (home concert, presentazioni di libri, networking).",
-      "paragraph2": "Il coworking è riservato ai soci: il contributo è di 120€/mese e i posti sono limitati. Per aderire serve diventare socio presentando domanda di ammissione (quota 20€/anno); l'ammissione avviene entro 24 ore, poi il contributo coworking si versa tramite bonifico (istruzioni nella mail di ammissione).",
+      "paragraph2": "Il coworking è riservato ai soci: il contributo di iscrizione è 20€/anno; il contributo coworking segue i piani (da 40€/giorno a 120€/mese nei piani più lunghi) e i posti sono limitati. Per aderire presenta domanda di ammissione; entro 24 ore ricevi risposta e, in caso di ammissione, il contributo coworking si versa tramite bonifico secondo il piano scelto (istruzioni nella mail di ammissione).",
       "paragraph3": "Non c'è profitto: solo la voglia che chi frequenta questi spazi — che sia del posto o di passaggio — trovi un'offerta culturale più ricca e rilevante.",
       "latestUpdate": "Ultimo aggiornamento",
       "milestones": {
         "idea": { "label": "Idea e progetto", "desc": "Definizione del modello e della visione" },
         "space": { "label": "Ricerca spazio e copertura economica", "desc": "Trovare la location e la copertura economica" },
         "setup": { "label": "Allestimento", "desc": "Ristrutturazione e attrezzatura" },
-        "opening": { "label": "Apertura", "desc": "Inaugurazione e primi mesi. Apertura stimata: primi di maggio." }
+        "opening": { "label": "Apertura", "desc": "Inaugurazione e primi mesi. Apertura stimata: 1° giugno." }
       },
       "status": { "done": "Completato", "current": "In corso", "next": "Prossimo" },
       "followProgress": "Segui l'avanzamento",
@@ -117,18 +117,49 @@
       "canHelp": "Posso dare una mano",
       "canHelpDesc": "Competenze, tempo, contatti o idee: ogni contributo conta.",
       "plansDisclaimer": "L'adesione ai piani coworking è riservata ai soci dell'associazione.",
-      "howToJoin": "Per aderire è necessario presentare domanda di ammissione a socio (quota 20€/anno). Quando il socio sarà ammesso (entro 24 ore), potrà versare il contributo per il coworking tramite bonifico (istruzioni nella mail di avvenuta ammissione a socio).",
-      "contributionMonthly": "Il contributo per usufruire del coworking è di 120€/mese.",
+      "howToJoin": "Iscrizione socio 20€/anno.",
+      "contributionMonthly": "Il contributo mensile standard per il coworking è 180€/mese.",
+      "contributionOverview": "Contributi coworking disponibili:",
+      "plans": {
+        "contributionType": "Contributo associativo",
+        "savePerMonth": "Risparmi {amount}/mese rispetto al mensile",
+        "period": {
+          "day": "giorno",
+          "month": "mese"
+        },
+        "daily": {
+          "name": "Giornaliero"
+        },
+        "monthly": {
+          "name": "Mensile"
+        },
+        "quarterly": {
+          "name": "Trimestrale"
+        },
+        "semiannual": {
+          "name": "Semestrale"
+        }
+      },
+      "earlyMerch": {
+        "kicker": "Prima dell'apertura",
+        "title": "Un gesto di ringraziamento per chi ci aiuta a partire",
+        "body": "Per ringraziare chi sottoscrive un piano coworking mentre lo spazio è ancora in avviamento, abbiamo pensato a una piccola selezione di merchandising ARTCORE HUB dedicata alla community. È il nostro modo di dire grazie a chi crede nel progetto fin dall’inizio.",
+        "disclaimer": "Modelli e colori possono variare; le immagini sono indicative fino alla produzione definitiva.",
+        "sliderAria": "Scorri le immagini dei gadget",
+        "masonryAria": "Galleria immagini gadget",
+        "imageAlt": "Anteprima gadget ARTCORE HUB, immagine {n}"
+      },
       "placesLimit": "I posti sono limitati (massimo 12).",
       "spotsRemaining": "{count} posti rimanenti",
-      "reserveByAdvance": "Per riservare un mese è necessario versare il contributo almeno 15 giorni prima del primo giorno del mese.",
+      "reserveByAdvance": "Per riservare un mese è necessario versare il contributo.",
       "becomeMemberCta": "Scrivici per la domanda di ammissione",
-      "quotaAnnual": "Quota socio 20€/anno.",
+      "quotaAnnual": "Contributo di iscrizione a socio: 20€/anno.",
       "admissionMax24h": "Ammissione entro 24 ore.",
       "contactCta": "Scrivici",
       "contactSubject": {
         "interested": "Interesse a restare aggiornato / far parte della community",
-        "help": "Disponibile a dare una mano (competenze / tempo / contatti)"
+        "help": "Disponibile a dare una mano (competenze / tempo / contatti)",
+        "membershipApplication": "Richiesta domanda di ammissione a socio"
       }
     }
   },
@@ -196,8 +227,8 @@
       "title": "Dopo gli eventi",
       "body": "A fine serata lo spazio si chiude. Il giorno dopo riapre per il coworking. Un solo luogo, due anime: lavoro e community."
     },
-    "outro": "Stiamo cercando la sede giusta e la copertura economica per aprire (apertura stimata: primi di maggio). Se vuoi farne parte, diventa socio o contattaci.",
-    "membershipIntro": "Il coworking è riservato ai soci dell'associazione. Il contributo per usufruirne è di 120€/mese, i posti sono limitati (massimo 12). Per aderire presenta domanda di ammissione a socio (quota 20€/anno): entro 24 ore ricevi risposta e, in caso di ammissione, le istruzioni per il bonifico del contributo coworking. Per riservare un mese bisogna versare il contributo almeno 15 giorni prima del primo giorno del mese."
+    "outro": "Stiamo cercando la sede giusta e la copertura economica per aprire (apertura stimata: 1° giugno). Se vuoi farne parte, diventa socio o contattaci.",
+    "membershipIntro": "Il coworking è riservato ai soci dell'associazione. Il contributo di iscrizione a socio è di 20€/anno; il contributo coworking segue i piani: Giornaliero 40€/giorno, Mensile 180€/mese, Trimestrale 150€/mese e Semestrale 120€/mese. I posti sono limitati (massimo 12). Per aderire presenta domanda di ammissione: entro 24 ore ricevi risposta e, in caso di ammissione, le istruzioni per il bonifico del contributo coworking del piano scelto."
   },
   "events": {
     "hero": {

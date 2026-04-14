@@ -6,7 +6,7 @@
 export function useContactHashScroll() {
   const route = useRoute()
   /** Condiviso con l'header: true solo se in URL c'è davvero #contact (aggiornato anche dopo replaceState). */
-  const isContactHashInUrl = useState('contact-hash-in-url', () => ref(false))
+  const isContactHashInUrl = useState<boolean>('contact-hash-in-url', () => false)
 
   let observer: IntersectionObserver | null = null
 
@@ -46,5 +46,5 @@ export function useContactHashScroll() {
 
 /** Usa nell'header/footer per sapere se il link Contatti è attivo (hash #contact in URL). */
 export function useContactHashInUrl() {
-  return { isContactHashInUrl: useState('contact-hash-in-url', () => ref(false)) }
+  return { isContactHashInUrl: useState<boolean>('contact-hash-in-url', () => false) }
 }
