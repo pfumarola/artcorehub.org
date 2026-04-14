@@ -63,15 +63,15 @@
       "title": "Domande frequenti",
       "q1": {
         "question": "Chi può usufruire del coworking?",
-        "answer": "Solo i soci. L'adesione ai piani coworking è riservata ai soci dell'associazione. Il contributo di iscrizione a socio è di 20€/anno; il contributo per il coworking è distinto e segue i piani indicati sul sito. Per aderire serve presentare domanda di ammissione. Quando il socio sarà ammesso (entro 24 ore), potrà versare il contributo coworking tramite bonifico (istruzioni nella mail di ammissione)."
+        "answer": "Solo i soci. L'adesione ai piani coworking è riservata ai soci dell'associazione. La quota di iscrizione a socio è di 20€/anno; il contributo per il coworking è distinto e segue i piani indicati sul sito. Per aderire serve presentare domanda di ammissione. Quando il socio sarà ammesso (entro 24 ore), potrà versare il contributo coworking tramite bonifico (istruzioni nella mail di ammissione)."
       },
       "q2": {
         "question": "Quanto costa il coworking?",
-        "answer": "Il contributo coworking segue i piani: Giornaliero 40€/giorno, Mensile 180€/mese, Trimestrale 150€/mese e Semestrale 120€/mese. È distinto dal contributo di iscrizione a socio (20€/anno). I posti sono limitati (massimo 12)."
+        "answer": "Il contributo coworking segue i piani: Giornaliero 40€/giorno, Mensile 180€/mese, Trimestrale 150€/mese e Semestrale 120€/mese. È distinto dalla quota di iscrizione a socio (20€/anno). I posti sono limitati (massimo 12)."
       },
       "q3": {
         "question": "Come si diventa socio?",
-        "answer": "Presentando domanda di ammissione a socio: il contributo di iscrizione è di 20€/anno. Entro 24 ore ricevi risposta; in caso di ammissione, per il coworking versi il contributo previsto dal piano scelto (istruzioni via mail)."
+        "answer": "Presentando domanda di ammissione a socio: la quota di iscrizione è di 20€/anno. Entro 24 ore ricevi risposta via mail con le istruzioni per saldare la quota associativa."
       },
       "q4": {
         "question": "Come si paga il contributo coworking?",
@@ -79,11 +79,11 @@
       },
       "q5": {
         "question": "Posso dare il mio contributo anche se il coworking non è ancora aperto?",
-        "answer": "Sì. Contribuire prima dell'apertura ci aiuta a coprire le spese iniziali (ricerca dello spazio, allestimento, attrezzature) e a far partire il progetto. Puoi diventare socio (contributo di iscrizione 20€/anno) e, se vuoi, versare in anticipo il contributo coworking secondo i piani per riservare il tuo posto non appena apriremo."
+        "answer": "Sì. Contribuire prima dell'apertura ci aiuta a coprire le spese iniziali (ricerca dello spazio, allestimento, attrezzature) e a far partire il progetto. Puoi diventare socio (quota di iscrizione 20€/anno) e, se vuoi, versare in anticipo il contributo coworking secondo i piani per riservare il tuo posto non appena apriremo."
       },
       "q6": {
         "question": "Posso diventare socio anche senza contribuire alle spese del coworking?",
-        "answer": "Certo. Il coworking è solo una delle nostre attività: l'associazione promuove anche live music, festival e scambio culturale. Puoi essere socio pagando solo il contributo di iscrizione (20€/anno) e partecipare agli eventi, alla community e alle iniziative senza usufruire del coworking."
+        "answer": "Certo. Il coworking è solo una delle nostre attività: l'associazione promuove anche live music, festival e scambio culturale. Puoi essere socio pagando solo la quota di iscrizione (20€/anno) e partecipare agli eventi, alla community e alle iniziative senza usufruire del coworking."
       }
     },
     "about": {
@@ -98,7 +98,7 @@
     "project": {
       "title": "Il percorso del coworking",
       "paragraph1": "Il coworking serve a creare la community e a finanziare gli spazi e le attività dell'associazione. Insieme stiamo dando forma a una sede capace di ospitare coworking e piccoli eventi (home concert, presentazioni di libri, networking).",
-      "paragraph2": "Il coworking è riservato ai soci: il contributo di iscrizione è 20€/anno; il contributo coworking segue i piani (da 40€/giorno a 120€/mese nei piani più lunghi) e i posti sono limitati. Per aderire presenta domanda di ammissione; entro 24 ore ricevi risposta e, in caso di ammissione, il contributo coworking si versa tramite bonifico secondo il piano scelto (istruzioni nella mail di ammissione).",
+      "paragraph2": "Il coworking è riservato ai soci: la quota di iscrizione è 20€/anno; il contributo coworking segue i piani (da 40€/giorno a 120€/mese nei piani più lunghi) e i posti sono limitati. Per aderire presenta domanda di ammissione; entro 24 ore ricevi risposta e, in caso di ammissione, il contributo coworking si versa tramite bonifico secondo il piano scelto (istruzioni nella mail di ammissione).",
       "paragraph3": "Non c'è profitto: solo la voglia che chi frequenta questi spazi — che sia del posto o di passaggio — trovi un'offerta culturale più ricca e rilevante.",
       "latestUpdate": "Ultimo aggiornamento",
       "milestones": {
@@ -228,7 +228,7 @@
       "body": "A fine serata lo spazio si chiude. Il giorno dopo riapre per il coworking. Un solo luogo, due anime: lavoro e community."
     },
     "outro": "Stiamo cercando la sede giusta e la copertura economica per aprire (apertura stimata: 1° giugno). Se vuoi farne parte, diventa socio o contattaci.",
-    "membershipIntro": "Il coworking è riservato ai soci dell'associazione. Il contributo di iscrizione a socio è di 20€/anno; il contributo coworking segue i piani: Giornaliero 40€/giorno, Mensile 180€/mese, Trimestrale 150€/mese e Semestrale 120€/mese. I posti sono limitati (massimo 12). Per aderire presenta domanda di ammissione: entro 24 ore ricevi risposta e, in caso di ammissione, le istruzioni per il bonifico del contributo coworking del piano scelto."
+    "membershipIntro": "Il coworking è riservato ai soci dell'associazione. La quota di iscrizione a socio è di 20€/anno; il contributo coworking segue i piani: Giornaliero 40€/giorno, Mensile 180€/mese, Trimestrale 150€/mese e Semestrale 120€/mese. I posti sono limitati (massimo 12). Per aderire presenta domanda di ammissione: entro 24 ore ricevi risposta e, in caso di ammissione, le istruzioni per il bonifico del contributo coworking del piano scelto."
   },
   "events": {
     "hero": {
@@ -266,6 +266,9 @@
       "email": "Email",
       "message": "Messaggio",
       "submit": "Invia",
+      "submitting": "Invio in corso...",
+      "gdprConsentPrefix": "Dichiaro di aver preso visione della ",
+      "gdprConsentLink": "normativa GDPR",
       "success": "Messaggio inviato. Ti risponderemo al più presto.",
       "error": "Si è verificato un errore. Riprova."
     },
@@ -339,17 +342,67 @@
     "manage": "Puoi gestire le preferenze tramite il banner cookie."
   },
   "gdpr": {
-    "title": "Privacy Policy (GDPR)",
-    "intro": "Informativa sul trattamento dei dati personali ai sensi del GDPR.",
-    "controller": "Titolare del trattamento",
-    "controllerDesc": "ARTCORE HUB è titolare del trattamento dei dati raccolti tramite questo sito.",
-    "data": "Dati raccolti",
-    "dataDesc": "Raccogliamo solo i dati necessari (nome, email, messaggio) quando ci contatti.",
-    "purpose": "Finalità",
-    "purposeDesc": "I dati sono usati per rispondere alle richieste e per le comunicazioni dell'associazione.",
-    "rights": "I tuoi diritti",
-    "rightsDesc": "Hai diritto ad accesso, rettifica, cancellazione e portabilità dei dati. Contattaci per esercitarli.",
-    "contact": "Contatti per la privacy"
+    "title": "Informativa sul Trattamento dei Dati Personali (GDPR)",
+    "subtitle": "Informativa privacy di ArtCore APS - ETS",
+    "entity": "ArtCore APS - ETS",
+    "address": "Sede legale: Via Francesco Caroli 28, Martina Franca (TA) 74015",
+    "email": "Email: segreteria{'@'}artcorehub.org",
+    "sections": {
+      "controller": {
+        "title": "1. Titolare del trattamento",
+        "body": "Il titolare del trattamento dei dati personali è ArtCore APS - ETS, con sede legale all'indirizzo sopra indicato. Per ogni richiesta relativa alla protezione dei dati personali è possibile contattare l'associazione via e-mail all'indirizzo segreteria{'@'}artcorehub.org."
+      },
+      "dataTypes": {
+        "title": "2. Tipologia di dati trattati",
+        "lead": "ArtCore APS - ETS può trattare le seguenti categorie di dati personali:",
+        "item1": "Dati anagrafici e di contatto (nome, cognome, indirizzo email, numero di telefono, codice fiscale);",
+        "item2": "Dati relativi alle attività associative (iscrizione, partecipazione a corsi o eventi, tesseramento);",
+        "item3": "Dati bancari necessari per eventuali donazioni o quote associative;",
+        "item4": "Immagini, fotografie o riprese video effettuate durante eventi promossi dall'associazione;",
+        "item5": "Informazioni su interessi o preferenze artistiche, se comunicate spontaneamente dagli interessati.",
+        "minorsNote": "L'associazione non tratta dati di minori di età."
+      },
+      "purpose": {
+        "title": "3. Finalità e base giuridica del trattamento",
+        "lead": "I dati personali vengono raccolti e trattati per le seguenti finalità:",
+        "item1": "Gestione del rapporto associativo e adempimento di obblighi statutari o legali correlati all'attività dell'associazione (base giuridica: art. 6, par. 1, lett. b GDPR);",
+        "item2": "Invio di comunicazioni informative e promozionali relative ad attività, eventi e iniziative culturali promosse da ArtCore APS - ETS (base giuridica: legittimo interesse dell'associazione, art. 6, par. 1, lett. f GDPR);",
+        "item3": "Gestione contabile e amministrativa, incluse donazioni e sponsorizzazioni (base giuridica: obbligo legale, art. 6, par. 1, lett. c GDPR);",
+        "item4": "Pubblicazione di immagini o video su canali ufficiali (sito, social network) a fini di documentazione o promozione delle attività associative, nel rispetto dell'informativa e del consenso informato rilasciato."
+      },
+      "processing": {
+        "title": "4. Modalità del trattamento",
+        "p1": "I dati vengono trattati con modalità cartacee e informatiche in modo lecito, corretto e trasparente, garantendo la sicurezza, la riservatezza e l'integrità degli stessi.",
+        "p2": "Sono adottate misure tecniche e organizzative adeguate per evitare perdite, accessi non autorizzati, usi impropri o divulgazioni non consentite."
+      },
+      "disclosure": {
+        "title": "5. Comunicazione e diffusione dei dati",
+        "lead": "I dati personali potranno essere comunicati esclusivamente a:",
+        "item1": "Collaboratori e volontari dell'associazione, nella misura necessaria all'espletamento delle attività associative;",
+        "item2": "Fornitori di servizi digitali di supporto (es. Google Workspace, piattaforme per newsletter o social network) localizzati nell'Unione Europea;",
+        "item3": "Enti pubblici o privati quando previsto da obblighi di legge.",
+        "noTransfer": "Nessun dato viene trasferito al di fuori dell'Unione Europea."
+      },
+      "retention": {
+        "title": "6. Conservazione dei dati",
+        "body": "I dati personali vengono conservati per il tempo necessario alla gestione del rapporto associativo e comunque non oltre la cancellazione dal registro dei soci o dieci anni ai soli fini contabili o amministrativi, salvo obblighi legali di ulteriore conservazione."
+      },
+      "rights": {
+        "title": "7. Diritti dell'interessato",
+        "p1": "Gli interessati possono in ogni momento esercitare i diritti previsti dagli artt. 15-22 del Regolamento UE 2016/679 (accesso, rettifica, cancellazione, limitazione, opposizione, portabilità dei dati), scrivendo a segreteria{'@'}artcorehub.org.",
+        "p2": "L'associazione si impegna a rispondere entro i termini previsti dal GDPR."
+      },
+      "cookies": {
+        "title": "8. Cookie e interazione con il sito web",
+        "p1": "Il sito web di ArtCore APS - ETS utilizza solo cookie tecnici indispensabili al corretto funzionamento della piattaforma e moduli di contatto per consentire la comunicazione con l'associazione.",
+        "p2": "Non vengono utilizzati cookie di profilazione né strumenti di analisi statistica di terze parti."
+      },
+      "updates": {
+        "title": "9. Aggiornamenti dell'informativa",
+        "p1": "La presente informativa potrà essere aggiornata periodicamente per recepire modifiche normative o organizzative.",
+        "p2": "Eventuali aggiornamenti saranno pubblicati sul sito ufficiale dell'associazione o comunicati ai soci tramite i canali abituali."
+      }
+    }
   },
   "seo": {
     "keywords": {

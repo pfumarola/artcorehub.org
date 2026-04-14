@@ -114,19 +114,8 @@ const coworkingPlans: CoworkingPlan[] = [
       </div>
     </section>
 
-    <section class="border-t border-stone-200 px-4 py-12 dark:border-stone-800 sm:py-16">
-      <div class="mx-auto max-w-2xl text-center">
-        <p class="text-lg leading-relaxed text-stone-600 dark:text-stone-400">
-          {{ $t('theSpace.outro') }}
-        </p>
-      </div>
-    </section>
-
     <section class="border-t border-stone-200 bg-stone-50 px-4 py-12 dark:border-stone-800 dark:bg-stone-900/30 sm:py-16">
       <div class="mx-auto max-w-4xl">
-        <p class="mb-10 text-center text-base leading-relaxed text-stone-600 dark:text-stone-400 sm:mb-12">
-          {{ $t('theSpace.membershipIntro') }}
-        </p>
         <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-10 lg:items-start">
           <div>
             <h2 class="text-center text-2xl font-bold text-stone-900 dark:text-white lg:text-left">

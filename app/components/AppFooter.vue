@@ -1,7 +1,9 @@
 <script setup lang="ts">
+const { t } = useI18n()
 const config = useRuntimeConfig().public
 const maintenanceMode = config.maintenanceMode as boolean
 const instagramUrl = (config.instagramUrl as string) || ''
+const staticformKey = (config.staticformKey as string) || ''
 const localePath = useLocalePath()
 const route = useRoute()
 const year = new Date().getFullYear()
@@ -18,9 +20,11 @@ const form = ref({
   name: '',
   surname: '',
   email: '',
-  message: (route.query.subject as string) || ''
+  message: (route.query.subject as string) || '',
+  honeypot: '',
+  gdprConsent: false
 })
-const status = ref<'idle' | 'success' | 'error'>('idle')
+const status = ref<'idle' | 'submitting' | 'success' | 'error'>('idle')
 
 watch(
   () => route.fullPath,
@@ -35,12 +39,49 @@ function linkTo(link: { key: string; path: string }) {
   return localePath(link.path)
 }
 
-function submit() {
+async function submit() {
+  if (status.value === 'submitting') return
   status.value = 'idle'
-  setTimeout(() => {
-    status.value = 'success'
-    form.value = { name: '', surname: '', email: '', message: '' }
-  }, 500)
+
+  if (!staticformKey) {
+    status.value = 'error'
+    return
+  }
+
+  status.value = 'submitting'
+
+  const subjectQuery = (route.query.subject as string) || ''
+  const contactSubject = subjectQuery.trim() || t('contact.hero.title')
+
+  try {
+    const payload = {
+      accessKey: staticformKey,
+      name: `${form.value.name} ${form.value.surname}`.trim(),
+      surname: form.value.surname,
+      email: form.value.email,
+      subject: contactSubject,
+      message: form.value.message,
+      honeypot: form.value.honeypot,
+      replyTo: form.value.email,
+      gdprConsent: form.value.gdprConsent ? 'accepted' : 'not_accepted'
+    }
+
+    const response = await $fetch<{ success?: boolean; message?: string }>('https://api.staticforms.dev/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: payload
+    })
+
+    if (response?.success) {
+      status.value = 'success'
+      form.value = { name: '', surname: '', email: '', message: '', honeypot: '', gdprConsent: false }
+      return
+    }
+
+    status.value = 'error'
+  } catch {
+    status.value = 'error'
+  }
 }
 </script>
 
@@ -54,6 +95,15 @@ function submit() {
     >
       <div class="mx-auto mt-8 max-w-4xl">
         <form class="space-y-4" @submit.prevent="submit">
+          <input
+            v-model="form.honeypot"
+            type="text"
+            name="honeypot"
+            tabindex="-1"
+            autocomplete="off"
+            class="hidden"
+            aria-hidden="true"
+          >
           <div class="grid gap-4 sm:grid-cols-2">
             <div>
               <label for="footer-contact-name" class="block text-sm font-medium text-stone-700 dark:text-stone-300">
@@ -108,11 +158,35 @@ function submit() {
               class="mt-1 w-full resize-none rounded-lg border border-stone-200 bg-white/90 px-3 py-2.5 text-base text-stone-900 focus-visible:border-amber-500 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-amber-500 dark:border-stone-600 dark:bg-stone-800/90 dark:text-white"
             />
           </div>
+          <div>
+            <label for="footer-contact-gdpr" class="flex items-start gap-2 text-sm text-stone-700 dark:text-stone-300">
+              <input
+                id="footer-contact-gdpr"
+                v-model="form.gdprConsent"
+                type="checkbox"
+                required
+                aria-required="true"
+                class="mt-0.5 h-4 w-4 rounded border-stone-300 text-amber-600 focus:ring-amber-500 dark:border-stone-600 dark:bg-stone-800"
+              >
+              <span>
+                {{ $t('contact.form.gdprConsentPrefix') }}
+                <NuxtLink
+                  :to="localePath('/gdpr')"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="font-medium text-amber-700 underline underline-offset-2 hover:text-amber-800 dark:text-amber-300 dark:hover:text-amber-200"
+                >
+                  {{ $t('contact.form.gdprConsentLink') }}
+                </NuxtLink>
+              </span>
+            </label>
+          </div>
           <button
             type="submit"
-            class="min-h-11 rounded-lg bg-amber-500 px-5 py-2.5 text-sm font-medium text-amber-950 hover:bg-amber-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-stone-900"
+            :disabled="status === 'submitting'"
+            class="min-h-11 rounded-lg bg-amber-500 px-5 py-2.5 text-sm font-medium text-amber-950 hover:bg-amber-600 disabled:cursor-not-allowed disabled:opacity-60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-stone-900"
           >
-            {{ $t('contact.form.submit') }}
+            {{ status === 'submitting' ? $t('contact.form.submitting') : $t('contact.form.submit') }}
           </button>
           <p v-if="status === 'success'" class="text-sm text-green-600 dark:text-green-400" role="status">
             {{ $t('contact.form.success') }}
