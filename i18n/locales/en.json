@@ -36,7 +36,7 @@
   "home": {
     "hero": {
       "title": "ARTCORE HUB",
-      "subtitle": "Coworking space, live music, festivals and cultural exchange",
+      "subtitle": "Coworking space, live music, festivals and cultural exchange just a short walk from the city center",
       "ctaCoworking": "Discover Coworking",
       "ctaEvents": "View Events"
     },
@@ -52,7 +52,7 @@
       },
       "coworking": {
         "title": "Coworking",
-        "description": "Shared workspaces and community"
+        "description": "Shared workspaces and community, close to the city center"
       },
       "festivals": {
         "title": "Festivals",
@@ -97,7 +97,7 @@
     },
     "project": {
       "title": "The coworking journey",
-      "paragraph1": "Coworking is for building the community and funding the association's spaces and activities. Together we're shaping a venue for coworking and small events (home concerts, book presentations, networking).",
+      "paragraph1": "Coworking is for building the community and funding the association's spaces and activities. Together we're shaping a venue, just a short walk from the city center, for coworking and small events (home concerts, book presentations, networking).",
       "paragraph2": "Coworking is for members only: the registration fee is 20€/year; the coworking contribution follows the plans (from 40€/day down to 120€/month on longer plans) and places are limited. Submit a membership application; you get a response within 24 hours and, if admitted, pay the coworking contribution for your chosen plan by bank transfer (instructions in the admission email).",
       "paragraph3": "There is no profit — only the desire that whoever uses these spaces, whether local or just passing through, finds a richer and more relevant cultural offering.",
       "latestUpdate": "Latest update",
@@ -210,7 +210,7 @@
       "title": "The space",
       "subtitle": "Coworking by day, events and concerts in the evening"
     },
-    "intro": "One space: workstations in the morning and afternoon, a room for events, home concerts and meetups in the evening.",
+    "intro": "One space, just steps from the city center: workstations in the morning and afternoon, a room for events, home concerts and meetups in the evening.",
     "morning": {
       "title": "Morning and daytime",
       "body": "Quiet workstations: desks, Wi‑fi, space for calls and meetings. A shared environment for remote workers and anyone who needs a base."
@@ -227,7 +227,7 @@
       "title": "After events",
       "body": "At the end of the evening the space closes. The next day it reopens for coworking. One place, two roles: work and community."
     },
-    "outro": "We're looking for the right venue and funding to open (estimated opening: June 1st). If you want to be part of it, become a member or get in touch.",
+    "outro": "We're finalizing a venue just a short walk from the city center and the funding needed to open (estimated opening: June 1st). If you want to be part of it, become a member or get in touch.",
     "membershipIntro": "Coworking is reserved for association members. The membership registration fee is 20€/year; the coworking contribution follows the plans: Daily 40€/day, Monthly 180€/month, Quarterly 150€/month and Semiannual 120€/month. Places are limited (maximum 12). Submit a membership application: you receive a response within 24 hours and, if admitted, bank transfer instructions for the coworking contribution for your chosen plan."
   },
   "events": {
