@@ -1,4 +1,4 @@
-const DEFAULT_OG_IMAGE = '/images/og-default.jpg'
+const DEFAULT_OG_IMAGE = '/images/og-default.webp'
 const DEFAULT_OG_IMAGE_WIDTH = 1200
 const DEFAULT_OG_IMAGE_HEIGHT = 630
 

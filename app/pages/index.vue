@@ -37,10 +37,10 @@ function contactUrl(subjectKey: 'interested' | 'help' | 'membershipApplication')
 }
 
 const featureCards = [
-  { key: 'liveMusic', image: '/images/feature-live.jpg' },
-  { key: 'international', image: '/images/feature-international.jpg' },
-  { key: 'coworking', image: '/images/feature-coworking.jpg' },
-  { key: 'festivals', image: '/images/feature-festivals.jpg' }
+  { key: 'liveMusic', image: '/images/feature-live.webp' },
+  { key: 'international', image: '/images/feature-international.webp' },
+  { key: 'coworking', image: '/images/feature-coworking.webp' },
+  { key: 'festivals', image: '/images/feature-festivals.webp' }
 ] as const
 
 type CoworkingPlan = {
@@ -65,7 +65,7 @@ const coworkingPlans: CoworkingPlan[] = [
     <section class="relative border-b border-stone-200 overflow-hidden px-4 py-16 dark:border-stone-800">
       <div
         class="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style="background-image: url('/images/wall.png')"
+        style="background-image: url('/images/wall.webp')"
         aria-hidden="true"
       />
       <div class="absolute inset-0 bg-white/70 dark:bg-stone-950/80" aria-hidden="true" />
@@ -138,7 +138,7 @@ const coworkingPlans: CoworkingPlan[] = [
         </div>
         <div class="relative mt-10 aspect-[4/3] w-full overflow-hidden rounded-xl bg-stone-200 dark:bg-stone-800 lg:mt-0">
           <img
-            src="/images/journey.jpg"
+            src="/images/journey.webp"
             :alt="$t('home.journey.imageAlt')"
             class="h-full w-full object-cover"
             loading="lazy"
@@ -414,7 +414,7 @@ const coworkingPlans: CoworkingPlan[] = [
       <div class="relative z-10 mx-auto max-w-6xl grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-10 lg:items-center">
         <div class="relative order-2 aspect-[4/3] w-full overflow-hidden rounded-xl bg-stone-200 dark:bg-stone-800 lg:order-1">
           <img
-            src="/images/about-teaser.jpg"
+            src="/images/about-teaser.webp"
             :alt="$t('home.about.imageAlt')"
             class="h-full w-full object-cover"
             loading="lazy"

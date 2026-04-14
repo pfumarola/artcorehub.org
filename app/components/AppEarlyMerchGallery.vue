@@ -14,8 +14,8 @@ const props = withDefaults(
 )
 
 const defaultGallery: EarlyMerchImage[] = [
-  { src: '/images/gadget-1.jpg' },
-  { src: '/images/gadget-2.png' }
+  { src: '/images/gadget-1.webp' },
+  { src: '/images/gadget-2.webp' }
 ]
 
 const items = computed(() => props.images ?? defaultGallery)

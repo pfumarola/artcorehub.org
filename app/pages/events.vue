@@ -13,9 +13,9 @@ useBreadcrumbStructuredData([
 ])
 
 const eventTypes = [
-  { key: 'liveMusic', image: '/images/event-live.jpg' },
-  { key: 'festivals', image: '/images/event-festivals.jpg' },
-  { key: 'cultural', image: '/images/event-cultural.jpg' }
+  { key: 'liveMusic', image: '/images/event-live.webp' },
+  { key: 'festivals', image: '/images/event-festivals.webp' },
+  { key: 'cultural', image: '/images/event-cultural.webp' }
 ] as const
 </script>
 
@@ -24,7 +24,7 @@ const eventTypes = [
     <section class="relative border-b border-stone-200 overflow-hidden bg-gradient-to-b from-amber-50/50 to-white px-4 py-16 dark:border-stone-800 dark:from-stone-900/50 dark:to-stone-950">
       <div
         class="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style="background-image: url('/images/events-hero.jpg')"
+        style="background-image: url('/images/events-hero.webp')"
         aria-hidden="true"
       />
       <div class="absolute inset-0 bg-white/70 dark:bg-stone-950/80" aria-hidden="true" />
