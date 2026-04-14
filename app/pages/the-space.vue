@@ -31,6 +31,26 @@ const faqItems = computed(() => [
   { question: t('home.faq.q5.question'), answer: t('home.faq.q5.answer') },
   { question: t('home.faq.q6.question'), answer: t('home.faq.q6.answer') }
 ])
+
+function contactUrl(subjectKey: 'membershipApplication') {
+  const subject = t(`home.project.contactSubject.${subjectKey}`)
+  return `${localePath('/')}?subject=${encodeURIComponent(subject)}#contact`
+}
+
+type CoworkingPlan = {
+  key: 'daily' | 'monthly' | 'quarterly' | 'semiannual'
+  amount: string
+  periodKey: 'day' | 'month'
+  oldAmount?: string
+  savingPerMonth?: string
+}
+
+const coworkingPlans: CoworkingPlan[] = [
+  { key: 'daily', amount: '40€', periodKey: 'day' },
+  { key: 'monthly', amount: '180€', periodKey: 'month' },
+  { key: 'quarterly', amount: '150€', periodKey: 'month', oldAmount: '180€', savingPerMonth: '30€' },
+  { key: 'semiannual', amount: '120€', periodKey: 'month', oldAmount: '180€', savingPerMonth: '60€' }
+]
 </script>
 
 <template>
@@ -127,16 +147,53 @@ const faqItems = computed(() => [
               <p class="mt-3 font-semibold text-stone-900 dark:text-white">
                 {{ $t('home.project.plansDisclaimer') }}
               </p>
-              <p class="mt-3 text-sm leading-relaxed text-stone-600 dark:text-stone-400">
-                {{ $t('home.project.howToJoin') }}
+              <p class="mt-4 text-sm font-medium text-stone-700 dark:text-stone-300">
+                {{ $t('home.project.contributionOverview') }}
               </p>
+              <ul class="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
+                <li
+                  v-for="plan in coworkingPlans"
+                  :key="plan.key"
+                  class="flex h-full flex-col justify-between rounded-xl border p-3"
+                  :class="plan.key === 'semiannual'
+                    ? 'border-amber-500 bg-white/80 dark:border-amber-400 dark:bg-stone-900/50'
+                    : 'border-amber-200/80 bg-white/80 dark:border-amber-800/70 dark:bg-stone-900/50'"
+                >
+                  <div class="flex items-start justify-between gap-3">
+                    <div>
+                      <p class="text-sm font-semibold text-stone-900 dark:text-white">
+                        {{ $t(`home.project.plans.${plan.key}.name`) }}
+                      </p>
+                    </div>
+                    <div class="text-right">
+                      <p class="text-sm font-semibold text-stone-900 dark:text-white">
+                        {{ plan.amount }}/{{ $t(`home.project.plans.period.${plan.periodKey}`) }}
+                      </p>
+                      <p
+                        v-if="plan.oldAmount"
+                        class="text-xs text-stone-500 line-through dark:text-stone-400"
+                      >
+                        {{ plan.oldAmount }}/{{ $t(`home.project.plans.period.${plan.periodKey}`) }}
+                      </p>
+                    </div>
+                  </div>
+                  <p
+                    v-if="plan.savingPerMonth"
+                    class="mt-2 text-xs font-medium text-emerald-700 dark:text-emerald-300"
+                  >
+                    {{ $t('home.project.plans.savePerMonth', { amount: plan.savingPerMonth }) }}
+                  </p>
+                </li>
+              </ul>
               <ul class="mt-4 space-y-2 text-sm text-stone-600 dark:text-stone-400">
-                <li>{{ $t('home.project.contributionMonthly') }}</li>
                 <li>{{ $t('home.project.placesLimit') }}</li>
                 <li>{{ $t('home.project.reserveByAdvance') }}</li>
               </ul>
+              <p class="mt-3 text-sm leading-relaxed text-stone-600 dark:text-stone-400">
+                {{ $t('home.project.howToJoin') }}
+              </p>
               <NuxtLink
-                :to="`${localePath('/')}#contact`"
+                :to="contactUrl('membershipApplication')"
                 class="mt-6 inline-flex items-center gap-2 rounded-lg bg-amber-500 px-4 py-2.5 text-sm font-medium text-amber-950 transition hover:bg-amber-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-stone-900"
               >
                 {{ $t('home.project.becomeMemberCta') }}
@@ -146,6 +203,9 @@ const faqItems = computed(() => [
               </NuxtLink>
             </div>
           </div>
+        </div>
+        <div class="mx-auto mt-12 max-w-4xl sm:mt-14">
+          <AppEarlyMerchGallery />
         </div>
       </div>
     </section>
