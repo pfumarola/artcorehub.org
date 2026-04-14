@@ -5,7 +5,8 @@ usePageSeo({
   title: `${t('common.brand')} - ${t('gdpr.title')}`,
   description: t('gdpr.subtitle'),
   path: '/gdpr',
-  keywords: t('seo.keywords.gdpr')
+  keywords: t('seo.keywords.gdpr'),
+  image: '/images/og-default.webp'
 })
 useBreadcrumbStructuredData([
   { name: t('nav.home'), path: localePath('/') },

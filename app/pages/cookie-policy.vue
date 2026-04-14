@@ -5,7 +5,8 @@ usePageSeo({
   title: `${t('common.brand')} - ${t('cookiePolicy.title')}`,
   description: t('cookiePolicy.intro'),
   path: '/cookie-policy',
-  keywords: t('seo.keywords.cookiePolicy')
+  keywords: t('seo.keywords.cookiePolicy'),
+  image: '/images/og-default.webp'
 })
 useBreadcrumbStructuredData([
   { name: t('nav.home'), path: localePath('/') },

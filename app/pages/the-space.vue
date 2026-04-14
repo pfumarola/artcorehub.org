@@ -8,7 +8,8 @@ usePageSeo({
   title: `${t('common.brand')} - ${t('theSpace.hero.title')}`,
   description: t('theSpace.hero.subtitle'),
   path: '/the-space',
-  keywords: t('seo.keywords.theSpace')
+  keywords: t('seo.keywords.theSpace'),
+  image: '/images/og-default.webp'
 })
 useBreadcrumbStructuredData([
   { name: t('nav.home'), path: localePath('/') },
