@@ -6,7 +6,8 @@ usePageSeo({
   title: `${t('common.brand')} - ${t('transparency.hero.title')}`,
   description: t('transparency.hero.subtitle'),
   path: '/transparency',
-  keywords: t('seo.keywords.transparency')
+  keywords: t('seo.keywords.transparency'),
+  image: '/images/og-default.webp'
 })
 useBreadcrumbStructuredData([
   { name: t('nav.home'), path: localePath('/') },

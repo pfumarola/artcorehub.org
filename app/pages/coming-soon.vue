@@ -3,7 +3,8 @@ const { t } = useI18n()
 usePageSeo({
   title: `${t('common.brand')} - ${t('comingSoon.title')}`,
   description: t('comingSoon.message'),
-  path: '/coming-soon'
+  path: '/coming-soon',
+  image: '/images/og-default.webp'
 })
 useHead({
   meta: [{ name: 'robots', content: 'noindex, nofollow' }]

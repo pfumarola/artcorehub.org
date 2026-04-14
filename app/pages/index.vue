@@ -6,7 +6,8 @@ usePageSeo({
   title: `${t('common.brand')} - ${t('home.hero.subtitle')}`,
   description: t('home.about.description'),
   path: '/',
-  keywords: t('seo.keywords.home')
+  keywords: t('seo.keywords.home'),
+  image: '/images/og-default.webp'
 })
 
 // Project milestones: 'done' | 'current' | 'next' (edit to reflect real progress)

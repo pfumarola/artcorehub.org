@@ -5,7 +5,8 @@ usePageSeo({
   title: `${t('common.brand')} - ${t('about.hero.title')}`,
   description: t('about.mission.description'),
   path: '/about',
-  keywords: t('seo.keywords.about')
+  keywords: t('seo.keywords.about'),
+  image: '/images/og-default.webp'
 })
 useBreadcrumbStructuredData([
   { name: t('nav.home'), path: localePath('/') },
