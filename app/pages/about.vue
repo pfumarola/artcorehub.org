@@ -15,43 +15,43 @@ useBreadcrumbStructuredData([
 // Team: array of members (name and surname not translated, role by locale)
 const teamMembers = [
   {
-    image: '/images/lbonasia.jpg',
+    image: '/images/lbonasia.webp',
     name: 'Lucrezia',
     surname: 'Bonasia',
     role: { it: 'Co-fondatore, Direttore Artistico', en: 'Co-founder, Artistic Director' }
   },
   {
-    image: '/images/pfumarola.jpg',
+    image: '/images/pfumarola.webp',
     name: 'Paolo',
     surname: 'Fumarola',
     role: { it: 'Co-fondatore, Direttore Operativo', en: 'Co-founder, Operational Director' }
   },
   {
-    image: '/images/dbonasia.jpg',
+    image: '/images/dbonasia.webp',
     name: 'Diletta',
     surname: 'Bonasia',
     role: { it: 'Co-fondatore, Community Manager', en: 'Co-founder, Community Manager' }
   },
   {
-    image: '/images/mfumarola.jpg',
+    image: '/images/mfumarola.webp',
     name: 'Michele',
     surname: 'Fumarola',
     role: { it: 'Co-fondatore, Spazi & Operazioni', en: 'Co-founder, Spaces & Operations' }
   },
   {
-    image: '/images/gmarangi.jpg',
+    image: '/images/gmarangi.webp',
     name: 'Giusi',
     surname: 'Marangi',
     role: { it: 'Co-fondatore, Eventi', en: 'Co-founder, Events' }
   },
   {
-    image: '/images/acolonna.jpg',
+    image: '/images/acolonna.webp',
     name: 'Antonio',
     surname: 'Colonna',
     role: { it: 'Co-fondatore, Eventi e logistica', en: 'Co-founder, Events & Logistics' }
   },
   {
-    image: '/images/fpsantoro.jpg',
+    image: '/images/fpsantoro.webp',
     name: 'Francesco Paolo',
     surname: 'Santoro',
     role: { it: 'Co-fondatore', en: 'Co-founder' }
@@ -64,7 +64,7 @@ const teamMembers = [
     <section class="relative border-b border-stone-200 overflow-hidden bg-gradient-to-b from-amber-50/50 to-white px-4 py-12 dark:border-stone-800 dark:from-stone-900/50 dark:to-stone-950 sm:py-16">
       <div
         class="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style="background-image: url('/images/about-hero.jpg')"
+        style="background-image: url('/images/about-hero.webp')"
         aria-hidden="true"
       />
       <div class="absolute inset-0 bg-white/70 dark:bg-stone-950/80" aria-hidden="true" />
@@ -90,7 +90,7 @@ const teamMembers = [
         </div>
         <div class="relative aspect-[4/3] w-full overflow-hidden rounded-xl bg-stone-200 dark:bg-stone-800">
           <img
-            src="/images/about-mission.jpg"
+            src="/images/about-mission.webp"
             :alt="$t('about.mission.imageAlt')"
             class="h-full w-full object-cover"
             loading="lazy"

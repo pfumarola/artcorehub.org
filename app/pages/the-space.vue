@@ -17,10 +17,10 @@ useBreadcrumbStructuredData([
 
 const storyBlocks = ['morning', 'day', 'evening', 'night'] as const
 const spaceBlockImages: Record<(typeof storyBlocks)[number], string> = {
-  morning: '/images/space-morning.jpg',
-  day: '/images/space-day.jpg',
-  evening: '/images/space-evening.jpg',
-  night: '/images/space-night.jpg'
+  morning: '/images/space-morning.webp',
+  day: '/images/space-day.webp',
+  evening: '/images/space-evening.webp',
+  night: '/images/space-night.webp'
 }
 
 const faqItems = computed(() => [
@@ -58,7 +58,7 @@ const coworkingPlans: CoworkingPlan[] = [
     <section class="relative border-b border-stone-200 overflow-hidden bg-gradient-to-b from-amber-50/50 to-white px-4 py-16 dark:border-stone-800 dark:from-stone-900/50 dark:to-stone-950">
       <div
         class="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style="background-image: url('/images/the-space-hero.jpg')"
+        style="background-image: url('/images/the-space-hero.webp')"
         aria-hidden="true"
       />
       <div class="absolute inset-0 bg-white/70 dark:bg-stone-950/80" aria-hidden="true" />
