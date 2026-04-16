@@ -63,11 +63,11 @@
       "title": "Frequently asked questions",
       "q1": {
         "question": "Who can use the coworking?",
-        "answer": "Only members. Coworking plan membership is reserved for association members. The membership registration fee is 20€/year; the coworking contribution is separate and follows the plans shown on the site. Submit a membership application. When admitted (within 24 hours), you pay the coworking contribution by bank transfer (instructions in the admission email)."
+        "answer": "Only members. Coworking plan membership is reserved for association members. The membership registration fee is 20€/year; the coworking contribution is separate and follows the plans shown on the site. Submit a membership application. When admitted (within 24 hours), you can pay the coworking contribution via PayPal (also available in installments). The payment link will be sent by admission email."
       },
       "q2": {
         "question": "How much does coworking cost?",
-        "answer": "The coworking contribution follows the plans: Daily 40€/day, Monthly 180€/month, Quarterly 150€/month and Semiannual 120€/month. This is separate from the membership registration fee (20€/year). Places are limited (maximum 12)."
+        "answer": "The membership fee is 20€/year. If you use coworking, you add a separate contribution based on your selected plan: Daily 40€/day, Monthly 180€/month, Quarterly 150€/month, Semiannual 120€/month. Example: monthly plan = 20€ membership fee + 180€/month coworking. Places are limited (maximum 12)."
       },
       "q3": {
         "question": "How do I become a member?",
@@ -75,7 +75,7 @@
       },
       "q4": {
         "question": "How do I pay the coworking contribution?",
-        "answer": "By bank transfer. Instructions are sent in the membership admission email."
+        "answer": "Via PayPal (also available in installments). The payment link will be sent in the membership admission email."
       },
       "q5": {
         "question": "Can I contribute even if the coworking isn't open yet?",
@@ -98,7 +98,7 @@
     "project": {
       "title": "The coworking journey",
       "paragraph1": "Coworking is for building the community and funding the association's spaces and activities. Together we're shaping a venue, just a short walk from the city center, for coworking and small events (home concerts, book presentations, networking).",
-      "paragraph2": "Coworking is for members only: the registration fee is 20€/year; the coworking contribution follows the plans (from 40€/day down to 120€/month on longer plans) and places are limited. Submit a membership application; you get a response within 24 hours and, if admitted, pay the coworking contribution for your chosen plan by bank transfer (instructions in the admission email).",
+      "paragraph2": "Coworking is for members only: the membership fee is 20€/year. If you choose coworking, add the contribution for your selected plan (from 40€/day down to 120€/month on longer plans). In short: total = 20€/year + coworking plan (only if you use coworking). Places are limited. Submit a membership application; you get a response within 24 hours and, if admitted, you can pay via PayPal (also available in installments). The payment link will be sent by admission email.",
       "paragraph3": "There is no profit — only the desire that whoever uses these spaces, whether local or just passing through, finds a richer and more relevant cultural offering.",
       "latestUpdate": "Latest update",
       "milestones": {
@@ -116,8 +116,8 @@
       "interestedDesc": "Want to stay updated or join the community?",
       "canHelp": "I can help",
       "canHelpDesc": "Skills, time, contacts or ideas: every contribution counts.",
-      "plansDisclaimer": "Coworking plan membership is reserved for association members.",
-      "howToJoin": "Membership registration is 20€/year.",
+      "plansDisclaimer": "First become a member (20€/year), then you can add a coworking plan.",
+      "howToJoin": "Annual membership fee: 20€. The coworking plan is separate and optional.",
       "contributionMonthly": "The standard monthly coworking contribution is 180€/month.",
       "contributionOverview": "Available coworking contributions:",
       "plans": {
@@ -144,6 +144,7 @@
         "kicker": "Before we open",
         "title": "A thank-you for early supporters",
         "body": "To thank everyone who chooses a coworking plan while we are still getting started, we prepared a small ARTCORE HUB merch selection for the community. It is our way of saying thank you to those who believe in the project from day one.",
+        "itemsIncluded": "Included for members: one bag and one aluminum coffee cup.",
         "disclaimer": "Designs and colours may vary; photos are indicative until the final production run.",
         "sliderAria": "Swipe through gadget photos",
         "masonryAria": "Gadget photo gallery",
@@ -151,9 +152,10 @@
       },
       "placesLimit": "Places are limited (maximum 12).",
       "spotsRemaining": "{count} spots left",
-      "reserveByAdvance": "To reserve a month you must pay the contribution.",
+      "reserveByAdvance": "To reserve a month you must pay the coworking contribution for your selected plan.",
+      "pricingFormula": "Total: 20€/year membership fee + coworking plan contribution (only if you use coworking).",
       "becomeMemberCta": "Contact us for the membership application",
-      "quotaAnnual": "Membership registration fee: 20€/year.",
+      "quotaAnnual": "Annual membership fee: 20€/year (separate from the coworking contribution).",
       "admissionMax24h": "Admission within 24 hours.",
       "contactCta": "Get in touch",
       "contactSubject": {
@@ -227,8 +229,9 @@
       "title": "After events",
       "body": "At the end of the evening the space closes. The next day it reopens for coworking. One place, two roles: work and community."
     },
+    "aiRenderDisclaimer": "These images are AI-generated renderings, meant to give an idea of what the space will look like once it opens.",
     "outro": "We're finalizing a venue just a short walk from the city center and the funding needed to open (estimated opening: June 1st). If you want to be part of it, become a member or get in touch.",
-    "membershipIntro": "Coworking is reserved for association members. The membership registration fee is 20€/year; the coworking contribution follows the plans: Daily 40€/day, Monthly 180€/month, Quarterly 150€/month and Semiannual 120€/month. Places are limited (maximum 12). Submit a membership application: you receive a response within 24 hours and, if admitted, bank transfer instructions for the coworking contribution for your chosen plan."
+    "membershipIntro": "Coworking is reserved for association members. The membership fee is 20€/year. If you want coworking, add a separate contribution based on your selected plan: Daily 40€/day, Monthly 180€/month, Quarterly 150€/month and Semiannual 120€/month. In short: 20€/year + coworking plan (only if you use coworking). Places are limited (maximum 12). Submit a membership application: you receive a response within 24 hours and, if admitted, you can pay via PayPal (also available in installments). The payment link will be sent by admission email."
   },
   "events": {
     "hero": {

@@ -113,6 +113,11 @@ const coworkingPlans: CoworkingPlan[] = [
           </div>
         </article>
       </div>
+      <div class="mx-auto mt-8 max-w-4xl">
+        <p class="text-sm text-stone-500 dark:text-stone-400">
+          * {{ $t('theSpace.aiRenderDisclaimer') }}
+        </p>
+      </div>
     </section>
 
     <section class="border-t border-stone-200 bg-stone-50 px-4 py-12 dark:border-stone-800 dark:bg-stone-900/30 sm:py-16">
@@ -179,6 +184,9 @@ const coworkingPlans: CoworkingPlan[] = [
                 <li>{{ $t('home.project.placesLimit') }}</li>
                 <li>{{ $t('home.project.reserveByAdvance') }}</li>
               </ul>
+              <p class="mt-3 text-sm font-medium text-stone-700 dark:text-stone-300">
+                {{ $t('home.project.pricingFormula') }}
+              </p>
               <p class="mt-3 text-sm leading-relaxed text-stone-600 dark:text-stone-400">
                 {{ $t('home.project.howToJoin') }}
               </p>

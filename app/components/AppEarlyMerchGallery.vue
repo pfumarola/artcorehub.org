@@ -50,28 +50,33 @@ function hideBroken(e: Event) {
       </p>
       </div>
 
-      <div
-        class="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-2 lg:gap-4"
-        role="list"
-        :aria-label="t('home.project.earlyMerch.sliderAria')"
-      >
-        <figure
-          v-for="(item, i) in items"
-          :key="`g-${item.src}-${i}`"
-          role="listitem"
-          class="overflow-hidden rounded-xl ring-1 ring-stone-200/90 dark:ring-stone-600"
+      <div>
+        <div
+          class="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-2 lg:gap-4"
+          role="list"
+          :aria-label="t('home.project.earlyMerch.sliderAria')"
         >
-          <div class="aspect-[4/3] w-full bg-stone-100 dark:bg-stone-800">
-            <img
-              :src="item.src"
-              :alt="t('home.project.earlyMerch.imageAlt', { n: i + 1 })"
-              class="h-full w-full object-cover"
-              loading="lazy"
-              decoding="async"
-              @error="hideBroken"
-            >
-          </div>
-        </figure>
+          <figure
+            v-for="(item, i) in items"
+            :key="`g-${item.src}-${i}`"
+            role="listitem"
+            class="overflow-hidden rounded-xl ring-1 ring-stone-200/90 dark:ring-stone-600"
+          >
+            <div class="aspect-[4/3] w-full bg-stone-100 dark:bg-stone-800">
+              <img
+                :src="item.src"
+                :alt="t('home.project.earlyMerch.imageAlt', { n: i + 1 })"
+                class="h-full w-full object-cover"
+                loading="lazy"
+                decoding="async"
+                @error="hideBroken"
+              >
+            </div>
+          </figure>
+        </div>
+        <p class="mt-3 text-sm font-medium text-stone-700 dark:text-stone-300 lg:mt-4">
+          {{ t('home.project.earlyMerch.itemsIncluded') }}
+        </p>
       </div>
     </div>
   </section>
