@@ -16,6 +16,26 @@ const props = withDefaults(
 const openIndex = ref<number | null>(null)
 const openSet = ref<Set<number>>(new Set())
 
+watch(
+  () => props.items.length,
+  (length) => {
+    if (length <= 0) {
+      openIndex.value = null
+      openSet.value = new Set()
+      return
+    }
+
+    const lastIndex = length - 1
+    if (props.allowMultiple) {
+      openSet.value = new Set([lastIndex])
+      return
+    }
+
+    openIndex.value = lastIndex
+  },
+  { immediate: true }
+)
+
 function toggle(index: number) {
   if (props.allowMultiple) {
     const next = new Set(openSet.value)
