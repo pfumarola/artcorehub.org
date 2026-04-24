@@ -88,17 +88,40 @@ const coworkingPlans: CoworkingPlan[] = [
           :key="blockKey"
           class="grid grid-cols-1 gap-6 sm:gap-8 md:grid-cols-2 md:items-center"
         >
-          <div
-            class="relative aspect-[4/3] w-full overflow-hidden rounded-xl bg-stone-200 dark:bg-stone-800"
-            :class="i % 2 === 0 ? 'md:order-1' : 'md:order-2'"
-          >
-            <img
-              :src="spaceBlockImages[blockKey]"
-              :alt="$t(`theSpace.${blockKey}.title`)"
-              class="h-full w-full object-cover"
-              loading="lazy"
-              @error="($event.target as HTMLImageElement).style.display = 'none'"
+          <div :class="i % 2 === 0 ? 'md:order-1' : 'md:order-2'">
+            <AppImageCompare
+              v-if="blockKey === 'morning'"
+              before-src="/images/space-morning-pre.webp"
+              after-src="/images/space-morning.webp"
+              :before-alt="$t('theSpace.morning.title') + ' - before'"
+              :after-alt="$t('theSpace.morning.title') + ' - after'"
             />
+            <AppImageCompare
+              v-else-if="blockKey === 'day'"
+              before-src="/images/space-day-pre.webp"
+              after-src="/images/space-day.webp"
+              :before-alt="$t('theSpace.day.title') + ' - before'"
+              :after-alt="$t('theSpace.day.title') + ' - after'"
+            />
+            <AppImageCompare
+              v-else-if="blockKey === 'evening'"
+              before-src="/images/space-evening-pre.webp"
+              after-src="/images/space-evening.webp"
+              :before-alt="$t('theSpace.evening.title') + ' - before'"
+              :after-alt="$t('theSpace.evening.title') + ' - after'"
+            />
+            <div
+              v-else
+              class="relative aspect-[4/3] w-full overflow-hidden rounded-xl bg-stone-200 dark:bg-stone-800"
+            >
+              <img
+                :src="spaceBlockImages[blockKey]"
+                :alt="$t(`theSpace.${blockKey}.title`)"
+                class="h-full w-full object-cover"
+                loading="lazy"
+                @error="($event.target as HTMLImageElement).style.display = 'none'"
+              />
+            </div>
           </div>
           <div
             class="min-w-0"

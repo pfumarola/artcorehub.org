@@ -229,6 +229,10 @@
       "title": "After events",
       "body": "At the end of the evening the space closes. The next day it reopens for coworking. One place, two roles: work and community."
     },
+    "compare": {
+      "before": "Before",
+      "after": "After"
+    },
     "aiRenderDisclaimer": "These images are AI-generated renderings, meant to give an idea of what the space will look like once it opens.",
     "outro": "We're finalizing a venue just a short walk from the city center and the funding needed to open (estimated opening: June 1st). If you want to be part of it, become a member or get in touch.",
     "membershipIntro": "Coworking is reserved for association members. The membership fee is 20€/year. If you want coworking, add a separate contribution based on your selected plan: Daily 40€/day, Monthly 180€/month, Quarterly 150€/month and Semiannual 120€/month. In short: 20€/year + coworking plan (only if you use coworking). Places are limited (maximum 12). Submit a membership application: you receive a response within 24 hours and, if admitted, you can pay via PayPal (also available in installments). The payment link will be sent by admission email."
