@@ -82,7 +82,7 @@ const coworkingPlans: CoworkingPlan[] = [
     </section>
 
     <section class="border-t border-stone-200 bg-stone-50 px-4 py-12 dark:border-stone-800 dark:bg-stone-900/30 sm:py-16">
-      <div class="mx-auto max-w-4xl space-y-16">
+      <div class="mx-auto max-w-6xl space-y-16">
         <article
           v-for="(blockKey, i) in storyBlocks"
           :key="blockKey"
@@ -136,7 +136,7 @@ const coworkingPlans: CoworkingPlan[] = [
           </div>
         </article>
       </div>
-      <div class="mx-auto mt-8 max-w-4xl">
+      <div class="mx-auto mt-8 max-w-6xl">
         <p class="text-sm text-stone-500 dark:text-stone-400">
           * {{ $t('theSpace.aiRenderDisclaimer') }}
         </p>
@@ -144,7 +144,7 @@ const coworkingPlans: CoworkingPlan[] = [
     </section>
 
     <section class="border-t border-stone-200 bg-stone-50 px-4 py-12 dark:border-stone-800 dark:bg-stone-900/30 sm:py-16">
-      <div class="mx-auto max-w-4xl">
+      <div class="mx-auto max-w-6xl">
         <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-10 lg:items-start">
           <div>
             <h2 class="text-center text-2xl font-bold text-stone-900 dark:text-white lg:text-left">
@@ -225,7 +225,7 @@ const coworkingPlans: CoworkingPlan[] = [
             </div>
           </div>
         </div>
-        <div class="mx-auto mt-12 max-w-4xl sm:mt-14">
+        <div class="mx-auto mt-12 max-w-6xl sm:mt-14">
           <AppEarlyMerchGallery />
         </div>
       </div>

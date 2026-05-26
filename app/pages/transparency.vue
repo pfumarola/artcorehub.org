@@ -38,7 +38,7 @@ const rendicontiPerAnno = ref<RendicontoAnno[]>([
 <template>
   <div>
     <section class="border-b border-stone-200 bg-gradient-to-b from-amber-50/50 to-white px-4 py-16 dark:border-stone-800 dark:from-stone-900/50 dark:to-stone-950">
-      <div class="mx-auto max-w-4xl text-center">
+      <div class="mx-auto max-w-6xl text-center">
         <h1 class="text-3xl font-bold tracking-tight text-stone-900 dark:text-white sm:text-4xl">
           {{ $t('transparency.hero.title') }}
         </h1>

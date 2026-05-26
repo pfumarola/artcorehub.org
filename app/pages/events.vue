@@ -29,7 +29,7 @@ const eventTypes = [
         aria-hidden="true"
       />
       <div class="absolute inset-0 bg-white/70 dark:bg-stone-950/80" aria-hidden="true" />
-      <div class="relative z-10 mx-auto max-w-4xl text-center">
+      <div class="relative z-10 mx-auto max-w-6xl text-center">
         <h1 class="text-3xl font-bold tracking-tight text-stone-900 dark:text-white sm:text-4xl">
           {{ $t('events.hero.title') }}
         </h1>
@@ -41,7 +41,7 @@ const eventTypes = [
 
     <section class="relative overflow-hidden px-4 py-16">
       <span class="absolute -left-32 top-1/2 h-72 w-72 -translate-y-1/2 rounded-full bg-amber-100/50 dark:bg-amber-900/20" aria-hidden="true" />
-      <div class="relative z-10 mx-auto max-w-4xl">
+      <div class="relative z-10 mx-auto max-w-6xl">
         <h2 class="text-2xl font-bold text-stone-900 dark:text-white">
           {{ $t('events.types.title') }}
         </h2>
@@ -70,7 +70,7 @@ const eventTypes = [
     </section>
 
     <section class="border-t border-stone-200 bg-stone-50 px-4 py-16 dark:border-stone-800 dark:bg-stone-900/30">
-      <div class="mx-auto max-w-4xl text-center">
+      <div class="mx-auto max-w-6xl text-center">
         <h2 class="text-2xl font-bold text-stone-900 dark:text-white">
           {{ $t('events.upcoming.title') }}
         </h2>

@@ -70,7 +70,7 @@ const coworkingPlans: CoworkingPlan[] = [
         aria-hidden="true"
       />
       <div class="absolute inset-0 bg-white/70 dark:bg-stone-950/80" aria-hidden="true" />
-      <div class="relative z-10 mx-auto max-w-4xl text-center">
+      <div class="relative z-10 mx-auto max-w-6xl text-center">
         <h1 class="text-3xl font-bold tracking-tight text-stone-900 dark:text-white sm:text-4xl md:text-5xl">
           {{ $t('home.hero.title') }}
         </h1>
@@ -99,7 +99,7 @@ const coworkingPlans: CoworkingPlan[] = [
 
             <!-- The coworking journey: testo + immagine a lato -->
       <div class="mx-auto mt-10 max-w-6xl lg:mt-12 lg:grid lg:grid-cols-2 lg:gap-10 lg:items-start">
-        <div class="max-w-4xl lg:max-w-none">
+        <div class="max-w-6xl lg:max-w-none">
           <h2 class="text-center text-2xl font-bold text-stone-900 dark:text-white lg:text-left">
             {{ $t('home.project.title') }}
           </h2>
@@ -230,6 +230,7 @@ const coworkingPlans: CoworkingPlan[] = [
       </div>
 
       <!-- Timeline step: riga full-width per leggibilità -->
+      <!--
       <div class="mx-auto mt-14 max-w-6xl lg:mt-20" role="list" aria-label="Stato del progetto">
         <div class="grid grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-4 lg:gap-6">
           <template v-for="(key, index) in milestoneKeys" :key="key">
@@ -300,6 +301,7 @@ const coworkingPlans: CoworkingPlan[] = [
           </template>
         </div>
       </div>
+      -->
 
       <!-- Riga sotto: I can help e I'm interested affiancate -->
       <div class="mx-auto mt-14 max-w-6xl grid grid-cols-1 gap-5 sm:grid-cols-2 lg:mt-20">

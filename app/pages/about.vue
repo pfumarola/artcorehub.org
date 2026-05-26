@@ -69,7 +69,7 @@ const teamMembers = [
         aria-hidden="true"
       />
       <div class="absolute inset-0 bg-white/70 dark:bg-stone-950/80" aria-hidden="true" />
-      <div class="relative z-10 mx-auto max-w-4xl px-2 text-center sm:px-4">
+      <div class="relative z-10 mx-auto max-w-6xl px-2 text-center sm:px-4">
         <h1 class="text-2xl font-bold tracking-tight text-stone-900 dark:text-white sm:text-3xl lg:text-4xl">
           {{ $t('about.hero.title') }}
         </h1>
