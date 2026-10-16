@@ -49,13 +49,13 @@ const teamMembers = [
     image: '/images/acolonna.webp',
     name: 'Antonio',
     surname: 'Colonna',
-    role: { it: 'Co-fondatore, Eventi e logistica', en: 'Co-founder, Events & Logistics' }
+    role: { it: 'Co-fondatore, Eventi e Logistica', en: 'Co-founder, Events & Logistics' }
   },
   {
     image: '/images/fpsantoro.webp',
     name: 'Francesco Paolo',
     surname: 'Santoro',
-    role: { it: 'Co-fondatore', en: 'Co-founder' }
+    role: { it: 'Co-fondatore, Comunicazione e Marketing', en: 'Co-founder, Communication & Marketing' }
   }
 ]
 </script>

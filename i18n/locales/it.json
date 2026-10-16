@@ -36,7 +36,7 @@
   "home": {
     "hero": {
       "title": "ARTCORE HUB",
-      "subtitle": "Spazio di coworking, live music, festival e scambio culturale a pochi passi dal centro città",
+      "subtitle": "Spazio di coworking, live music, festival e scambio culturale a Martina Franca",
       "ctaCoworking": "Scopri il Coworking",
       "ctaEvents": "Vedi gli Eventi"
     },
@@ -52,7 +52,7 @@
       },
       "coworking": {
         "title": "Coworking",
-        "description": "Spazi di lavoro condivisi e community, vicino al centro città"
+        "description": "Spazi di lavoro condivisi e community in Via Orazio Flacco 28, Martina Franca"
       },
       "festivals": {
         "title": "Festival",
@@ -63,11 +63,11 @@
       "title": "Domande frequenti",
       "q1": {
         "question": "Chi può usufruire del coworking?",
-        "answer": "Solo i soci. L'adesione ai piani coworking è riservata ai soci dell'associazione. La quota di iscrizione a socio è di 20€/anno; il contributo per il coworking è distinto e segue i piani indicati sul sito. Per aderire serve presentare domanda di ammissione. Quando il socio sarà ammesso (entro 24 ore), potrà versare il contributo coworking tramite PayPal (anche rateizzabile). Il link sarà inviato tramite email di ammissione."
+        "answer": "Solo i soci. L'adesione ai piani coworking è riservata ai soci dell'associazione. La quota di iscrizione a socio è di 20€/anno; il contributo per il coworking è distinto e segue i piani indicati sul sito. Per aderire serve presentare domanda di ammissione. Quando il socio sarà ammesso (entro 24 ore), riceverà via email le istruzioni per versare il contributo coworking."
       },
       "q2": {
         "question": "Quanto costa il coworking?",
-        "answer": "La quota socio è 20€/anno. Se usi il coworking, aggiungi un contributo separato in base al piano scelto: Giornaliero 40€/giorno, Mensile 180€/mese, Trimestrale 150€/mese, Semestrale 120€/mese. Esempio: piano mensile = 20€ quota socio + 180€/mese coworking. I posti sono limitati (massimo 12)."
+        "answer": "La quota socio è 20€/anno. Se usi il coworking, aggiungi un contributo separato in base al piano scelto: Giornaliero 15€/giorno, Settimanale 50€/settimana. In ottobre, promo su tutti i piani mensili (Mensile, Trimestrale, Semestrale) a 120€/mese (listino 180€/150€/120€). Esempio in promo: piano mensile = 20€ quota socio + 120€/mese coworking. I posti sono limitati (massimo 12)."
       },
       "q3": {
         "question": "Come si diventa socio?",
@@ -75,13 +75,9 @@
       },
       "q4": {
         "question": "Come si paga il contributo coworking?",
-        "answer": "Tramite PayPal (anche rateizzabile). Il link sarà inviato tramite email di avvenuta ammissione a socio."
+        "answer": "Le istruzioni per il versamento saranno inviate via email dopo l'ammissione a socio."
       },
       "q5": {
-        "question": "Posso dare il mio contributo anche se il coworking non è ancora aperto?",
-        "answer": "Sì. Contribuire prima dell'apertura ci aiuta a coprire le spese iniziali (ricerca dello spazio, allestimento, attrezzature) e a far partire il progetto. Puoi diventare socio (quota di iscrizione 20€/anno) e, se vuoi, versare in anticipo il contributo coworking secondo i piani per riservare il tuo posto non appena apriremo."
-      },
-      "q6": {
         "question": "Posso diventare socio anche senza contribuire alle spese del coworking?",
         "answer": "Certo. Il coworking è solo una delle nostre attività: l'associazione promuove anche live music, festival e scambio culturale. Puoi essere socio pagando solo la quota di iscrizione (20€/anno) e partecipare agli eventi, alla community e alle iniziative senza usufruire del coworking."
       }
@@ -97,19 +93,9 @@
     },
     "project": {
       "title": "Il percorso del coworking",
-      "paragraph1": "Il coworking serve a creare la community e a finanziare gli spazi e le attività dell'associazione. Insieme stiamo dando forma a una sede, a pochi passi dal centro città, capace di ospitare coworking e piccoli eventi (home concert, presentazioni di libri, networking).",
-      "paragraph2": "Il coworking è riservato ai soci: la quota socio è 20€/anno. Se scegli il coworking, aggiungi il contributo del piano selezionato (da 40€/giorno a 120€/mese nei piani più lunghi). In sintesi: totale = 20€/anno + piano coworking (solo se utilizzi il coworking). I posti sono limitati. Per aderire presenta domanda di ammissione; entro 24 ore ricevi risposta e, in caso di ammissione, potrai pagare tramite PayPal (anche rateizzabile). Il link sarà inviato tramite email di ammissione.",
+      "paragraph1": "Il coworking serve a creare la community e a finanziare gli spazi e le attività dell'associazione. La sede in Via Orazio Flacco 28 ospita coworking e, a seconda del calendario, piccoli eventi (workshop, home concert, presentazioni di libri, networking).",
+      "paragraph2": "Il coworking è riservato ai soci: la quota socio è 20€/anno. Se scegli il coworking, aggiungi il contributo del piano selezionato (da 15€/giorno; in ottobre i piani mensili sono in promo a 120€/mese). In sintesi: totale = 20€/anno + piano coworking (solo se utilizzi il coworking). I posti sono limitati. Per aderire presenta domanda di ammissione; entro 24 ore ricevi risposta e, in caso di ammissione, riceverai via email le istruzioni per il versamento.",
       "paragraph3": "Non c'è profitto: solo la voglia che chi frequenta questi spazi — che sia del posto o di passaggio — trovi un'offerta culturale più ricca e rilevante.",
-      "latestUpdate": "Ultimo aggiornamento",
-      "milestones": {
-        "idea": { "label": "Idea e progetto", "desc": "Definizione del modello e della visione" },
-        "space": { "label": "Ricerca spazio e copertura economica", "desc": "Trovare la location e la copertura economica" },
-        "setup": { "label": "Allestimento", "desc": "Ristrutturazione e attrezzatura" },
-        "opening": { "label": "Apertura", "desc": "Inaugurazione e primi mesi. Apertura stimata: 1° giugno." }
-      },
-      "status": { "done": "Completato", "current": "In corso", "next": "Prossimo" },
-      "followProgress": "Segui l'avanzamento",
-      "imagineLikeThis": "Noi lo immaginiamo così",
       "getInvolved": "Diventa socio",
       "expandHint": "Clicca per scoprire come partecipare",
       "interested": "Sono interessato/a",
@@ -118,17 +104,22 @@
       "canHelpDesc": "Competenze, tempo, contatti o idee: ogni contributo conta.",
       "plansDisclaimer": "Prima diventi socio (20€/anno), poi puoi aggiungere un piano coworking.",
       "howToJoin": "Quota socio annuale: 20€. Il piano coworking è separato e facoltativo.",
-      "contributionMonthly": "Il contributo mensile standard per il coworking è 180€/mese.",
+      "contributionMonthly": "In ottobre, promo: tutti i piani mensili a 120€/mese (listino mensile 180€).",
       "contributionOverview": "Contributi coworking disponibili:",
+      "octoberPromo": "Promo ottobre: tutti i piani mensili a 120€/mese",
       "plans": {
         "contributionType": "Contributo associativo",
         "savePerMonth": "Risparmi {amount}/mese rispetto al mensile",
         "period": {
           "day": "giorno",
+          "week": "settimana",
           "month": "mese"
         },
         "daily": {
           "name": "Giornaliero"
+        },
+        "weekly": {
+          "name": "Settimanale"
         },
         "monthly": {
           "name": "Mensile"
@@ -141,9 +132,9 @@
         }
       },
       "earlyMerch": {
-        "kicker": "Prima dell'apertura",
+        "kicker": "Per chi ci supporta",
         "title": "Un gesto di ringraziamento per chi ci aiuta a partire",
-        "body": "Per ringraziare chi sottoscrive un piano coworking mentre lo spazio è ancora in avviamento, abbiamo pensato a una piccola selezione di merchandising ARTCORE HUB dedicata alla community. È il nostro modo di dire grazie a chi crede nel progetto fin dall’inizio.",
+        "body": "Per ringraziare chi sottoscrive un piano coworking, abbiamo pensato a una piccola selezione di merchandising ARTCORE HUB dedicata alla community. È il nostro modo di dire grazie a chi crede nel progetto.",
         "itemsIncluded": "Per chi aderisce: una bag e una coffee cup in alluminio.",
         "disclaimer": "Modelli e colori possono variare; le immagini sono indicative fino alla produzione definitiva.",
         "sliderAria": "Scorri le immagini dei gadget",
@@ -210,9 +201,12 @@
   "theSpace": {
     "hero": {
       "title": "Lo spazio",
-      "subtitle": "Coworking di giorno, eventi e concerti la sera"
+      "subtitle": "Coworking, eventi, workshop e concerti"
     },
-    "intro": "Un unico spazio, a pochi passi dal centro città: postazioni di lavoro al mattino e nel pomeriggio, sala per eventi, home concert e incontri la sera.",
+    "address": "Via Orazio Flacco 28, Martina Franca (TA)",
+    "addressLabel": "Indirizzo",
+    "openInMaps": "Apri in Google Maps",
+    "intro": "Uno spazio in Via Orazio Flacco 28, Martina Franca (TA), pensato per il coworking e, a seconda del programma, per eventi, workshop, home concert e incontri.",
     "morning": {
       "title": "Mattino e giorno",
       "body": "Postazioni per lavorare in tranquillità: scrivanie, Wi‑fi, spazi per chiamate e riunioni. Ambiente condiviso per chi lavora in remoto o ha bisogno di una base."
@@ -223,7 +217,7 @@
     },
     "evening": {
       "title": "La sera",
-      "body": "Lo spazio ospita eventi: home concert, presentazioni di libri, aperitivi di networking. Stessa sala, uso diverso — lavoro di giorno, cultura e incontri la sera."
+      "body": "Quando in programma, lo spazio ospita eventi: home concert, workshop, presentazioni di libri, aperitivi di networking. Stessa sala, usi diversi: lavoro e cultura."
     },
     "night": {
       "title": "Dopo gli eventi",
@@ -234,8 +228,8 @@
       "after": "Dopo"
     },
     "aiRenderDisclaimer": "Queste immagini sono rendering generati con l'AI, utili per rendere l'idea di come sarà lo spazio una volta aperto.",
-    "outro": "Stiamo finalizzando una sede a pochi passi dal centro città e la copertura economica per aprire (apertura stimata: 1° giugno). Se vuoi farne parte, diventa socio o contattaci.",
-    "membershipIntro": "Il coworking è riservato ai soci dell'associazione. La quota socio è 20€/anno. Se vuoi usare il coworking, aggiungi un contributo separato in base al piano scelto: Giornaliero 40€/giorno, Mensile 180€/mese, Trimestrale 150€/mese e Semestrale 120€/mese. In sintesi: 20€/anno + piano coworking (solo se usi il coworking). I posti sono limitati (massimo 12). Per aderire presenta domanda di ammissione: entro 24 ore ricevi risposta e, in caso di ammissione, potrai pagare tramite PayPal (anche rateizzabile). Il link sarà inviato tramite email di ammissione."
+    "outro": "Lo spazio in Via Orazio Flacco 28, Martina Franca (TA), è aperto dal 2 ottobre. Se vuoi farne parte, diventa socio o contattaci.",
+    "membershipIntro": "Il coworking è riservato ai soci dell'associazione. La quota socio è 20€/anno. Se vuoi usare il coworking, aggiungi un contributo separato in base al piano scelto: Giornaliero 15€/giorno, Settimanale 50€/settimana; in ottobre Mensile, Trimestrale e Semestrale a 120€/mese in promo. In sintesi: 20€/anno + piano coworking (solo se usi il coworking). I posti sono limitati (massimo 12). Per aderire presenta domanda di ammissione: entro 24 ore ricevi risposta e, in caso di ammissione, riceverai via email le istruzioni per il versamento."
   },
   "events": {
     "hero": {
@@ -259,7 +253,25 @@
     },
     "upcoming": {
       "title": "Prossimi eventi",
-      "empty": "Presto nuovi eventi. Resta in contatto!"
+      "empty": "Presto nuovi eventi. Resta in contatto!",
+      "venueLabel": "Luogo",
+      "admissionLabel": "Ingresso",
+      "listenCta": "Scopri di più",
+      "callCta": "Chiama per info",
+      "items": {
+        "postWorkingLucesci": {
+          "title": "POST-WORKING — Gianni Sciambarruto — Lucesci",
+          "description": "Gianni Sciambarruto è un chitarrista classico basato in Puglia. La sua musica esplora i suoni tradizionali del Sud Italia e del Mediterraneo, adattandoli alla chitarra classica. Fondatore del progetto world-music Yarákä, il suo ultimo lavoro solista Lucesci reinterpreta canti e ritmi del Salento con una prospettiva moderna e personale.",
+          "venue": "ArtCore Hub / Via Orazio Flacco 28, Martina Franca (TA)",
+          "admission": "Ingresso riservato ai tesserati. Per maggiori info chiamare +39 366 342 4199."
+        },
+        "postWorkingCordesVocales": {
+          "title": "POST-WORKING — Sofia Silvestrini — Cordes Vocales",
+          "description": "Il progetto esplora una terza dimensione espressiva tra il duo cameristico (voce e chitarra separate) e il cantautore pop/rock, proponendo la fusione di voce e strumento in un'unica entità integrata affidata a un solo esecutore.\n\nAttraverso l'esecuzione di brani esistenti e nuove commissioni a compositori contemporanei, la ricerca impiega la voce, i suoni e i gesti vocali come estensioni timbriche ed espressive della chitarra classica. L'obiettivo principale è superare i confini di genere, offrire nuove sfide tecniche ed espressive al chitarrista e rinnovarne la figura nel panorama della musica classica contemporanea.",
+          "venue": "ArtCore Hub / Via Orazio Flacco 28, Martina Franca (TA)",
+          "admission": "Ingresso riservato ai tesserati. Per maggiori info chiamare +39 366 342 4199."
+        }
+      }
     }
   },
   "contact": {
@@ -288,6 +300,7 @@
     "description": "APS per coworking, live music, festival e scambio culturale.",
     "legalName": "ArtCore APS",
     "address": "Via Francesco Caroli 28, Martina Franca (TA) 74015",
+    "coworkingAddress": "Coworking: Via Orazio Flacco 28, Martina Franca (TA)",
     "email": "segreteria{'@'}artcorehub.org",
     "pec": "artcore{'@'}pec.it",
     "taxCode": "Codice fiscale: 90290600734",

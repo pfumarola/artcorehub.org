@@ -36,7 +36,7 @@
   "home": {
     "hero": {
       "title": "ARTCORE HUB",
-      "subtitle": "Coworking space, live music, festivals and cultural exchange just a short walk from the city center",
+      "subtitle": "Coworking space, live music, festivals and cultural exchange in Martina Franca",
       "ctaCoworking": "Discover Coworking",
       "ctaEvents": "View Events"
     },
@@ -52,7 +52,7 @@
       },
       "coworking": {
         "title": "Coworking",
-        "description": "Shared workspaces and community, close to the city center"
+        "description": "Shared workspaces and community at Via Orazio Flacco 28, Martina Franca"
       },
       "festivals": {
         "title": "Festivals",
@@ -63,11 +63,11 @@
       "title": "Frequently asked questions",
       "q1": {
         "question": "Who can use the coworking?",
-        "answer": "Only members. Coworking plan membership is reserved for association members. The membership registration fee is 20€/year; the coworking contribution is separate and follows the plans shown on the site. Submit a membership application. When admitted (within 24 hours), you can pay the coworking contribution via PayPal (also available in installments). The payment link will be sent by admission email."
+        "answer": "Only members. Coworking plan membership is reserved for association members. The membership registration fee is 20€/year; the coworking contribution is separate and follows the plans shown on the site. Submit a membership application. When admitted (within 24 hours), you will receive payment instructions for the coworking contribution by email."
       },
       "q2": {
         "question": "How much does coworking cost?",
-        "answer": "The membership fee is 20€/year. If you use coworking, you add a separate contribution based on your selected plan: Daily 40€/day, Monthly 180€/month, Quarterly 150€/month, Semiannual 120€/month. Example: monthly plan = 20€ membership fee + 180€/month coworking. Places are limited (maximum 12)."
+        "answer": "The membership fee is 20€/year. If you use coworking, you add a separate contribution based on your selected plan: Daily 15€/day, Weekly 50€/week. In October, a promo applies to all monthly plans (Monthly, Quarterly, Semiannual) at 120€/month (list prices 180€/150€/120€). Promo example: monthly plan = 20€ membership fee + 120€/month coworking. Places are limited (maximum 12)."
       },
       "q3": {
         "question": "How do I become a member?",
@@ -75,13 +75,9 @@
       },
       "q4": {
         "question": "How do I pay the coworking contribution?",
-        "answer": "Via PayPal (also available in installments). The payment link will be sent in the membership admission email."
+        "answer": "Payment instructions will be sent by email after membership admission."
       },
       "q5": {
-        "question": "Can I contribute even if the coworking isn't open yet?",
-        "answer": "Yes. Contributing before we open helps us cover initial costs (finding the space, setup, equipment) and get the project off the ground. You can become a member (registration fee 20€/year) and, if you wish, pay the coworking contribution in advance according to the plans to reserve your spot as soon as we open."
-      },
-      "q6": {
         "question": "Can I become a member without contributing to coworking costs?",
         "answer": "Absolutely. Coworking is just one of our activities: the association also promotes live music, festivals and cultural exchange. You can be a member by paying only the registration fee (20€/year) and take part in events, the community and initiatives without using the coworking space."
       }
@@ -97,19 +93,9 @@
     },
     "project": {
       "title": "The coworking journey",
-      "paragraph1": "Coworking is for building the community and funding the association's spaces and activities. Together we're shaping a venue, just a short walk from the city center, for coworking and small events (home concerts, book presentations, networking).",
-      "paragraph2": "Coworking is for members only: the membership fee is 20€/year. If you choose coworking, add the contribution for your selected plan (from 40€/day down to 120€/month on longer plans). In short: total = 20€/year + coworking plan (only if you use coworking). Places are limited. Submit a membership application; you get a response within 24 hours and, if admitted, you can pay via PayPal (also available in installments). The payment link will be sent by admission email.",
+      "paragraph1": "Coworking is for building the community and funding the association's spaces and activities. The venue at Via Orazio Flacco 28 hosts coworking and, depending on the calendar, small events (workshops, home concerts, book presentations, networking).",
+      "paragraph2": "Coworking is for members only: the membership fee is 20€/year. If you choose coworking, add the contribution for your selected plan (from 15€/day; in October monthly plans are on promo at 120€/month). In short: total = 20€/year + coworking plan (only if you use coworking). Places are limited. Submit a membership application; you get a response within 24 hours and, if admitted, you will receive payment instructions by email.",
       "paragraph3": "There is no profit — only the desire that whoever uses these spaces, whether local or just passing through, finds a richer and more relevant cultural offering.",
-      "latestUpdate": "Latest update",
-      "milestones": {
-        "idea": { "label": "Idea and plan", "desc": "Defining the model and vision" },
-        "space": { "label": "Finding a space and financial coverage", "desc": "Finding the right location and financial coverage" },
-        "setup": { "label": "Setup", "desc": "Renovation and equipment" },
-        "opening": { "label": "Opening", "desc": "Launch and first months. Estimated opening: June 1st." }
-      },
-      "status": { "done": "Done", "current": "In progress", "next": "Upcoming" },
-      "followProgress": "Follow the progress",
-      "imagineLikeThis": "We imagine it like this",
       "getInvolved": "Become a member",
       "expandHint": "Click to see how you can participate",
       "interested": "I'm interested",
@@ -118,17 +104,22 @@
       "canHelpDesc": "Skills, time, contacts or ideas: every contribution counts.",
       "plansDisclaimer": "First become a member (20€/year), then you can add a coworking plan.",
       "howToJoin": "Annual membership fee: 20€. The coworking plan is separate and optional.",
-      "contributionMonthly": "The standard monthly coworking contribution is 180€/month.",
+      "contributionMonthly": "October promo: all monthly plans at 120€/month (monthly list price 180€).",
       "contributionOverview": "Available coworking contributions:",
+      "octoberPromo": "October promo: all monthly plans at 120€/month",
       "plans": {
         "contributionType": "Associative contribution",
         "savePerMonth": "Save {amount}/month compared to monthly",
         "period": {
           "day": "day",
+          "week": "week",
           "month": "month"
         },
         "daily": {
           "name": "Daily"
+        },
+        "weekly": {
+          "name": "Weekly"
         },
         "monthly": {
           "name": "Monthly"
@@ -141,9 +132,9 @@
         }
       },
       "earlyMerch": {
-        "kicker": "Before we open",
+        "kicker": "For our supporters",
         "title": "A thank-you for early supporters",
-        "body": "To thank everyone who chooses a coworking plan while we are still getting started, we prepared a small ARTCORE HUB merch selection for the community. It is our way of saying thank you to those who believe in the project from day one.",
+        "body": "To thank everyone who chooses a coworking plan, we prepared a small ARTCORE HUB merch selection for the community. It is our way of saying thank you to those who believe in the project.",
         "itemsIncluded": "Included for members: one bag and one aluminum coffee cup.",
         "disclaimer": "Designs and colours may vary; photos are indicative until the final production run.",
         "sliderAria": "Swipe through gadget photos",
@@ -210,9 +201,12 @@
   "theSpace": {
     "hero": {
       "title": "The space",
-      "subtitle": "Coworking by day, events and concerts in the evening"
+      "subtitle": "Coworking, events, workshops and concerts"
     },
-    "intro": "One space, just steps from the city center: workstations in the morning and afternoon, a room for events, home concerts and meetups in the evening.",
+    "address": "Via Orazio Flacco 28, Martina Franca (TA)",
+    "addressLabel": "Address",
+    "openInMaps": "Open in Google Maps",
+    "intro": "A space at Via Orazio Flacco 28, Martina Franca (TA), designed for coworking and, depending on the programme, for events, workshops, home concerts and meetups.",
     "morning": {
       "title": "Morning and daytime",
       "body": "Quiet workstations: desks, Wi‑fi, space for calls and meetings. A shared environment for remote workers and anyone who needs a base."
@@ -223,7 +217,7 @@
     },
     "evening": {
       "title": "Evening",
-      "body": "The space hosts events: home concerts, book launches, networking aperitifs. Same room, different use — work by day, culture and meetups in the evening."
+      "body": "When scheduled, the space hosts events: home concerts, workshops, book launches, networking aperitifs. Same room, different uses: work and culture."
     },
     "night": {
       "title": "After events",
@@ -234,8 +228,8 @@
       "after": "After"
     },
     "aiRenderDisclaimer": "These images are AI-generated renderings, meant to give an idea of what the space will look like once it opens.",
-    "outro": "We're finalizing a venue just a short walk from the city center and the funding needed to open (estimated opening: June 1st). If you want to be part of it, become a member or get in touch.",
-    "membershipIntro": "Coworking is reserved for association members. The membership fee is 20€/year. If you want coworking, add a separate contribution based on your selected plan: Daily 40€/day, Monthly 180€/month, Quarterly 150€/month and Semiannual 120€/month. In short: 20€/year + coworking plan (only if you use coworking). Places are limited (maximum 12). Submit a membership application: you receive a response within 24 hours and, if admitted, you can pay via PayPal (also available in installments). The payment link will be sent by admission email."
+    "outro": "The space at Via Orazio Flacco 28, Martina Franca (TA), has been open since October 2. If you want to be part of it, become a member or get in touch.",
+    "membershipIntro": "Coworking is reserved for association members. The membership fee is 20€/year. If you want coworking, add a separate contribution based on your selected plan: Daily 15€/day, Weekly 50€/week; in October Monthly, Quarterly and Semiannual are on promo at 120€/month. In short: 20€/year + coworking plan (only if you use coworking). Places are limited (maximum 12). Submit a membership application: you receive a response within 24 hours and, if admitted, you will receive payment instructions by email."
   },
   "events": {
     "hero": {
@@ -259,7 +253,25 @@
     },
     "upcoming": {
       "title": "Upcoming events",
-      "empty": "New events coming soon. Stay tuned!"
+      "empty": "New events coming soon. Stay tuned!",
+      "venueLabel": "Venue",
+      "admissionLabel": "Admission",
+      "listenCta": "Learn more",
+      "callCta": "Call for info",
+      "items": {
+        "postWorkingLucesci": {
+          "title": "POST-WORKING — Gianni Sciambarruto — Lucesci",
+          "description": "Gianni Sciambarruto is a classical guitarist based in Apulia, Italy. His music explores the traditional sounds of Southern Italy and the Mediterranean, adapting them to the classical guitar. Founder of the world-music project Yarákä, his latest solo work, Lucesci, reinterprets the chants and rhythms of Salento through a modern and personal perspective.",
+          "venue": "ArtCore Hub / Via Orazio Flacco 28, Martina Franca (TA)",
+          "admission": "Entry reserved for members. For more info call +39 366 342 4199."
+        },
+        "postWorkingCordesVocales": {
+          "title": "POST-WORKING — Sofia Silvestrini — Cordes Vocales",
+          "description": "The project explores a third expressive dimension between the chamber duo (voice and guitar as separate entities) and the pop/rock singer-songwriter, proposing the fusion of voice and instrument into a single integrated entity performed by one musician.\n\nThrough existing works and new commissions from contemporary composers, the research uses the voice, vocal sounds and gestures as timbral and expressive extensions of the classical guitar. The main goal is to move beyond genre boundaries, offer new technical and expressive challenges to the guitarist, and renew this figure within contemporary classical music.",
+          "venue": "ArtCore Hub / Via Orazio Flacco 28, Martina Franca (TA)",
+          "admission": "Entry reserved for members. For more info call +39 366 342 4199."
+        }
+      }
     }
   },
   "contact": {
@@ -288,6 +300,7 @@
     "description": "APS for coworking, live music, festivals and cultural exchange.",
     "legalName": "ArtCore APS",
     "address": "Via Francesco Caroli 28, Martina Franca (TA) 74015",
+    "coworkingAddress": "Coworking: Via Orazio Flacco 28, Martina Franca (TA)",
     "email": "segreteria{'@'}artcorehub.org",
     "pec": "artcore{'@'}pec.it",
     "taxCode": "Tax code: 90290600734",

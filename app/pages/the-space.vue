@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { coworkingPlans, isPromoPlan } from '~/utils/coworkingPlans'
+
 const { t } = useI18n()
 const localePath = useLocalePath()
 const config = useRuntimeConfig().public
@@ -29,8 +31,7 @@ const faqItems = computed(() => [
   { question: t('home.faq.q2.question'), answer: t('home.faq.q2.answer') },
   { question: t('home.faq.q3.question'), answer: t('home.faq.q3.answer') },
   { question: t('home.faq.q4.question'), answer: t('home.faq.q4.answer') },
-  { question: t('home.faq.q5.question'), answer: t('home.faq.q5.answer') },
-  { question: t('home.faq.q6.question'), answer: t('home.faq.q6.answer') }
+  { question: t('home.faq.q5.question'), answer: t('home.faq.q5.answer') }
 ])
 
 function contactUrl(subjectKey: 'membershipApplication') {
@@ -38,20 +39,8 @@ function contactUrl(subjectKey: 'membershipApplication') {
   return `${localePath('/')}?subject=${encodeURIComponent(subject)}#contact`
 }
 
-type CoworkingPlan = {
-  key: 'daily' | 'monthly' | 'quarterly' | 'semiannual'
-  amount: string
-  periodKey: 'day' | 'month'
-  oldAmount?: string
-  savingPerMonth?: string
-}
+const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('artcore hub martina franca')}`
 
-const coworkingPlans: CoworkingPlan[] = [
-  { key: 'daily', amount: '40€', periodKey: 'day' },
-  { key: 'monthly', amount: '180€', periodKey: 'month' },
-  { key: 'quarterly', amount: '150€', periodKey: 'month', oldAmount: '180€', savingPerMonth: '30€' },
-  { key: 'semiannual', amount: '120€', periodKey: 'month', oldAmount: '180€', savingPerMonth: '60€' }
-]
 </script>
 
 <template>
@@ -70,6 +59,19 @@ const coworkingPlans: CoworkingPlan[] = [
         <p class="mt-4 text-lg text-stone-600 dark:text-stone-400">
           {{ $t('theSpace.hero.subtitle') }}
         </p>
+        <p class="mt-4 text-sm font-medium text-stone-800 dark:text-stone-200">
+          <span class="text-stone-500 dark:text-stone-400">{{ $t('theSpace.addressLabel') }}:</span>
+          {{ $t('theSpace.address') }}
+        </p>
+        <a
+          :href="mapsUrl"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="mt-2 inline-flex items-center gap-1 text-sm font-medium text-amber-700 underline-offset-2 hover:underline dark:text-amber-300"
+          :aria-label="`${$t('theSpace.openInMaps')} (${$t('a11y.opensNewTab')})`"
+        >
+          {{ $t('theSpace.openInMaps') }}
+        </a>
       </div>
     </section>
 
@@ -168,12 +170,15 @@ const coworkingPlans: CoworkingPlan[] = [
               <p class="mt-4 text-sm font-medium text-stone-700 dark:text-stone-300">
                 {{ $t('home.project.contributionOverview') }}
               </p>
+              <p class="mt-3 inline-flex items-center rounded-full bg-emerald-100 px-3 py-1 text-xs font-semibold text-emerald-800 dark:bg-emerald-900/40 dark:text-emerald-200">
+                {{ $t('home.project.octoberPromo') }}
+              </p>
               <ul class="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
                 <li
                   v-for="plan in coworkingPlans"
                   :key="plan.key"
                   class="flex h-full flex-col justify-between rounded-xl border p-3"
-                  :class="plan.key === 'semiannual'
+                  :class="isPromoPlan(plan.key)
                     ? 'border-amber-500 bg-white/80 dark:border-amber-400 dark:bg-stone-900/50'
                     : 'border-amber-200/80 bg-white/80 dark:border-amber-800/70 dark:bg-stone-900/50'"
                 >

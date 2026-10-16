@@ -53,7 +53,6 @@ export default defineNuxtConfig({
     public: {
       maintenanceMode: process.env.MAINTENANCE_MODE === 'true',
       siteUrl: publicSiteUrl,
-      paypalDonateUrl: process.env.NUXT_PUBLIC_PAYPAL_DONATE_URL || 'https://paypal.me/artcorehub',
       instagramUrl: process.env.NUXT_PUBLIC_INSTAGRAM_URL || 'https://instagram.com/artcorehub',
       staticformKey: process.env.STATICFORM_KEY || '',
       /** Posti coworking ancora disponibili: imposta NUXT_PUBLIC_COWORKING_SPOTS_LEFT (es. 7) e rideploya per aggiornare */

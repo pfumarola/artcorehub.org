@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { coworkingPlans, isPromoPlan } from '~/utils/coworkingPlans'
+
 const { t } = useI18n()
 const localePath = useLocalePath()
 
@@ -10,17 +12,7 @@ usePageSeo({
   image: '/images/og-default.webp'
 })
 
-// Project milestones: 'done' | 'current' | 'next' (edit to reflect real progress)
-const milestoneKeys = ['idea', 'space', 'setup', 'opening'] as const
-const milestoneStatus: Record<(typeof milestoneKeys)[number], 'done' | 'current' | 'next'> = {
-  idea: 'done',
-  space: 'done',
-  setup: 'current',
-  opening: 'next'
-}
-
 const config = useRuntimeConfig().public
-const instagramUrl = (config.instagramUrl as string) || ''
 const coworkingSpotsLeft = (config.coworkingSpotsLeft as number) ?? 10
 
 const faqItems = computed(() => [
@@ -28,8 +20,7 @@ const faqItems = computed(() => [
   { question: t('home.faq.q2.question'), answer: t('home.faq.q2.answer') },
   { question: t('home.faq.q3.question'), answer: t('home.faq.q3.answer') },
   { question: t('home.faq.q4.question'), answer: t('home.faq.q4.answer') },
-  { question: t('home.faq.q5.question'), answer: t('home.faq.q5.answer') },
-  { question: t('home.faq.q6.question'), answer: t('home.faq.q6.answer') }
+  { question: t('home.faq.q5.question'), answer: t('home.faq.q5.answer') }
 ])
 
 function contactUrl(subjectKey: 'interested' | 'help' | 'membershipApplication') {
@@ -43,21 +34,6 @@ const featureCards = [
   { key: 'coworking', image: '/images/feature-coworking.webp' },
   { key: 'festivals', image: '/images/feature-festivals.webp' }
 ] as const
-
-type CoworkingPlan = {
-  key: 'daily' | 'monthly' | 'quarterly' | 'semiannual'
-  amount: string
-  periodKey: 'day' | 'month'
-  oldAmount?: string
-  savingPerMonth?: string
-}
-
-const coworkingPlans: CoworkingPlan[] = [
-  { key: 'daily', amount: '40€', periodKey: 'day' },
-  { key: 'monthly', amount: '180€', periodKey: 'month' },
-  { key: 'quarterly', amount: '150€', periodKey: 'month', oldAmount: '180€', savingPerMonth: '30€' },
-  { key: 'semiannual', amount: '120€', periodKey: 'month', oldAmount: '180€', savingPerMonth: '60€' }
-]
 
 </script>
 
@@ -94,7 +70,7 @@ const coworkingPlans: CoworkingPlan[] = [
       </div>
     </section>
 
-    <!-- Project status: FAQ + Get involved affiancati, poi journey e step -->
+    <!-- Project status: FAQ + Get involved affiancati -->
     <section class="border-t border-stone-200 bg-stone-50 px-4 py-16 dark:border-stone-800 dark:bg-stone-900/30">
 
             <!-- The coworking journey: testo + immagine a lato -->
@@ -174,12 +150,15 @@ const coworkingPlans: CoworkingPlan[] = [
             <p class="mt-4 text-sm font-medium text-stone-700 dark:text-stone-300">
               {{ $t('home.project.contributionOverview') }}
             </p>
+            <p class="mt-3 inline-flex items-center rounded-full bg-emerald-100 px-3 py-1 text-xs font-semibold text-emerald-800 dark:bg-emerald-900/40 dark:text-emerald-200">
+              {{ $t('home.project.octoberPromo') }}
+            </p>
             <ul class="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
               <li
                 v-for="plan in coworkingPlans"
                 :key="plan.key"
                 class="flex h-full flex-col justify-between rounded-xl border p-3"
-                :class="plan.key === 'semiannual'
+                :class="isPromoPlan(plan.key)
                   ? 'border-amber-500 bg-white/80 dark:border-amber-400 dark:bg-stone-900/50'
                   : 'border-amber-200/80 bg-white/80 dark:border-amber-800/70 dark:bg-stone-900/50'"
               >
@@ -228,80 +207,6 @@ const coworkingPlans: CoworkingPlan[] = [
       <div class="mx-auto mt-14 max-w-6xl lg:mt-16">
         <AppEarlyMerchGallery />
       </div>
-
-      <!-- Timeline step: riga full-width per leggibilità -->
-      <!--
-      <div class="mx-auto mt-14 max-w-6xl lg:mt-20" role="list" aria-label="Stato del progetto">
-        <div class="grid grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-4 lg:gap-6">
-          <template v-for="(key, index) in milestoneKeys" :key="key">
-            <div
-              role="listitem"
-              :aria-current="milestoneStatus[key] === 'current' ? 'step' : undefined"
-              class="relative flex min-w-0 flex-col rounded-xl border-2 p-3 transition-all sm:p-4"
-              :class="{
-                'border-amber-500 bg-amber-50/80 dark:bg-amber-900/20 dark:border-amber-400': milestoneStatus[key] === 'current',
-                'border-amber-200 bg-amber-50/80 dark:bg-amber-900/20 dark:border-amber-800/40': milestoneStatus[key] === 'done',
-                'border-stone-200 bg-stone-100/50 dark:border-stone-800 dark:bg-stone-900/50': milestoneStatus[key] === 'next'
-              }"
-            >
-              <span
-                class="mb-2 flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-sm font-semibold sm:h-8 sm:w-8"
-                :class="{
-                  'bg-amber-500 text-white dark:bg-amber-500': milestoneStatus[key] === 'current' || milestoneStatus[key] === 'done',
-                  'bg-stone-200 text-stone-500 dark:bg-stone-700 dark:text-stone-400': milestoneStatus[key] === 'next'
-                }"
-                aria-hidden="true"
-              >
-                {{ index + 1 }}
-              </span>
-              <span
-                v-if="milestoneStatus[key] === 'done'"
-                class="absolute right-2 top-2 text-amber-600 dark:text-amber-400"
-                aria-hidden="true"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="sm:w-[18px] sm:h-[18px]">
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
-              </span>
-              <span
-                v-else-if="milestoneStatus[key] === 'current'"
-                class="absolute right-2 top-2 h-1.5 w-1.5 animate-pulse rounded-full bg-amber-500 sm:h-2 sm:w-2"
-                aria-hidden="true"
-              />
-              <p class="pr-6 text-xs font-semibold text-stone-900 dark:text-white sm:pr-0 sm:text-sm">
-                {{ $t(`home.project.milestones.${key}.label`) }}
-              </p>
-              <p class="mt-1 text-[11px] leading-tight text-stone-500 dark:text-stone-400 sm:text-xs">
-                {{ $t(`home.project.milestones.${key}.desc`) }}
-              </p>
-              <p class="mt-2 text-[11px] font-medium sm:text-xs" :class="milestoneStatus[key] === 'current' ? 'text-amber-700 dark:text-amber-300' : 'text-stone-500 dark:text-stone-400'">
-                {{ $t(`home.project.status.${milestoneStatus[key]}`) }}
-              </p>
-              <a
-                v-if="milestoneStatus[key] === 'current' && instagramUrl"
-                :href="instagramUrl"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="mt-3 inline-flex w-fit items-center gap-1.5 text-xs font-medium text-amber-700 hover:text-amber-800 dark:text-amber-300 dark:hover:text-amber-200 sm:mt-3"
-                :aria-label="`${$t('home.project.followProgress')} (Instagram) (${$t('a11y.opensNewTab')})`"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="shrink-0 sm:w-4 sm:h-4">
-                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
-                </svg>
-                {{ $t('home.project.followProgress') }}
-              </a>
-              <NuxtLink
-                v-if="key === 'opening'"
-                :to="localePath('/the-space')"
-                class="mt-3 inline-flex w-fit text-xs font-medium text-amber-700 underline hover:text-amber-800 dark:text-amber-300 dark:hover:text-amber-200 sm:mt-3"
-              >
-                {{ $t('home.project.imagineLikeThis') }}
-              </NuxtLink>
-            </div>
-          </template>
-        </div>
-      </div>
-      -->
 
       <!-- Riga sotto: I can help e I'm interested affiancate -->
       <div class="mx-auto mt-14 max-w-6xl grid grid-cols-1 gap-5 sm:grid-cols-2 lg:mt-20">
